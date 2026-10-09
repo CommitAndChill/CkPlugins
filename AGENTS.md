@@ -10,6 +10,8 @@ Use this project when you need to work on a Chainkemists plugin in isolation: yo
 
 ## Framework Development Guides
 
+Before starting or changing an in-game UI, read the [UI authoring lessons and acceptance rules](Plugins/CkFoundation/Source/CkSlateLayout/UI_AUTHORING_RULES.md) and the [supported authoring grammar](Plugins/CkFoundation/Source/CkSlateLayout/AUTHORING.md). Apply these rules to new screens as well as existing gyms; typography, alignment, reusable composition, and rendered-reference checks are baseline requirements.
+
 Before writing code against CkFoundation, read the appropriate guide in the submodule:
 
 - **AngelScript (.as):** [Plugins/CkFoundation/Script/AGENTS.md](Plugins/CkFoundation/Script/AGENTS.md) — language differences from C++, `utils_*` shortcuts, entity script lifecycle, asset definitions, dynamic handle registration gotcha.
