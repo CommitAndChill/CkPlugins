@@ -1,0 +1,10 @@
+{
+  "defaultMap": "/CkTests/TestGyms/TestGyms_CkTests_Level",
+  "classPrefix": "Ck_GauntletAsTest_",
+  "tests": [
+    {
+      "name": "PixelSpriteCookedRuntime",
+      "timeoutSec": 60
+    }
+  ]
+}
