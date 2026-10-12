@@ -5,6 +5,10 @@
     {
       "name": "PixelSpriteCookedRuntime",
       "timeoutSec": 60
+    },
+    {
+      "name": "PixelSpriteGym",
+      "timeoutSec": 60
     }
   ]
 }
