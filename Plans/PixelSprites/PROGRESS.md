@@ -1,5 +1,10 @@
 # Pixel sprite progress
 
+## Sproutling example - approved and created locally
+
+Approved eight-frame Sproutling concept translated to native 32x32 XPM/JSON: fixed ten-entry palette, one-pixel torso rise/leaf-tip sway, brief blink, planted feet/origin16,29, and 1980ms loop. Actual native import saves the Sproutling example asset; rendered creature transport/selection test and screenshot pass. Final viewer group passes3/3. The broader sample gate passed52/53 with an unreproduced existing Character initial-import crash; that test passes alone and in the final group, with no speculative production change. Details/provenance/logs are in SPROUTLING.md. New example/test/assets are local and uncommitted; earlier dev publication remains intact. Outside failures are deferred at the user's request.
+
+
 ## Publication - 2026-10-11
 
 PixelSprite publication was explicitly authorized after feature closure. Three logical Foundation commits publish authoring tools/fixtures (7a5df3394), indexed runtime (51d32687d), and transactional importer/export (b21d1d761). Debugger viewer/catalog commit 9e37c6104 and Tests operational AS/actor/cooked scenario commit f0c7360c2 are pushed to CommitAndChill dev; all remote tips verified. Fresh fetch found no incoming changes, so no rebase or source-invalidating regate was needed. Two redundant EOF blank lines were normalized without behavior changes. Existing editor, focused viewer/catalog, Game, cook/stage and staged-client evidence applies to the delivered feature content.
@@ -135,3 +140,31 @@ Gate 3 needs reflected image/animation assets, import factories, source dependen
 - Native drafts: NativeJsonDraft.h.txt, NativeFileDraft.cpp.txt, NativeSchemaDraft.cpp.txt, NativeManifestTypes.h.txt are non-built artifacts only. Lexer value tree preserves decoded-key uniqueness, ordering and exact extras spans without a lossy DOM; Astra review pending. No native loader or link-rejection completion claim.
 
 - Native manifest draft review: Astra cleared tree approach, NUL-safe hex identities and raw spans, locale-independent from_chars numerical conversion (host MSVC14.44 source evidence), spaced-device rejection, platform component inspection. Leading-NUL construction changed to ConstructFromPtrSize. Runtime source not integrated/compiled yet. Native subset rejects NUL-containing animation and anchor names; valid arbitrary NUL-containing extras are preserved. New authoring fixtures cover 6 valid/32 invalid manifests; full Python suite 28 pass independently.
+
+## Approved Studio and Focused viewer refresh — 2026-10-11
+
+User approved Studio mockup and requested both layouts through a dropdown. Native UI now shares one preview state/resources/canvas between layouts, reorganizes menus and transport, and has mounted input/screenshot coverage staged for a focused build gate. No runtime/parser changes. Previous focused viewer baseline: 3/3 passing. New LayoutSwitch adds one mounted test; new result pending. Unrelated work preserved.
+
+### Studio / Focused acceptance complete
+
+StudioGate5 editor build passed; focused Ck.PixelArtViewer gate 4/4 passed (three mounted renderer tests), 0 skipped/contaminated. Dropdown and inspector physical input, preview state preservation, source navigation and existing render checks passed. Fresh native Sproutling Studio/Focused screenshots inspected and readable. Prior menu test failures were an omitted native-child-window search, fixed in the test helper; no guessed production menu workaround. See UI_GATE.md. Implementation and prior creature additions remain local/unpublished; unrelated staged tags preserved.
+
+## Pixel Sprite gym — 2026-10-12
+
+User requested correction of the shoulder pixels in frames 2/6 and an in-world gym with aliased shader, edge-only AA shader (authored RGB stays crisp), and CkIsm box pixels. Sources corrected; CLI validation, regenerated sheet inspection, and Python suite 28/28 pass. Registered three-station gym and runtime Gauntlet script are implemented locally. New player pixel query and passive material presenter use the committed indexed source, one clock, atomic material validation, and transparent invalidation. Movable cube proxies reserve the full canvas and update linear custom RGB data. Assets are authored by an ownership-checked native automation fixture, not by deleting/replacing user assets.
+
+GymGate1/2 stopped in compilation on missing material-domain/complete texture includes in new tests (zero boots). GymGate3 native build passed; discovery boot rejected the gym's call to the native-only texture accessor, so no valid tests ran. Added reflected presenter refresh query; GymGate4 is the current incremental build/test invocation, initially waiting on another checkout's engine build. Source freeze is active until it terminates. Native example reimport, material/quad generation, and rendered gym Gauntlet screenshots are pending. See GYM.md and Saved/Logs/PixelSprite-GymGate4.log. All unrelated staged/dirty work remains preserved; no new commits or pushes.
+
+Update: GymGate5 core tests 30/30 passed; GymGate7 renderer authoring fixture 1/1 passed after source-grounded mask-pin correction and targeted material completion. Runtime2 rendered Gauntlet passed in 32s, three stations captured and inspected. Test handles saved startup redirect via normal gym switcher and restores LastGymName. Visual polish (label clearance, closer framing, oblique cube camera, diffuse-only cube reflections) is pending GymGate8 + one final rendered game capture. Source freeze active during the gate; unrelated dirt remains untouched.
+
+Gym acceptance complete: GymGate8 incremental build and renderer fixture passed 1/1, zero skipped/contaminated. Last script-only lift verified by GymRuntime4 rendered Gauntlet PASS in 23s (Runtime3 also passed); final aliased, edge-AA, and CkIsm box screenshots inspected and copied to Saved/PixelSpriteAcceptance/Gym/. All animation controls, indexed pixels and settled ISM colors passed. Clear station headings and oblique box framing verified. Native asset and source border corrections are saved. Local/uncommitted, no new publication. See GYM.md for usage, exact gate scope, alpha-only AA magnification limit, and deferred startup FText diagnostic.
+
+## Approved Art Viewer time track - 2026-10-12
+
+Implemented duration-proportional blocks, independently zoomed Fit/2x/4x/8x scrolling time track, fixed 56 px thumbnails clipped inside short holds, one ruler/playhead, and authored-time readout. Loop cursor wraps and PingPong return travels backward without changing runtime endpoint holds or absolute clock. Scrubbing preserves the current return visit where available. Both layouts share the track.
+
+TimelineGate6 incremental editor build succeeded; focused Ck.PixelArtViewer 5/5 passed (4 mounted real-renderer tests), 0 failed/skipped/contaminated, 53s. Native Sproutling Fit/8x captures inspected; glyph encoding corrected. Tests exercise real menu/pointer input, proportional widths, thumbnail clipping/reveal, scrolling, independent zoom, return/loop mapping, and atomic candidate rejection. Earlier compile/test issues fixed with source-grounded includes/API use, finite zoom validation, and the correct two expected CK diagnostics. See TIMELINE.md. All changes local/uncommitted; no publication or unrelated work modification.
+
+## Direct dev publication - 2026-10-12
+
+The approved creature, viewer layouts/time track and world gym are included in the direct dev publication batch. Submodule tips verified on origin/dev: Foundation `562da71fd1c4`, GameplayDebugger `e05ddc4e85cc`, Tests `4f4f4bc355b7`. Incremental build and focused Ck.Pixel acceptance passed 58/58 with five rendered tests, 0 skipped/contaminated; rendered PixelSpriteGym passed in 24s with its documented map/game override. No rebase was needed because all three fetched submodule bases matched the opening tips. Unrelated instructions, build profiles, procedural animation work and staged tags are excluded.
