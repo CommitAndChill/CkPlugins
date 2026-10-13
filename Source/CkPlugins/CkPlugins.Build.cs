@@ -7,6 +7,7 @@ public class CkPlugins : ModuleRules
     public CkPlugins(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+        CkModuleRules.ApplyProjectPCHOptions(this, Target);
 
         PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 

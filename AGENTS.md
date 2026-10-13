@@ -1,10 +1,10 @@
-# AGENTS.md
+# CkPlugins instructions
 
-This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.
+This file provides shared instructions for coding agents working in this repository.
 
 ## Project Overview
 
-CkPlugins is an Unreal Engine 5.5 project that serves as the **development host for the Chainkemists plugin ecosystem**. The host project itself is intentionally minimal — a default `GameModeBase` and a near-empty `Source/CkPlugins/` module. The real content is the plugin submodules under `Plugins/`, which are developed, tested, and iterated on inside this clean project before being consumed by downstream game projects.
+CkPlugins is an Unreal Engine 5.7 project (the `EngineAssociation` fork, currently 5.7.4) that serves as the **development host for the Chainkemists plugin ecosystem**. The host project itself is intentionally minimal — a default `GameModeBase` and a near-empty `Source/CkPlugins/` module. The real content is the plugin submodules under `Plugins/`, which are developed, tested, and iterated on inside this clean project before being consumed by downstream game projects.
 
 Use this project when you need to work on a Chainkemists plugin in isolation: you get a full UE project to compile against, the AngelScript runtime via CkFoundation, and the CkTests harness — without the weight of a full game project on top.
 
@@ -14,18 +14,37 @@ Before writing code against CkFoundation, read the appropriate guide in the subm
 
 - **AngelScript (.as):** [Plugins/CkFoundation/Script/AGENTS.md](Plugins/CkFoundation/Script/AGENTS.md) — language differences from C++, `utils_*` shortcuts, entity script lifecycle, asset definitions, dynamic handle registration gotcha.
 - **C++ framework patterns:** [Plugins/CkFoundation/Source/AGENTS.md](Plugins/CkFoundation/Source/AGENTS.md) — full development guidelines: function formatting, ECS patterns, `CK_PROPERTY`, request structs, component lifetimes, module tier table.
-- **C++ quick reference:** [Plugins/CkFoundation/AGENTS.md](Plugins/CkFoundation/AGENTS.md) — condensed architecture overview (macros, fragments, processors, naming).
+- **Shared framework instructions:** [Plugins/CkFoundation/AGENTS.md](Plugins/CkFoundation/AGENTS.md) — mandatory rules and links to the neutral development and architecture guides.
+
+## CK validation and skill discovery
+
+- Read the CkFoundation AGENTS.md and relevant neutral guide before framework changes.
+- `CK_ENSURE_IF_NOT` owns its inverted `if`: put recovery directly in its body. Never write an
+  empty ensure followed by an ordinary `if` repeating the condition. Older guidance requiring
+  that shape is superseded by this rule.
+- Checks run in non-Shipping builds. The intended Shipping policy skips the predicate and body;
+  retaining checks in Shipping is an explicit exception when needed to avoid crashes under
+  delivery constraints. Current Foundation flags keep Shipping checks enabled; verify actual
+  flags when describing build behavior. Do not change flags as part of a validation fix.
+- Foundation's 27 workflow bodies remain in `Plugins/CkFoundation/.claude/skills/`.
+  The root `.agents/skills/` wrappers make them discoverable from this host checkout. Read the
+  repository-local canonical body and its relative references; prefer it over global copies.
+
+## Code Review Rules
+
+- Reject an empty `CK_ENSURE_IF_NOT` body followed by an ordinary `if` repeating its condition.
+- Verify prerequisite checks are safe and the failure/recovery is inside the ensure body.
 
 ## Per-plugin versioning
 
-When changes touch `Plugins/GitLink/Source/`, follow the bump rule in [Plugins/GitLink/AGENTS.md](Plugins/GitLink/AGENTS.md)'s **Versioning** section at end of session:
+When changes touch `Plugins/GitLink/Source/`, follow the bump rule in [Plugins/GitLink/CLAUDE.md](Plugins/GitLink/CLAUDE.md)'s **Versioning** section at end of session:
 
 1. Bump `GITLINK_VERSION` in `Plugins/GitLink/Source/GitLink/Public/GitLink/GitLink_Version.h`.
 2. Bump `VersionName` (and `Version`) in `Plugins/GitLink/GitLink.uplugin` to match.
-3. Add a row at the top of the **Version log** table in `Plugins/GitLink/AGENTS.md`.
+3. Add a row at the top of the **Version log** table in `Plugins/GitLink/CLAUDE.md`.
 4. Rebuild so the binary's build timestamp refreshes.
 
-Other plugins under `Plugins/` may adopt the same pattern over time; check their `AGENTS.md` for an analogous section before assuming there isn't one.
+Other plugins under `Plugins/` may adopt the same pattern over time; check their `CLAUDE.md` for an analogous section before assuming there isn't one.
 
 ## Repository Structure
 
@@ -42,12 +61,20 @@ Other plugins under `Plugins/` may adopt the same pattern over time; check their
 The project uses the **runreal** build system. The engine source comes from `https://github.com/Chainkemists/UnrealEngine-Internal` (configured in `runreal.config.json`).
 
 **Build + run automation/Gauntlet tests via the Unreal Toolbox** — use the
-`/build-test` skill (canonical doc: [CkAuto/.Codex/skills/build-test/SKILL.md](CkAuto/.Codex/skills/build-test/SKILL.md);
-the project-root `.Codex/skills/build-test/` is a thin wrapper over it, needed
+`/build-test` skill (canonical doc: [CkAuto/.claude/skills/build-test/SKILL.md](CkAuto/.claude/skills/build-test/SKILL.md);
+the project-root `.agents/skills/build-test/` and `.claude/skills/build-test/` are thin wrappers over it, needed
 because skills inside submodules aren't auto-discovered). Never invoke
 `Build.bat`, UnrealBuildTool, or `UnrealEditor-Cmd.exe -ExecCmds="Automation ..."`
 directly for build/test automation — the toolbox owns engine resolution, the
 machine-wide build lock, watchdogs, and structured results.
+
+**Builds on different worktrees no longer wait for each other** (toolbox v1.57, on an engine whose
+UnrealBuildTool has the reader/writer lock: the engine fork's `main-ck` `5f05b0cf` or later): a build waits
+only when another UnrealBuildTool on this engine is writing under `Engine/` (stale engine rules assemblies
+after a UBT change, a ShaderCompileWorker relink after an engine change, `-Rebuild`), and the wait line
+names the holder. Same-project builds still serialize. Read the `=== Build lock: ... ===` line a `--build`
+prints; `--serialize-builds` restores the old behaviour for one run. On an engine without that lock, builds
+on one engine still run one at a time.
 
 ### Setup and building
 
@@ -56,23 +83,16 @@ machine-wide build lock, watchdogs, and structured results.
 runreal engine install
 runreal engine update --setup
 
-# Build the editor (runs the "Build Editor" workflow from runreal.config.json)
-runreal build editor
 ```
 
 Configurations available: Development, Test, Shipping, Debug.
 
-#### Building the editor directly (Build.bat)
+#### Editor compilation and automation
 
-For editor-only iteration without going through runreal, invoke the engine's `Build.bat` directly. The engine path is resolved dynamically from this project's `.uproject` `EngineAssociation` GUID via a tiny helper — do not hardcode it:
-
-```powershell
-$engine = & "$env:CLAUDE_PROJECT_DIR\CkAuto\Get-ProjectEnginePath.ps1"
-& "$engine\Engine\Build\BatchFiles\Build.bat" CkPluginsEditor Win64 Development `
-    -Project="$env:CLAUDE_PROJECT_DIR\CkPlugins.uproject" -WaitMutex -FromMsBuild
-```
-
-The same `PreToolUse` hook that guards git ops (see *Hooks / safety guards*) also blocks `Build.bat` invocations whenever UnrealEditor is running for this project — building while the editor has DLLs loaded corrupts hot-reload state. Close the editor first, or set `SKIP_UNREAL_GUARD=1` if you know what you're doing.
+Use `CkAuto/UnrealToolbox.exe` through the `build-test` skill for editor compilation and tests.
+Never invoke raw `Build.bat`, UnrealBuildTool, or an automation editor command directly.
+Pass `--project=<absolute-project-path>` and launch the Toolbox detached with a hidden parent
+console so its progress window appears. Ask before a Shipping build.
 
 ### Running
 
@@ -112,7 +132,7 @@ CkAuto/SubmodulesCustomCommand.bat "git status"
 - **CkFoundation** — ECS framework using EnTT 3.15.0; the foundation everything else builds on.
 - **CkApplication** — Application-level functionality on top of CkFoundation.
 - **CkGameplayDebugger** — Debug tools integration with UE's gameplay debugger.
-- **CkTests** — Test harness (AutoTests + Gym framework). See its own AGENTS.md and the `Script/Common/` specifications for authoring tests and gyms against CkFoundation features.
+- **CkTests** — Test harness (AutoTests + Gym framework). See its own CLAUDE.md and the `Script/Common/` specifications for authoring tests and gyms against CkFoundation features.
 - **GitLink** — Source-control / git integration plugin.
 
 ### Third-party dev tools
@@ -145,7 +165,7 @@ The `CkAuto/UpdateAllSubmodules_PUSH_DEV.bat` helper can automate steps 2–3 ac
 
 ## Hooks / safety guards
 
-`.Codex/settings.json` registers a `PreToolUse` hook (`CkAuto/Check-UnrealNotRunning.ps1`) that intercepts file-mutating git commands (`checkout`, `switch`, `rebase`, `merge`, `reset`, `pull`, `clean`, `restore`, `cherry-pick`, `revert`, `stash pop/apply`) and engine `Build.bat` invocations. Behaviour:
+Claude Code's `.claude/settings.json` registers a `PreToolUse` hook (`CkAuto/Check-UnrealNotRunning.ps1`) that intercepts file-mutating git commands (`checkout`, `switch`, `rebase`, `merge`, `reset`, `pull`, `clean`, `restore`, `cherry-pick`, `revert`, `stash pop/apply`) and engine `Build.bat` invocations. A `.codex/hooks.json` also exists; client-specific hook activation must be verified, rather than assuming Codex loads Claude settings. The protection script's behavior is:
 
 - **Editor closed for this project** → silent pass.
 - **Editor open, op only touches source/config** → soft-warn prompt (`permissionDecision: "ask"`); user confirms or declines.
@@ -154,9 +174,9 @@ The `CkAuto/UpdateAllSubmodules_PUSH_DEV.bat` helper can automate steps 2–3 ac
 
 Detection is per-project: probes `Saved/Logs/*.log` for an exclusive write lock (UE holds the active log exclusively while running). Other UE instances open for unrelated projects do not trip the guard, and renamed editor binaries don't matter (no process-name scan).
 
-Submodule-aware: commands like `cd Plugins/CkFoundation && git checkout <ref>` are recognised — the script resolves the effective repo root via `git rev-parse --show-toplevel`, enumerates against that repo, and prefixes the resulting paths with the submodule's offset under the project root before classification.
+Submodule-aware: the op's directory is resolved from the shell's cwd, then a leading `cd <path> &&`, then any `git -C <path>` options (Git Bash `/d/...` paths accepted) — so `cd Plugins/CkFoundation && git checkout <ref>` and `git -C Plugins/CkFoundation checkout <ref>` are both recognised. The script resolves the effective repo root via `git rev-parse --show-toplevel`, enumerates against that repo, and prefixes the resulting paths with the submodule's offset under the project root before classification.
 
-**Limitation — submodule-rooted sessions:** the hook is wired through `CkPlugins/.Codex/settings.json`, which Codex only loads when the session's project root *is* CkPlugins. If you launch Codex from inside a submodule, our hook is not active. Workarounds: (a) launch Codex from the CkPlugins root for any session that may do git ops, or (b) add a personal `~/.Codex/settings.json` invoking a copy of the script kept somewhere stable outside the repo — note this only protects you, not teammates.
+**Limitation — submodule-rooted sessions:** the hook is wired through `CkPlugins/.claude/settings.json`, which Claude Code only loads when the session's project root *is* CkPlugins. If you launch Claude Code from inside a submodule, our hook is not active. Workarounds: (a) launch Claude Code from the CkPlugins root for any session that may do git ops, or (b) add a personal `~/.claude/settings.json` invoking a copy of the script kept somewhere stable outside the repo — note this only protects you, not teammates.
 
 Override for the deny tier: `SKIP_UNREAL_GUARD=1`. Use only when you know the affected assets aren't loaded in the editor — the natural recovery is to close the editor and retry.
 
