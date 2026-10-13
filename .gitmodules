@@ -3,7 +3,7 @@
 	url = https://github.com/CommitAndChill/CkFoundation.git
 [submodule "Plugins/CkGameplayDebugger"]
 	path = Plugins/CkGameplayDebugger
-	url = https://github.com/chainkemists/CkGameplayDebugger.git
+	url = https://github.com/CommitAndChill/CkGameplayDebugger.git
 [submodule "Plugins/CkTests"]
 	path = Plugins/CkTests
 	url = https://github.com/CommitAndChill/CkTests.git
@@ -19,9 +19,6 @@
 [submodule "Plugins/NodeGraphAssistant"]
 	path = Plugins/NodeGraphAssistant
 	url = https://github.com/chainkemists/NodeGraphAssistant.git
-[submodule "Plugins/CkApplication"]
-	path = Plugins/CkApplication
-	url = https://github.com/chainkemists/CkApplication.git
 [submodule "CkAuto"]
 	path = CkAuto
 	url = https://github.com/CommitAndChill/CkAuto.git
