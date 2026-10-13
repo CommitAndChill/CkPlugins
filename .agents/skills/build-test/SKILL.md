@@ -9,10 +9,10 @@ This is a thin wrapper: the canonical skill ships inside the CkAuto submodule so
 every CK-family project (and every teammate) gets updates on submodule pull,
 instead of via pasted copies.
 
-**Read and follow [CkAuto/.Codex/skills/build-test/SKILL.md](../../../CkAuto/.Codex/skills/build-test/SKILL.md)
+**Read and follow [CkAuto/.claude/skills/build-test/SKILL.md](../../../CkAuto/.claude/skills/build-test/SKILL.md)
 in full before invoking the toolbox** — it owns the pre-flight editor-lock
 check, the build/test phases, the log-reading rules, the Gauntlet variant, and
 the traps. Do not act from this wrapper alone.
 
-(Why a wrapper at all: Codex does not discover `.Codex/skills/` inside
+(Why a wrapper at all: Codex scans `.agents/skills/` from the working directory to the repository root, not
 submodules, so the project root needs this stub for the skill to surface.)
