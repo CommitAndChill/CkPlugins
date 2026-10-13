@@ -361,3 +361,8 @@ Config/_StubRecovery_DynamicHandleTypes.json
 # Machine-local preparation records and scratch experiments
 /ReleasePreparation/
 /_scratch/
+
+# Regenerated binding cache and reserved editor-service test fixtures
+/Script/Binds.Cache.Headers
+/Content/__CkEntityScriptEditorServices_*/
+/Content/EntitySpawnParams/EntitySpawnParams_CkEntityScriptEditorServices_*.uasset
