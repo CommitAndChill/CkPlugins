@@ -12,10 +12,15 @@ These feature histories have not been integrated into rewritten `dev` histories.
 CkAuto now uses `feature/ui-package-clean-history` at published `origin/dev`
 `11b7ee9495b86dabd1c26fa5d613a3bb8569e324`. Its verified Release binary is v1.61,
 source `c467aeea`, SHA-256 `79edcb11ebe8eebf3ae33eba4656ece9098145bb0d4b59c8f1b5dbb509d0cf11`.
-The host's previous `95b9265` pin to unpublished CkAuto `459138f` is being corrected.
+The host's previous `95b9265` pin to unpublished CkAuto `459138f` was corrected
+by `73a9357` to published clean-history `11b7ee9`.
 The user approved changing the host origin to `CommitAndChill/CkPlugins`.
-Host publication uses `feature/reactor-umg-investigation`, with a PR rather than
-direct dev integration. Inspect its final remote tip and PR status before continuation.
+Host feature publication succeeded and was remotely verified through `cfa6113`;
+inspect subsequent documentation commits for the final tip. The destination had
+no branches before publication. Its only/default branch is now
+`feature/reactor-umg-investigation`; no separate PR base exists, so no host PR
+was created. Agree the baseline/integration policy before creating another base
+branch or integrating this work; do not fabricate a dev/main baseline.
 The supplied credentials are only in local remote configuration, never tracked files.
 Root commits already local: `9f82a92`, `d38a442`, `95b9265`; inspect later commits for delivery corrections.
 New UI commits: Foundation `87eb975`; Tests `4d855a6`, `2176c4f`, `f8e4b09`, `6428ea4`.
