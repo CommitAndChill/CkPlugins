@@ -5,18 +5,37 @@ Continue proving the code-authored CkFoundation HTML/CSS-to-Slate/UMG pipeline; 
 # Repo state
 
 Use only `D:\Repos\CkPlugins_2`, branch `feature/reactor-umg-investigation`.
-Foundation and Tests use `feature/authored-pause-menu`; CkAuto contains the deployed Toolbox update.
-The closing session committed the milestone locally, but publication is BLOCKED:
-Git push cannot obtain credentials and `gh auth status` reports no signed-in host.
-No push succeeded. Do not publish root gitlinks until all referenced submodule commits are published.
-No rebase was started; preserve the verified source until authentication and integration are addressed.
-New local commits: Foundation `87eb975`; Tests `4d855a6`, `2176c4f`, `f8e4b09`, `6428ea4`; CkAuto `459138f` on `feature/windows-package-prerequisites`.
+Foundation and Tests use local `feature/authored-pause-menu`; their tips are now
+published and remotely verified on `feature/ui-gameplay-inventory-proof` in
+`CommitAndChill/CkFoundation` (`87eb975`) and `CommitAndChill/CkTests` (`6428ea4`).
+These feature histories have not been integrated into rewritten `dev` histories.
+CkAuto now uses `feature/ui-package-clean-history` at published `origin/dev`
+`11b7ee9495b86dabd1c26fa5d613a3bb8569e324`. Its verified Release binary is v1.61,
+source `c467aeea`, SHA-256 `79edcb11ebe8eebf3ae33eba4656ece9098145bb0d4b59c8f1b5dbb509d0cf11`.
+The host's previous `95b9265` pin to unpublished CkAuto `459138f` is being corrected.
+The user approved changing the host origin to `CommitAndChill/CkPlugins`.
+Host publication uses `feature/reactor-umg-investigation`, with a PR rather than
+direct dev integration. Inspect its final remote tip and PR status before continuation.
+The supplied credentials are only in local remote configuration, never tracked files.
+Root commits already local: `9f82a92`, `d38a442`, `95b9265`; inspect later commits for delivery corrections.
+New UI commits: Foundation `87eb975`; Tests `4d855a6`, `2176c4f`, `f8e4b09`, `6428ea4`.
+No source rebase was started; preserve the verified UI source during integration.
 The Git author configuration was absent; the closing commands used the existing repository author identity Saad K only for those invocations, without changing global config.
-Fetched remote dev divergence before these commits: root 23 incoming/28 local,
-Foundation 1 incoming/27 local, Tests 1 incoming/36 local, CkAuto 1 incoming/1 local.
-Incoming source changes: Foundation outline thickness rejection (`3a52cf6`), Tests outline coverage (`cfabadb`), CkAuto storage rules (`aaaa432`). Integrating these can invalidate scoped evidence and needs appropriate post-rebase checks.
+Old chainkemists remote divergence is superseded by the CommitAndChill fetch.
+Foundation's initially reported 6931 incoming commits reflect shallow/re-written
+ancestry, not 6931 independent changes. Inspect trees/range-diffs before integration.
+Integrating incoming source can invalidate scoped evidence and needs appropriate checks.
 Root recursive fetch also encountered unavailable submodule refs in remote history;
 independent `git fetch --no-recurse-submodules origin dev` succeeded. Do not conceal or replicate broken remote gitlinks.
+IMPORTANT: PhantomLauncher history was intentionally dropped from CkAuto and
+must NEVER be republished. The legacy local branch `feature/windows-package-prerequisites`
+at `459138f` contains it and remains unpublished; do not push it or mirror/all refs.
+Rejected pushes led to recovering original shallow ancestry locally; one historical
+PhantomLauncher LFS object was downloaded locally before the user clarified the drop.
+No PhantomLauncher working files or old-history CkAuto ref were published/restored.
+The selected clean CkAuto history has no PhantomLauncher path commits. Its guard
+already matches the legacy fix and its Release binary has the same required runner
+source, so no legacy CkAuto commit needs replaying. Do not continue legacy LFS retrieval.
 `Script/Binds.Cache.Headers` is generated binary cache: preserve locally, do not commit.
 Never create a worktree, clone, copy or alternate checkout, or clean Binaries/Intermediate/DDC.
 The user's newest AGENTS instructions control: failures belong inside CK_ENSURE_IF_NOT bodies; Shipping omission is intentional.
@@ -84,7 +103,7 @@ Toolbox v1.61 clean published source `c467aeea`; vendored provenance passed with
 # Concrete continuation flow
 
 1. Read latest AGENTS, the two Foundation authoring docs, and gameplay proof notes. Inspect Git status, branch, remotes and publication without printing credential URLs.
-2. Resolve GitHub authentication through the user's authorized credential mechanism, then publish local feature commits first. Fetch again, inspect remote advances, and apply the commit/push workflow. If integration conflicts, stop and preserve them; do not silently resolve or create a clean alternate checkout. Verify referenced commits on the remote before pushing the host branch and creating its PR.
+2. Check the final host publication outcome and any approved host destination change. Submodule tips are published as described above; CkAuto must point to clean published `11b7ee9`, never legacy `459138f`. Fetch again and inspect rewritten history before integration; do not blindly replay dropped commits. If integration conflicts, stop and preserve them. Verify referenced commits on the remote before pushing the host branch and creating its PR.
 3. Choose one remaining acceptance slice and state its exact scope. Reuse existing UI gym rather than create another skin/station.
 4. Read build-test skill. All Unreal builds/tests use `CkAuto/UnrealToolbox.exe --project=D:\Repos\CkPlugins_2`; never raw engine commands. State planned Editor boots before launch, preflight active log locks, launch detached with Start-Process -WindowStyle Hidden and escalation for GUI, never --no-progress-window; monitor original PID and absolute output log.
 5. Preserve current artifacts and use new output/stage names. Do not rerun passed gates merely to broaden claims. Any source change invalidates only relevant evidence; AS-only edits reuse binaries.
