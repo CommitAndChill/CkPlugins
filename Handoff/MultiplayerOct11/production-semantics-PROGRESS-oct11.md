@@ -1,5 +1,12 @@
 # Current continuation - 2026-10-12
 
+## Authorized unrelated-work cleanup
+
+The user authorized keeping useful unrelated work and discarding the rest. Foundation97fa3345d commits the five portable build-profile hooks; Foundation703113244 retains two campaign-referenced navigation handoffs as historical checkpoints. Host84677ef recovers38 source-backed missing gameplay tags. The host build-profile checkpoint commits the two host hooks and records the current Foundation703113244fe1d5e520583ec140a1aec5d6a2e4aa, Tests0fac3c7627fc0c36aaa4d2551b148cce21911f04 and GameplayDebuggerf90b65ca1680c62b00fd74bd6d088d848b5b33f1 pointers. No push occurred.
+
+Discarded14 obsolete files: the pre-campaign root planning prompt, the Phase1 GroundNav tuning handoff, eight Jolt fixture bake/export files using format6 while current world format is7, and four old machine-local storage measurement reports. Removed only the two superseded checkout-transfer stashes after extracting the38 tags; the generated spawn-parameter difference was comment-only and the local executable override was superseded by tested dev. Rebase safety stashes, backup refs, current multiplayer evidence and Saved build artifacts/profile remain.
+
+One additional fresh startup smoke boot reused the built binaries:2/2 ClientServer/ListenServer,25s,exit0, no skips/contamination, tag errors, script compile errors or ensures. Source/config hashes remained unchanged. Log Saved/Logs/UnrelatedCleanup-Startup-Oct12.log; cleanup inventory and raw log retained under _scratch/multiplayer-dev-rebase-20261012/. This does not expand the prior50-case claim or rendered acceptance.
 ## Scene Node focused integration verified locally
 
 The editor build passed (attempt19, 501.34 seconds). The final current-binary gate (attempt20) passed all50 selected network tests:48 Scene Node cases and2 incidental Scene Node+Tween cases; zero failures, skips or contamination,3m49s, actual exit0. Fresh raw log review found no ensures or Scene Node script warnings/errors. All24 frozen source hashes remained unchanged; all8 unrelated tracked source files remained byte-identical to their opening hashes. No repository-wide, rendered, packaged or abrupt GameState-loss acceptance is claimed. Scene Node+Tween remains a separate pending family. The transport ledger now contains7 verified rows and85 pending rows.
@@ -8,7 +15,7 @@ Evidence: Handoff/MultiplayerOct11/scene-node-production-oct12-green-evidence.js
 
 ## Local commits and delivery boundary
 
-Foundation:968f9a3629f8a2b8032891220b79382b2cb9ae5d admits existing unnamed WithActor labels and atomically publishes the initial native pose;2981531cb3b06107dba8122d16768d9d6e4d916e excludes synchronous actor teardown from later transform output. CkTests:79fdf82a3cf4ce0072b40359963c8dafd1709576 adds direct build dependencies;0fac3c7627fc0c36aaa4d2551b148cce21911f04 completes coupled Scene Node integration/tests. GameplayDebugger:f90b65ca1680c62b00fd74bd6d088d848b5b33f1 adds the direct viewport declaration. All are local on feature/multiplayer-test-readiness-rebased. No push or new host gitlink delivery occurred; the three changed submodule heads are ahead of the host's rebased recorded pins. Their pointer updates remain unstaged.
+Foundation:968f9a3629f8a2b8032891220b79382b2cb9ae5d admits existing unnamed WithActor labels and atomically publishes the initial native pose;2981531cb3b06107dba8122d16768d9d6e4d916e excludes synchronous actor teardown from later transform output. CkTests:79fdf82a3cf4ce0072b40359963c8dafd1709576 adds direct build dependencies;0fac3c7627fc0c36aaa4d2551b148cce21911f04 completes coupled Scene Node integration/tests. GameplayDebugger:f90b65ca1680c62b00fd74bd6d088d848b5b33f1 adds the direct viewport declaration. All are local on feature/multiplayer-test-readiness-rebased. The subsequent authorized cleanup checkpoint records the current plugin heads in the host; no push occurred.
 
 The new Scene Node gym Request_Rebuild reflected parameter is named RequestOwner; function name/types/position and its observed positional caller are unchanged. Other warning cleanup only renames local World identifiers to CurrentWorld.
 
@@ -16,7 +23,7 @@ The new Scene Node gym Request_Rebuild reflected parameter is named RequestOwner
 
 The host feature/multiplayer-test-readiness was rebased locally at e29cfeaeac02dc4f54e996d2c588386127bb5de8 onto fetched origin/dev8a6665bd6. Foundation replayed31 WIP commits onto devb21d1d761f349178d0644768ddd6dbfb5831f4db; CkTests replayed161 onto devf0c7360c244042521ef39471fdac1831aab0b737; GameplayDebugger replayed8 onto dev9e37c610. Range-diffs matched every WIP commit with zero unmatched. Conflict resolutions retain Camera context validation, explicit DebugDraw headers, both CkRuntimeMesh/Sockets dependencies, registration unions and upstream known-red/default-enabled plugin configuration. All11 submodules were synchronized to fetched dev or the corresponding rebased WIP. CkAuto uses dev11b7ee9495b86dabd1c26fa5d613a3bb8569e324 (version1.61).
 
-Backup refs backup/multiplayer-before-dev-rebase-20261012 remain in each changed repository. Exact stash IDs, opening hashes, range-diffs and preservation evidence are in _scratch/multiplayer-dev-rebase-20261012/. Rebase preservation stashes were applied, not dropped. The earlier checkout-transfer stashes remain retained rather than blindly restoring conflicting gameplay-tag/generated-script files. Unrelated untracked navigation/Jolt work remains untouched. No new checkout, manual artifact purge or clean rebuild occurred. The saved Unique/Symbols=None/ProjectPCH=false profile remains unchanged. Native compilation used incremental existing artifacts; normal editor generation removed an obsolete generated script referencing retired navigation parameter types.
+Backup refs backup/multiplayer-before-dev-rebase-20261012 remain in each changed repository. Exact stash IDs, opening hashes, range-diffs and preservation evidence are in _scratch/multiplayer-dev-rebase-20261012/. Rebase preservation stashes were applied, not dropped. The earlier checkout-transfer stashes were removed by authorized cleanup after retaining source-backed tags. Superseded navigation prompts and obsolete Jolt fixture bakes were discarded; retained navigation handoffs are explicitly historical. No new checkout, manual artifact purge or clean rebuild occurred. The saved Unique/Symbols=None/ProjectPCH=false profile remains unchanged. Native compilation used incremental existing artifacts; normal editor generation removed an obsolete generated script referencing retired navigation parameter types.
 
 ## Resolved evidence chain
 
@@ -28,7 +35,7 @@ Attempt18:0/2 isolated role17's real scale mismatch: source/client L/R equal, so
 
 ## Next bounded work
 
-Scene Node+Tween is the next separate production transport review; its incidental2/2 results do not establish that review. Preserve the same checkout, unrelated work, retained backups/stashes and storage profile. Delivery requires explicit new authority before push or host gitlink update. Abrupt GameState-loss quarantine is non-destructive and unproved; adding automatic lifetime reparenting/destruction would require a new architecture decision.
+Scene Node+Tween is the next separate production transport review; its incidental2/2 results do not establish that review. Preserve the same checkout, unrelated work, retained backups/stashes and storage profile. The host now records current plugin revisions; a push still requires explicit new authority. Abrupt GameState-loss quarantine is non-destructive and unproved; adding automatic lifetime reparenting/destruction would require a new architecture decision.
 
 ---
 # Historical transfer record

@@ -3,7 +3,7 @@
   "workspace": "D:/Repos/CkPlugins_3",
   "source": "D:/Repos/CkPlugins",
   "branch": "feature/multiplayer-test-readiness",
-  "state": "Scene Node focused production path verified locally; final50/50; no active run/freeze;85pending. Rebased WIP on fetched dev; no new push/host gitlink delivery.",
+  "state": "Scene Node focused production path verified locally;50/50;85pending. Authorized unrelated cleanup committed useful build hooks, tags and history, discarded obsolete files, and recorded plugin pointers. Startup smoke2/2; no push/run/freeze.",
   "baseline": {
     "pid": 25360,
     "execSession": 18181,
@@ -6564,8 +6564,8 @@
       "continuation": "Handoff/MultiplayerOct11/production-semantics-PROGRESS-oct11.md",
       "ownedManifest": ".scratch/multiplayer/scene-node-inflight-owned-oct11.json",
       "finalEvidence": "Handoff/MultiplayerOct11/scene-node-production-oct12-green-evidence.json",
-      "localHeads": { "CkFoundation": "2981531cb3b06107dba8122d16768d9d6e4d916e", "CkTests": "0fac3c7627fc0c36aaa4d2551b148cce21911f04", "CkGameplayDebugger": "f90b65ca1680c62b00fd74bd6d088d848b5b33f1" },
-      "hostGitlinks": "New local plugin heads remain unstaged; no new delivery authorization"
+      "localHeads": { "CkFoundation": "703113244fe1d5e520583ec140a1aec5d6a2e4aa", "CkTests": "0fac3c7627fc0c36aaa4d2551b148cce21911f04", "CkGameplayDebugger": "f90b65ca1680c62b00fd74bd6d088d848b5b33f1" },
+      "hostGitlinks": "Current plugin heads recorded by the authorized host build-profile cleanup checkpoint; no push"
     }
   },
   "engineLockCoordinationOct11": {
