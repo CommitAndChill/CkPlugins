@@ -20,3 +20,5 @@ Unique non-pointer work from the multiplayer, online-services research, UI-pipel
 Historical CkAuto PhantomLauncher lineage is excluded. No existing secondary checkout or its occupied local branch was changed. Backup refs preserve the pre-reconciliation dev and shader branch tips.
 
 The recovered startup probe failed on the current engine helper paths and is archived unchanged outside active compilation; see UiPipeline/StartupProbe.md for the failed receipt and remaining limitation.
+
+Follow-up: the dependent engine now honors the selected physical project descriptor. The unchanged startup probe is restored under Source and passes its focused gate; see UiPipeline/StartupProbe.md for the engine revision, original failure, and verification receipt.
