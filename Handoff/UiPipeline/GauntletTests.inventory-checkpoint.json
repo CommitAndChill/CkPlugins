@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "controller": "Ck_GauntletAsBridgeController",
+  "defaultMap": "/CkTests/TestGyms/TestGyms_CkTests_Level",
+  "classPrefix": "Ck_GauntletAsTest_",
+  "heartbeatMarker": "[CkInvPackage]",
+  "tickRate": 0.0167,
+  "defaultTimeoutSec": 120,
+  "tests": [
+    {"name": "InventorySave", "timeoutSec": 120},
+    {"name": "InventoryLoad", "timeoutSec": 120}
+  ]
+}
