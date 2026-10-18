@@ -4,6 +4,30 @@ Continue proving the code-authored CkFoundation HTML/CSS-to-Slate/UMG pipeline; 
 
 # Repo state
 
+## Checkout preparation update, 2026-10-12
+
+The host submodule metadata now uses `CommitAndChill/CkGameplayDebugger`.
+Its exact recorded pin `86327732a75fc0b2e9ebecacd4563de2979ba64a` is published
+on `feature/authored-pause-menu`; no replacement pin or cherry-pick was needed.
+All remaining submodules were verified at the host's recorded commits.
+CkApplication is obsolete and has been removed from the host gitlinks,
+`.gitmodules`, and the default processor-injector configuration.
+CkAuto remains at `11b7ee9`; its Toolbox executable matches the v1.61 hash below.
+
+The stray header at
+`Plugins/CkEcsDebugger/Source/CkEcsDebugger/Public/CkEcsDebugger/Inspectors/CkInspector_FogOfWar.h`
+is preserved as an unintegrated draft at the user's request. It is outside the
+actual debugger submodule and has no plugin/module descriptor. The production
+inspector already exists under `Plugins/CkGameplayDebugger/Source/CkEcsDebugger`.
+The draft omits the production header's `SBox` declaration and native fallback
+scratch members, and differs in parameter names/formatting. Its provenance and
+intent remain unknown; do not substitute it for the production header without
+inspecting the implementation and validating compatibility.
+Other identified local edits and temporary recovery stashes were discarded as
+authorized. Historical scratch logs and existing build artifacts were retained.
+This preparation was checked with Git status, recorded pins, executable hash,
+and whitespace checks; it was not a new Unreal build or runtime acceptance gate.
+
 Use only `D:\Repos\CkPlugins_2`, branch `feature/reactor-umg-investigation`.
 Foundation and Tests use local `feature/authored-pause-menu`; their tips are now
 published and remotely verified on `feature/ui-gameplay-inventory-proof` in
