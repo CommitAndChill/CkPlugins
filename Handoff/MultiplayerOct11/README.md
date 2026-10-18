@@ -7,3 +7,5 @@ The post-rebase native build and focused Scene Node gate passed50/50. The reconc
 Historical evidence retains original-machine paths and earlier revisions. Resolve paths against the selected existing checkout. Ignored build artifacts, raw logs, local scratch, backup refs and safety stashes remain on the producing machine; portable summaries are included here.
 
 Pre-existing review debt remains in unrelated Foundation signal/messaging/debug-draw/voice guards that use empty CK_ENSURE_IF_NOT bodies followed by repeated ordinary checks. Review those families against current ensure/Shipping policy before completion claims; transferring their WIP does not establish correctness.
+
+The missing Foundation AngelScript language guide is available in [AngelScript-guide-recovered.md](AngelScript-guide-recovered.md). It is the exact historical text recovered from Git, with provenance and current instructions taking precedence. Raw historical gate logs remain machine-local; portable evidence summaries suffice for context, and new implementation requires fresh local evidence.

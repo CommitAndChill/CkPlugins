@@ -37,7 +37,7 @@ Continue production multiplayer readiness one bounded gym family at a time. Scen
 
 Read `Handoff/MultiplayerOct11/production-semantics-PROGRESS-oct11.md`, the transport ledger and `scene-node-production-oct12-green-evidence.json`. The publication manifest records the latest post-rebase build/gate and source identity. Older evidence remains historical and does not prove new revisions.
 
-First inspect the current root and submodule branches, HEADs, indices and dirty paths. Confirm the host pins match the publication manifest before editing. Read applicable global/project instructions and the actual Foundation C++/AngelScript guides; the checkout's CLAUDE guides may exist where older AGENTS links do not.
+First inspect the current root and submodule branches, HEADs, indices and dirty paths. Confirm the host pins match the publication manifest before editing. Read applicable global/project instructions and the actual Foundation C++/AngelScript guides; the missing Foundation Script/CLAUDE.md is recovered at Handoff/MultiplayerOct11/AngelScript-guide-recovered.md with exact provenance and current-policy precedence. Read it plus the tracked gameplay and interop skills before script implementation; validate examples against the current source.
 
 # Likely symptoms and causes
 
