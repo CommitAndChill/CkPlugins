@@ -25,13 +25,6 @@
 			"Enabled": false
 		},
 		{
-			"Name": "GitSourceControl",
-			"Enabled": false,
-			"TargetAllowList": [
-				"Editor"
-			]
-		},
-		{
 			"Name": "GitLink",
 			"Enabled": true,
 			"TargetAllowList": [
@@ -99,16 +92,6 @@
 		{
 			"Name": "ConsoleVariables",
 			"Enabled": false
-		},
-		{
-			"Name": "AutoSizeComments",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/ae89a2c4ab384de0a3f213b23de324f3"
-		},
-		{
-			"Name": "NodeGraphAssistant",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/d9baaaeadeaf41dcb52b3f6e134e9514"
 		},
 		{
 			"Name": "CommonUI",

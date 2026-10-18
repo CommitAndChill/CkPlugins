@@ -49,7 +49,7 @@ Other plugins under `Plugins/` may adopt the same pattern over time; check their
 ## Repository Structure
 
 - `/Source/CkPlugins/` — Minimal host module (`GameModeBase` only). You will rarely edit this.
-- `/Plugins/` — The Chainkemists plugin submodules and a few third-party dev tools. See **Plugin Ecosystem** below.
+- `/Plugins/` — The Chainkemists plugin submodules. See **Plugin Ecosystem** below.
 - `/CkAuto/` — Shared developer scripts (build, run, submodule management) — itself a submodule.
 - `/Config/` — UE project config (`DefaultEngine.ini`, `DefaultGame.ini`, etc.). Mostly stock.
 - `/Content/` — Minimal — host project has almost no Blueprint or asset content. Real assets live inside each plugin's `Plugins/<Name>/Content/`.
@@ -130,18 +130,9 @@ CkAuto/SubmodulesCustomCommand.bat "git status"
 ### Chainkemists plugins (the reason this project exists)
 
 - **CkFoundation** — ECS framework using EnTT 3.15.0; the foundation everything else builds on.
-- **CkApplication** — Application-level functionality on top of CkFoundation.
 - **CkGameplayDebugger** — Debug tools integration with UE's gameplay debugger.
 - **CkTests** — Test harness (AutoTests + Gym framework). See its own CLAUDE.md and the `Script/Common/` specifications for authoring tests and gyms against CkFoundation features.
 - **GitLink** — Source-control / git integration plugin.
-
-### Third-party dev tools
-
-- **AutoSizeComments** — Comment node enhancements in the Blueprint editor.
-- **BlueprintAssist** — Blueprint editing enhancements.
-- **NodeGraphAssistant** — Node graph editing utilities.
-- **GitSourceControl** (chainkemists fork of UEGitPlugin) — Git source control provider for the editor.
-- **ZenMode** — Editor focus / zen mode.
 
 ## CkFoundation Architecture Notes
 
