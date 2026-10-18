@@ -1,0 +1,160 @@
+{
+  "clientDate": "2026-10-12",
+  "state": "plugin-features-published-root-prepared",
+  "reason": "Plugin remote heads verified; this root handoff commit is prepared for feature-only publication with an exact lease.",
+  "successfulPushes": [
+    "CkFoundation",
+    "CkTests",
+    "CkGameplayDebugger"
+  ],
+  "root": {
+    "codeCheckpoint": "ab2863f10ccdac4c509622ad3cc926c8c6712420",
+    "devBase": "d410f072f8b203df6d9dea575a630ad2a5c23c19",
+    "oldRemoteTip": "1ac917473dbec084efb586a55d439f9178e49996",
+    "remote": "https://github.com/CommitAndChill/CkPlugins.git",
+    "pushPolicy": "exact force-with-lease on this rewritten feature only; no dev merge",
+    "branch": "feature/multiplayer-test-readiness"
+  },
+  "plugins": {
+    "CkTests": {
+      "remote": "https://github.com/CommitAndChill/CkTests.git",
+      "head": "ac511d1600745a650c8e76e8b2dfd448e0930345",
+      "branch": "feature/multiplayer-test-readiness-rebased"
+    },
+    "CkGameplayDebugger": {
+      "remote": "https://github.com/CommitAndChill/CkGameplayDebugger.git",
+      "head": "a7de739c1c8f2c702294668a3323d3b778bed9f6",
+      "branch": "feature/multiplayer-test-readiness-rebased"
+    },
+    "CkFoundation": {
+      "remote": "https://github.com/CommitAndChill/CkFoundation.git",
+      "head": "409985d1f1da88d1783f2fce282f37301506dcd5",
+      "branch": "feature/multiplayer-test-readiness-rebased"
+    }
+  },
+  "audit": {
+    "root": {
+      "unmatched": 0,
+      "adapted": 2,
+      "new": 7,
+      "old": 7
+    },
+    "CkFoundation": {
+      "unmatched": 0,
+      "adapted": 0,
+      "new": 35,
+      "old": 35
+    },
+    "CkTests": {
+      "unmatched": 0,
+      "adapted": 1,
+      "new": 163,
+      "old": 163
+    },
+    "CkGameplayDebugger": {
+      "unmatched": 0,
+      "adapted": 0,
+      "new": 9,
+      "old": 9
+    },
+    "outgoingPaths": {
+      "root": 35,
+      "CkGameplayDebugger": 41,
+      "CkTests": 741,
+      "CkFoundation": 78
+    },
+    "highConfidenceSecretMatches": 0,
+    "unintendedRuntimePaths": 0,
+    "boundary": "Feature-branch handoff only; online-services research remains DROP BEFORE MERGE."
+  },
+  "postRebaseGate": {
+    "logSHA256": "E0287F1A72C2B79F8E053FF1D102F2EDAE3EBCD50B340755479DA3703E200A56",
+    "frozenSourceAndConfigFiles": 25,
+    "changedDuringGate": 0,
+    "SceneNodeScriptWarnings": 0,
+    "skipped": 0,
+    "exit": 0,
+    "editorBoots": 2,
+    "passed": 50,
+    "failed": 0,
+    "total": 50,
+    "ensures": 0,
+    "log": "Saved/Logs/MultiplayerPublication-SceneNode-Oct12.log",
+    "contaminated": 0,
+    "nativeBuildPassed": true,
+    "duration": "3m52s",
+    "selectedTests": [
+      "Ck.Gym.Network.SceneNodeTween.SharedTrio.ClientServer",
+      "Ck.Gym.Network.SceneNodeTween.SharedTrio.ListenServer",
+      "Ck.SceneNode.Network.ActorLedger.FullCohort.ClientServer",
+      "Ck.SceneNode.Network.ActorLedger.FullCohort.ListenServer",
+      "Ck.SceneNode.Network.EcsRoots.Construction.ClientServer",
+      "Ck.SceneNode.Network.EcsRoots.Construction.ListenServer",
+      "Ck.SceneNode.Network.ExistingTransform.ForeignAnchor.ClientServer",
+      "Ck.SceneNode.Network.ExistingTransform.ForeignAnchor.ListenServer",
+      "Ck.SceneNode.Network.Gym.ProductionTwoOwner.ClientServer",
+      "Ck.SceneNode.Network.Gym.ProductionTwoOwner.ListenServer",
+      "Ck.SceneNode.Network.Gym.Remote.NestedUnknownFrozenClosure.ClientServer",
+      "Ck.SceneNode.Network.Gym.Remote.NestedUnknownFrozenClosure.ListenServer",
+      "Ck.SceneNode.Network.Gym.Remote.UnknownClosure.ClientServer",
+      "Ck.SceneNode.Network.Gym.Remote.UnknownClosure.ListenServer",
+      "Ck.SceneNode.Network.Gym.Remote.UnrelatedPending.ClientServer",
+      "Ck.SceneNode.Network.Gym.Remote.UnrelatedPending.ListenServer",
+      "Ck.SceneNode.Network.Motion.ActiveActorLoss.ClientServer",
+      "Ck.SceneNode.Network.Motion.ActiveActorLoss.ListenServer",
+      "Ck.SceneNode.Network.Motion.ClosingDuringResume.ClientServer",
+      "Ck.SceneNode.Network.Motion.ClosingDuringResume.ListenServer",
+      "Ck.SceneNode.Network.Motion.FrameSampler.Production.ClientServer",
+      "Ck.SceneNode.Network.Motion.FrameSampler.Production.ListenServer",
+      "Ck.SceneNode.Network.Motion.FrameSampler.TransformUpdatedActorLoss.ClientServer",
+      "Ck.SceneNode.Network.Motion.FrameSampler.TransformUpdatedActorLoss.ListenServer",
+      "Ck.SceneNode.Network.Motion.FrameSampler.UnregisteredChild.ClientServer",
+      "Ck.SceneNode.Network.Motion.FrameSampler.UnregisteredChild.ListenServer",
+      "Ck.SceneNode.Network.Motion.Production.ClientServer",
+      "Ck.SceneNode.Network.Motion.Production.ListenServer",
+      "Ck.SceneNode.Network.Motion.Retirement.ForeignAllocatedDescendant.ClientServer",
+      "Ck.SceneNode.Network.Motion.Retirement.ForeignAllocatedDescendant.ListenServer",
+      "Ck.SceneNode.Network.Motion.Retirement.Production.ClientServer",
+      "Ck.SceneNode.Network.Motion.Retirement.Production.ListenServer",
+      "Ck.SceneNode.Network.Motion.Retirement.ReentrantUnexpectedActor.ClientServer",
+      "Ck.SceneNode.Network.Motion.Retirement.ReentrantUnexpectedActor.ListenServer",
+      "Ck.SceneNode.Network.Motion.Retirement.SuccessorProduction.ClientServer",
+      "Ck.SceneNode.Network.Motion.Retirement.SuccessorProduction.ListenServer",
+      "Ck.SceneNode.Network.NodeGraph.ActorLossAfterComposition.ClientServer",
+      "Ck.SceneNode.Network.NodeGraph.ActorLossAfterComposition.ListenServer",
+      "Ck.SceneNode.Network.NodeGraph.Construction.ClientServer",
+      "Ck.SceneNode.Network.NodeGraph.Construction.ListenServer",
+      "Ck.SceneNode.Network.PreallocatedAnchor.FreshLeaf.ClientServer",
+      "Ck.SceneNode.Network.PreallocatedAnchor.FreshLeaf.ListenServer",
+      "Ck.SceneNode.Network.SourceQueues.StopDrain.ClientServer",
+      "Ck.SceneNode.Network.SourceQueues.StopDrain.ListenServer",
+      "Ck.SceneNode.Network.StopReceipt.CapturedAdmission.ClientServer",
+      "Ck.SceneNode.Network.StopReceipt.CapturedAdmission.ListenServer",
+      "Ck.SceneNode.Network.StopReceipt.ExactTimers.ClientServer",
+      "Ck.SceneNode.Network.StopReceipt.ExactTimers.ListenServer",
+      "Ck.SceneNode.Network.StopReceipt.PendingReset.ClientServer",
+      "Ck.SceneNode.Network.StopReceipt.PendingReset.ListenServer"
+    ],
+    "scriptErrors": 0,
+    "nativeBuildSeconds": 1159.72
+  },
+  "readiness": {
+    "pendingRows": 89,
+    "registry": 96,
+    "limits": [
+      "NullRHI rendered acceptance unproved",
+      "Abrupt GameState-loss quarantine unproved",
+      "No repository-wide readiness or regression claim"
+    ],
+    "next": "Scene Node + Tween",
+    "verifiedRows": 7
+  },
+  "preservation": {
+    "scratch": "local only",
+    "profile": "Saved/UnrealBuildTool/CkCloneBuildOptions.json remains machine-local",
+    "rebaseSafetyStashesRetained": true,
+    "rebaseBackupRefsRetained": true,
+    "noArtifactPurge": true,
+    "noNewCheckout": true
+  }
+}

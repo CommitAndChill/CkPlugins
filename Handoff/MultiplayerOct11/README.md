@@ -1,11 +1,9 @@
 # Portable multiplayer handoff
 
-Start with ../../CONTINUATION_PROMPT_multiplayer_semantics_scene_node_oct11.md. Its paused draft is now committed and published at the user's explicit request for transfer; historical pre-publication HEAD/index/uncommitted descriptions are preserved as evidence and superseded by the publication note at its top.
+Start with [the Oct12 continuation prompt](../../CONTINUATION_PROMPT_multiplayer_readiness_oct12.md), then publication-oct12.json and the current progress checkpoint. They supersede the older paused draft and transfer record. The plugin feature branches are published at the exact recorded heads; the host gitlinks preserve the rebased WIP.
 
-This directory contains the transport ledger, approved Scene Node proposal, exact in-flight file hashes and prior focused gate evidence. Source changes are preserved without further implementation or a new build/test. Scene Node remains unfinished and unverified. Other dirty families included for transfer also require their own production-semantic review; publication is not validation.
+The post-rebase native build and focused Scene Node gate passed50/50. The reconciled transport ledger has96 rows,7verified and89pending. Scene Node + Tween is next. Rendered acceptance and abrupt GameState-loss remain unproved; no overall readiness or dev merge is claimed.
 
-Paths inside copied JSON are historical original-machine references. .scratch/multiplayer/<included filename> maps to this directory. Saved/Logs and raw editor archives were not copied: their summarized checks remain in the evidence JSON; new runs must collect fresh logs locally. status.json is a historical campaign record, not a current active-process signal on another machine. Resolve the new local repository path before using absolute build paths.
+Historical evidence retains original-machine paths and earlier revisions. Resolve paths against the selected existing checkout. Ignored build artifacts, raw logs, local scratch, backup refs and safety stashes remain on the producing machine; portable summaries are included here.
 
-Ignored build artifacts, editor caches and unrelated local scratch output are not deliverables. Do not blindly restore old source-generation helpers from the original machine. No integration-branch merge or new validation is implied by these transfer commits.
-
-Additional pre-existing review debt noticed while packaging: some Foundation signal/messaging/debug-draw/voice guards use empty CK_ENSURE_IF_NOT bodies followed by repeated ordinary if checks. These were preserved at the user's request to transfer all current work. Review them against current ensure/Shipping policy before claiming those families complete; no policy changes or fixes were made during publication.
+Pre-existing review debt remains in unrelated Foundation signal/messaging/debug-draw/voice guards that use empty CK_ENSURE_IF_NOT bodies followed by repeated ordinary checks. Review those families against current ensure/Shipping policy before completion claims; transferring their WIP does not establish correctness.

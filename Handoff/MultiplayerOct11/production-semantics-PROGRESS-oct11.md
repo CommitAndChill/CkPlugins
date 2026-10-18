@@ -1,3 +1,17 @@
+# Publication continuation - 2026-10-12
+
+Read [the current continuation prompt](../../CONTINUATION_PROMPT_multiplayer_readiness_oct12.md) first. The publication manifest records the exact current plugin revisions and root code checkpoint. Three plugin feature branches are published and verified; this root handoff commit is prepared for publication. No dev merge is authorized.
+
+The latest in-place rebase preserves every prior WIP commit: root7/7, Foundation35/35, Tests163/163, Debugger9/9; zero unmatched range-diff entries. The refreshed root dev base is d410f072f8b203df6d9dea575a630ad2a5c23c19. Root conflict adaptations only select rebased gitlinks; Tests retains upstream Pixel Sprite plus multiplayer registrations.
+
+Post-rebase incremental editor build passed in1159.72seconds. The final SceneNode.Network gate passed50/50, zero failures/skips/contamination,3m52s,exit0; two fresh boots for discovery and the serial lane. Fresh raw logs showed no ensures, script errors or Scene Node script warnings. All25 frozen source/config hashes remained unchanged. Exact selection and log hash are in publication-oct12.json. This is focused production-path evidence, not rendered, packaged, abrupt GameState-loss or repository-wide acceptance.
+
+The reconciled registry contains96 gyms:7verified and89pending. Gait, Runtime Convex, Runtime Mesh and upstream Pixel Sprite are explicitly pending. Scene Node + Tween is the next separate production-transport review despite its incidental two passing cases. No active validation process or source/index freeze remains.
+
+Useful unrelated changes are committed; obsolete files were discarded as authorized. Scratch/raw logs, backup refs, rebase safety stashes and the optional Saved storage profile remain local. The historical revisions, counts and no-push statements below describe earlier checkpoints and are superseded by this publication checkpoint.
+
+---
+
 # Current continuation - 2026-10-12
 
 ## Authorized unrelated-work cleanup

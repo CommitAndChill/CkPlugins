@@ -1,3 +1,5 @@
+> **Superseded:** Start with [the current Oct12 handoff](CONTINUATION_PROMPT_multiplayer_readiness_oct12.md). The paused draft below is historical; Scene Node now has focused 50/50 post-rebase evidence.
+
 # One-line summary
 
 Continue CkPlugins production multiplayer readiness, one bounded family at a time: six families are verified/committed locally; Scene Node has an approved CkFoundation API extension and substantial **unbuilt, untested draft changes now committed and published for transfer**. The user explicitly stopped implementation because usage was running out. Resume Scene Node integration and verification first, then the remaining transport reviews.

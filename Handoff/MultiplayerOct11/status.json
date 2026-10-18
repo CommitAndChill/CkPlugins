@@ -3,7 +3,8 @@
   "workspace": "D:/Repos/CkPlugins_3",
   "source": "D:/Repos/CkPlugins",
   "branch": "feature/multiplayer-test-readiness",
-  "state": "Scene Node focused production path verified locally;50/50;85pending. Authorized unrelated cleanup committed useful build hooks, tags and history, discarded obsolete files, and recorded plugin pointers. Startup smoke2/2; no push/run/freeze.",
+  "state": "Post-dev-rebase native build passed; focused SceneNode.Network 50/50. Registry96:7verified,89pending. Plugin feature heads published and verified; root handoff prepared. No active gate or source freeze. Scene Node + Tween is next.",
+  "currentPublication": {"historicalFields":"Prior campaign and diagnostic snapshots below remain historical.","CkFoundation":"409985d1f1da88d1783f2fce282f37301506dcd5","CkTests":"ac511d1600745a650c8e76e8b2dfd448e0930345","CkGameplayDebugger":"a7de739c1c8f2c702294668a3323d3b778bed9f6","codeCheckpoint":"ab2863f10ccdac4c509622ad3cc926c8c6712420","remainingRows":89,"continuation":"../../CONTINUATION_PROMPT_multiplayer_readiness_oct12.md","manifest":"publication-oct12.json"},
   "baseline": {
     "pid": 25360,
     "execSession": 18181,

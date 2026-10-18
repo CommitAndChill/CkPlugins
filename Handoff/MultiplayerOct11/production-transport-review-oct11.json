@@ -1,7 +1,7 @@
 {
   "criterion": "Client-visible production state must use its production replication path. Local presentation and explicit remote diagnostics are separate scopes.",
-  "updated": "2026-10-12T07:08:59.9399999-07:00",
-  "registryCount": 92,
+  "updated": "2026-10-12",
+  "registryCount": 96,
   "rows": [
     {
       "gym": "Aggro",
@@ -1026,6 +1026,50 @@
     },
     {
       "gym": "GroundNav vs Recast",
+      "review": "pending",
+      "role": null,
+      "clientVisibleState": null,
+      "productionTransport": null,
+      "existingGymTransport": null,
+      "decision": null,
+      "evidence": [],
+      "focusedGate": null
+    },
+    {
+      "gym": "Gait",
+      "review": "pending",
+      "role": null,
+      "clientVisibleState": null,
+      "productionTransport": null,
+      "existingGymTransport": null,
+      "decision": null,
+      "evidence": [],
+      "focusedGate": null
+    },
+    {
+      "gym": "Runtime Convex",
+      "review": "pending",
+      "role": null,
+      "clientVisibleState": null,
+      "productionTransport": null,
+      "existingGymTransport": null,
+      "decision": null,
+      "evidence": [],
+      "focusedGate": null
+    },
+    {
+      "gym": "Runtime Mesh",
+      "review": "pending",
+      "role": null,
+      "clientVisibleState": null,
+      "productionTransport": null,
+      "existingGymTransport": null,
+      "decision": null,
+      "evidence": [],
+      "focusedGate": null
+    },
+    {
+      "gym": "Pixel Sprite",
       "review": "pending",
       "role": null,
       "clientVisibleState": null,
