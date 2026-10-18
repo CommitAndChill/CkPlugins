@@ -1,0 +1,73 @@
+{
+  "family": "Sway",
+  "criterion": "Production Transform replication; actual native and visible mesh motion",
+  "verifiedAt": "2026-10-11T11:20:00.99479-07:00",
+  "ownedHashManifest": ".scratch/multiplayer/sway-production-orderedpump-prefreeze-oct11.json",
+  "ownedHashMismatches": 0,
+  "editorAndToolboxProcessesExited": true,
+  "projectLogUnlocked": true,
+  "nativeBuild": "PASS",
+  "focusedResults": [
+    {
+      "log": "Saved/Logs/MultiplayerSwayProductionOrderedPumpOct11.log",
+      "summary": [
+        "[discovery] 321 renderer-only test(s) (listed with a real renderer, absent headless)",
+        "##ftx[progress id=tests label=Tests unit=tests n=2 of=2 err=0 st=ok note=\"\" t=1791742531135]",
+        "=== Test summary ===",
+        "Total: 2",
+        "Passed: 2",
+        "Failed: 0",
+        "Skipped: 0",
+        "Contaminated: 0",
+        "Duration: 2m 49s"
+      ],
+      "touchedScriptDiagnostics": 0,
+      "ensuresOrAssertions": 0,
+      "pumpLimits": 0,
+      "newComponentMarkerConflicts": 0
+    },
+    {
+      "log": "Saved/Logs/MultiplayerSwayOrderedComponentCompatibilityOct11.log",
+      "summary": [
+        "[2026.10.11-18.19.05:913][140]LogAutomationCommandLine: Display: **** TEST COMPLETE. EXIT CODE: 0 ****",
+        "##ftx[progress id=tests label=Tests unit=tests n=2 of=2 err=0 st=ok note=\"\" t=1791742746320]",
+        "=== Test summary ===",
+        "Total: 2",
+        "Passed: 2",
+        "Failed: 0",
+        "Skipped: 0",
+        "Contaminated: 0",
+        "Duration: 3m 10s"
+      ],
+      "touchedScriptDiagnostics": 0,
+      "ensuresOrAssertions": 0,
+      "pumpLimits": 0,
+      "newComponentMarkerConflicts": 0
+    }
+  ],
+  "sourceEntityCount": 29,
+  "clientTreeEntityCount": 25,
+  "stableOwnerBridge": true,
+  "poseSnapshotTransportRemoved": true,
+  "finalObservedBoots": 4,
+  "commitPending": false,
+  "postGateFormatting": [
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/CkSwayGym_Runtime.cpp",
+      "beforeHash": "55A3AF851DCF8B15E7951FAACDF77800891B0F0974CC3E2BFC0A669E57ABE0E6",
+      "afterHash": "BDA177D55FD103AD2C37EF470A595FFC7CB98B9F42AF23841B3D416ADB8CF837",
+      "change": "Remove surplus blank line at EOF only",
+      "normalizedContentsIdentical": true
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Public/CkSwayGym_Runtime.h",
+      "beforeHash": "9FF00732EBD449F46C65ECA974C2CFC160F7C1972B311F4351BBA58D8A0F9D78",
+      "afterHash": "0CC2C9989C4BFFA122AFFD8C7288527CF0B03AFC2365EE292D2350DEAA897463",
+      "change": "Remove surplus blank line at EOF only",
+      "normalizedContentsIdentical": true
+    }
+  ],
+  "priorObservedBoots": 15,
+  "foundationCommit": "45323922ce3fca25dbc764bf473b68f9964a5412",
+  "testsCommit": "41d2907a48acf760dd0b02a22d0bf886bf4595ef"
+}

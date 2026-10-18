@@ -1,0 +1,30 @@
+{
+  "family": "Replication",
+  "commit": "3036139e83d85b55f32cc21b8bf5ce51280f615c",
+  "contract": "Authority Integer Attribute replication; clients read actual world-local ECS values; control metadata carries no display values",
+  "gate": "Saved/Logs/MultiplayerReplicationEarlyReceiptOct11.log",
+  "rawEditorLog": ".scratch/multiplayer/ReplicationEarlyReceiptOct11-Editor.log",
+  "passed": 2,
+  "failed": 0,
+  "topologies": [
+    "ClientServer",
+    "ListenServer"
+  ],
+  "finalEditorBoots": 1,
+  "totalObservedFamilyBoots": 5,
+  "nativeBuild": "PASS in ReplicationPawnReceiptOct11",
+  "hashManifest": ".scratch/multiplayer/replication-pawn-earlyregistration-prefreeze-oct11.json",
+  "hashMismatches": 0,
+  "processesExited": true,
+  "projectLogUnlocked": true,
+  "secondaryPawnTimeouts": 0,
+  "scriptDiagnostics": 0,
+  "ensures": 0,
+  "limits": "Focused family only; generic unsolicited primary bridge expiries remain; arbitrary late framework registration unchanged; renderer tests skipped",
+  "priorEvidence": [
+    "MultiplayerReplicationProductionReviewOct11 2/2 false-green with secondary timeout",
+    "MultiplayerReplicationPawnReceiptOct11 0/2 all-pawn receipt checks exposed late Actor BeginPlay",
+    "MultiplayerReplicationPawnBranchDiagnosticOct11 0/1 confirmed replica construction precedes BeginPlay by over retry timeout"
+  ],
+  "fix": "Client pending registration from PawnExtra.DoConstruct before FinishConstruction; authority admission unchanged; ending pawn cancels unresolved pending target"
+}

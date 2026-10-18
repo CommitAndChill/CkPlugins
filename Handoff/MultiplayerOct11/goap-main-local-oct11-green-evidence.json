@@ -1,0 +1,27 @@
+{
+  "gate": "MultiplayerGoapMainLocalRejectionOct11",
+  "log": "Saved/Logs/MultiplayerGoapMainLocalRejectionOct11.log",
+  "commit": "88be497ef3d5aa3f4a2940e2d4ecab169e1d5a12",
+  "nativeBuild": "pass",
+  "editorBoots": 2,
+  "executed": 1,
+  "passed": 1,
+  "failed": 0,
+  "validControlActivations": 24,
+  "controls": 23,
+  "sourceHashMismatches": 0,
+  "touchedASDiagnostics": 0,
+  "errorEnsureAssertions": 0,
+  "ownedProcessesExited": true,
+  "logUnlocked": true,
+  "scope": "GOAP main standalone local diagnostic; excluded multiplayer readiness; NullRHI",
+  "checks": [
+    "current native attempt and planner presentation",
+    "seven-source isolation",
+    "malformed control receipts and no downstream mutation",
+    "source-loss forest cleanup",
+    "PIE teardown"
+  ],
+  "compatibleEarlierGate": "MultiplayerGoapMainLocalFixedOct11:16pass1mainfail, including six GOAP variant network rows",
+  "delivery": "CkTests local commit only; no push/host gitlink update"
+}

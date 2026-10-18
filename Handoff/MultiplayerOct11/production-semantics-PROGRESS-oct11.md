@@ -1,0 +1,9 @@
+# Production semantics progress — 2026-10-11
+
+Completed locally: VoxelNav1af8bf48 (4/4), GOAP main local exclusion88be497e (1/1, user decision), Transform5728190f (2/2), Sway41d2907a +Foundation component push45323922ce (focused4/4), Replication3036139e (2/2), Rotate Towards4417f861 (8/8). Exact family evidence under .scratch/multiplayer. No push or host/downstream gitlink update; no overall readiness claim. Six verified rows,86 pending.
+
+STOPPED at explicit user request due usage. Scene Node bounded API extension approved by CTO; substantial draft edits are unbuilt, untested and uncommitted. No active Toolbox/editor, no source/index freeze, all three indexes empty at stop. Workers stopped. Current HEADs and complete state in CONTINUATION_PROMPT_multiplayer_semantics_scene_node_oct11.md; exact31 candidate integration paths/hashes in .scratch/multiplayer/scene-node-inflight-owned-oct11.json.
+
+Draft:17actual source actors/WithActor Transform replicas +identity-only role0scope (18actors), authority graph retained,17targets/17carriers/6timers (41history), new public existing-Transform foreign-anchor API, metadata-only snapshot, actual client replica receipts, source-only frame oracle, normal production retirement, visibility admission/closure. Three Astra API findings corrected but no gate proof. Source-loss non-destructive quarantine retained.
+
+Next explicit resumption: read new continuation fully; reconcile pending RemoteVisuals structural unknown/loss checks, physical absence, visibility/readiness behavior and test evidence gaps; inspect exact native/source-test diffs; normalize; incremental detached UnrealToolbox focused gate; only after green commit exact coherent slices. Scene Node+Tween remains separate pending family. Do not prepare future families during this family gate. Preserve all unrelated dirt and current checkout; no new/repurposed checkout or destructive artifact cleanup.

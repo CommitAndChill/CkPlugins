@@ -1,0 +1,169 @@
+{
+  "state": "Stopped at user request; approved draft unbuilt/untested/uncommitted",
+  "foundationHead": "45323922ce3fca25dbc764bf473b68f9964a5412",
+  "testsHead": "4417f861bf8d79f063e0225a10522a7e944a6e73",
+  "workerEdits": [
+    "Plugins/CkTests/Source/CkTests/Public/CkSceneNodeGym_ActorLedger.h",
+    "Plugins/CkTests/Source/CkTests/Public/CkSceneNodeGym_EcsRoots.h",
+    "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_ActorLedger.cpp",
+    "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_EcsRoots.cpp",
+    "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_NodeGraph.cpp",
+    "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_Motion.cpp",
+    "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_FrameSampler.cpp",
+    "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_Retirement.cpp",
+    "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/CkSceneNode_ActorLedgerProbe.h",
+    "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/CkSceneNode_EcsRootsTestAccess.h",
+    "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/CkSceneNode_RetirementTestAccess.h",
+    "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_ActorLedger.spec.cpp",
+    "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_EcsRoots.spec.cpp",
+    "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_NodeGraph.spec.cpp",
+    "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_Motion.spec.cpp",
+    "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_StopReceipt.spec.cpp",
+    "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_TimerCaptured.spec.cpp"
+  ],
+  "leadEdits": [
+    "Plugins/CkFoundation/Source/CkEcsExt/Public/CkEcsExt/SceneNode/CkSceneNode_Utils.h",
+    "Plugins/CkFoundation/Source/CkEcsExt/Public/CkEcsExt/SceneNode/CkSceneNode_Utils.cpp",
+    "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_GameState.as",
+    "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_Shared.as",
+    "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_SourceVisuals.as",
+    "Plugins/CkTests/Source/CkTests/Public/CkSceneNodeGym_RemoteVisuals.h",
+    "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_RemoteVisuals.cpp",
+    "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_RemoteVisuals.spec.cpp",
+    "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_ExistingTransformAnchor.spec.cpp",
+    "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkGym/Test_SceneNodeGym_ProductionTwoOwner_Network.spec.cpp"
+  ],
+  "preexistingRelatedReviewBeforeCommit": [
+    "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_GameMode.as",
+    "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_PlayerController.as",
+    "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_Catalog.as",
+    "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_StationCohort.as"
+  ],
+  "removedPreviouslyUntracked": "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_RemoteVisuals.as",
+  "hashes": [
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Public/CkSceneNodeGym_ActorLedger.h",
+      "sha256": "6A4F1BED397B2FE741EA4469D4A54ABB1A60BB22018464A6376C6B7AE43730F5"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Public/CkSceneNodeGym_EcsRoots.h",
+      "sha256": "B2DBDF1302234A5879CD6A97348736ED360E92E76C3F24347A0D834C2F5EFD37"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_ActorLedger.cpp",
+      "sha256": "280FB51237D788B970FC33A4497B209B0DA7FE71398BF077D3A9790BB280501B"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_EcsRoots.cpp",
+      "sha256": "09C0CEE6B80CD66D12D134C39795A7E6066219B4B3DAA103B8C0436FAC5FE395"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_NodeGraph.cpp",
+      "sha256": "7A58C022D2CDF4031D729FF78C375C35883EF6719B1D308D57D8876DC630C740"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_Motion.cpp",
+      "sha256": "271CE5F19CD6885379412BCDBE08F608972E3B7B2915687BAD027CDA3325EF74"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_FrameSampler.cpp",
+      "sha256": "3AB4D5F59132412B5FC1B16042FCE2A9760061F3D0F05091155A9572F1B6DE57"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_Retirement.cpp",
+      "sha256": "C44F1889B635B664DFAF0DC3E87351EC872A57405692EABA21EFD9AECCB0ED17"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/CkSceneNode_ActorLedgerProbe.h",
+      "sha256": "96400F7B4D2BA6C3AC50348E4226E14F5888E0FE3166FA3DFA0A59949563F106"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/CkSceneNode_EcsRootsTestAccess.h",
+      "sha256": "155DDA00555176B0BC241E84808B68A89829F0508C63AE3F2BAF7E0BBDD1F488"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/CkSceneNode_RetirementTestAccess.h",
+      "sha256": "5A6661C55FE0723A6857BB687D13DB68D6B41EE6D0BA125FD624768804E9F388"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_ActorLedger.spec.cpp",
+      "sha256": "1F85BDA69C5D147B48DB41D7E8B0B9D5B884F89825FE94B489D178125E6EE2F8"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_EcsRoots.spec.cpp",
+      "sha256": "7BEDDBEC29B3303D5B9A883730EC29447CEB6E0B39556D9DF0FD1518885795B6"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_NodeGraph.spec.cpp",
+      "sha256": "F06650AECBEB116A76D0CD21FA399B873D49FC0450E513B85A3BF5A98E1AE8FA"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_Motion.spec.cpp",
+      "sha256": "5B1940A404A0CA10CDE9D16E1AF47AB2EE97F5BEAD4E8AF87B4C4111126263EC"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_StopReceipt.spec.cpp",
+      "sha256": "2E0740F841D86ED752076ABE743750CAC2B5E465AD31DC1346D7AD538344DBE7"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_TimerCaptured.spec.cpp",
+      "sha256": "372602A7034038F0712DB98BED01C405B32499D2799A611EA3F576CC58F7026E"
+    },
+    {
+      "path": "Plugins/CkFoundation/Source/CkEcsExt/Public/CkEcsExt/SceneNode/CkSceneNode_Utils.h",
+      "sha256": "688F51969EFCA3A56AE71A785BAA6C3F0B43C9789749ABA582465351EC81F5EA"
+    },
+    {
+      "path": "Plugins/CkFoundation/Source/CkEcsExt/Public/CkEcsExt/SceneNode/CkSceneNode_Utils.cpp",
+      "sha256": "E4217DD3BE14FC6489B35F12CBD417C543A3C5D8720CF117F9D1E80C839CB99E"
+    },
+    {
+      "path": "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_GameState.as",
+      "sha256": "E1A3A942EB66B56BBEFE013589991E566A3BBCB281136BD315D2F3EFF0C7AA1D"
+    },
+    {
+      "path": "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_Shared.as",
+      "sha256": "32A3A64C90F3696B6488CB3192312D177D3AF6DEC72EFAB6854FEF8D15BC2C4C"
+    },
+    {
+      "path": "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_SourceVisuals.as",
+      "sha256": "8D2945F4A0AAD0E78C556813AF7100774FDB2F749595A61879AB4266F9F6954F"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Public/CkSceneNodeGym_RemoteVisuals.h",
+      "sha256": "16214ADAB56EE204BF665C7183061AB624F1124984B5CCAC91B877BD75875914"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_RemoteVisuals.cpp",
+      "sha256": "50A534A953F4C3C3C14BFE7DD4184D56398CEC107847BE3838E253D5AB1F97C4"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_RemoteVisuals.spec.cpp",
+      "sha256": "1C9A4956348A692C7F131F730C812025E30119FCF7A936DE9F51A64491E1D1B8"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_ExistingTransformAnchor.spec.cpp",
+      "sha256": "8B05A85790A78454931F2C54A1AE4D1BC6FA0778570CDB62C39717D59E92C865"
+    },
+    {
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkGym/Test_SceneNodeGym_ProductionTwoOwner_Network.spec.cpp",
+      "sha256": "C4E6EEE11A74F72BE46639303A5C4305A324DE15F65DCD85B9D07CB5F91CE707"
+    },
+    {
+      "path": "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_GameMode.as",
+      "sha256": "AE97CC24487C0DA5101F3344EB0879A5122A08FECE0421BD295EB03150B3DC65"
+    },
+    {
+      "path": "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_PlayerController.as",
+      "sha256": "42993F1CCE96577C74C00216A83D8A2736BDCB3EF11B9B65349E5691F16DCD89"
+    },
+    {
+      "path": "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_Catalog.as",
+      "sha256": "2B79B5D29D6CDC53180464510AEF18061A1ABA3E4A5C30294F5BC51DD1FA06A2"
+    },
+    {
+      "path": "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_StationCohort.as",
+      "sha256": "3130AA6FD211FBB74315C4AEA727998EF7415639507A6F0385F8D1734C0BB1B9"
+    }
+  ]
+}

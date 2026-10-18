@@ -1,0 +1,78 @@
+{
+  "family": "Rotate Towards",
+  "verifiedAt": "2026-10-11T12:53:07.4432512-07:00",
+  "productionContract": "Authority RotateTowards/Tween/SceneNode simulation drives the actual11 replicated Cube Transforms. Clients construct identity-only Owner and Transform/mesh Cubes; no Rotate/Tween/SceneNode simulation.",
+  "sourceTopology": "Transient world -> stable replicated GS WithActor bridge -> generic replicated generationOwner -> actual11 simulated CubeNodes; authority-only original parents retained as SceneNode attachments.42-roleclosed simulation graph.",
+  "transportRemoved": "Snapshot Visual/Turret poses, Target/Rest positions and cloned visual SetWorldTransform transport removed; static station metadata and solver diagnostic summaries retained.",
+  "admission": "Exact owner/cube request carriers captured synchronously and retained outside42roles; deallocation required; rawallocated histories and forward child census preserve unknown-child refusal. Explicit static receipt phase before paused producers.",
+  "gate": {
+    "log": "Saved/Logs/MultiplayerRotateTowardsStaticPhaseOct11.log",
+    "raw": ".scratch/multiplayer/RotateTowardsStaticPhaseOct11-Editor.log",
+    "toolboxPid": 35348,
+    "editorPid": 9632,
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0,
+    "contaminated": 0,
+    "duration": "7m12s",
+    "observedEditorBoots": 1,
+    "scope": "NullRHI; renderer-only tests skipped"
+  },
+  "priorRuns": [
+    {
+      "name": "RotateTowardsProductionOct11",
+      "build": "FAIL two native test compiler errors",
+      "boots": 0
+    },
+    {
+      "name": "RotateTowardsCompileFixOct11",
+      "build": "PASS",
+      "passed": 2,
+      "failed": 6,
+      "boots": 2,
+      "fault": "Owner claim rejected permanent raw lifetime history and transient request carrier"
+    },
+    {
+      "name": "RotateTowardsCarrierDrainOct11",
+      "build": "PASS",
+      "passed": 4,
+      "failed": 4,
+      "boots": 2,
+      "fault": "Admission static boundary disappeared while TwoOwner CS/LS passed"
+    }
+  ],
+  "totalObservedEditorBoots": 5,
+  "proof": [
+    "11 actual client cubes per generation with applied driver L/R/S entries and empty request queues",
+    "Each slot actual mesh and native appliedTransform matches same-generation authority pose history on two distinct frames",
+    "Moved authority/native/mesh witnesses for slots0,1,3,6 on both clients",
+    "No client Rotate/Tween/SceneNode simulation or parallel clone cohort",
+    "Distinct replica identities/old-generation deallocation on restarts1->2->3",
+    "Owned controls/commit receipts/local settings/isolation and malformed/stale input preserved",
+    "Static37role six-world-tick dormancy; four genuine Pause receipts; atomic activation",
+    "Unknown child refuses closure while known producers stop; actual actor-loss productioncascade cleanup"
+  ],
+  "diagnostics": {
+    "processesExited": true,
+    "rawLogUnlocked": true,
+    "hashMismatches": 0,
+    "touchedScriptDiagnostics": 0,
+    "scriptErrors": 0,
+    "ensures": 0,
+    "nativeErrors": 0,
+    "expectedUnknownClosureFaults": 2,
+    "genericRetryWarnings": 0,
+    "pumpLimits": 0
+  },
+  "ownedManifest": ".scratch/multiplayer/rotate-production-owned-oct11.json",
+  "finalHashManifest": ".scratch/multiplayer/rotate-production-staticphase-prefreeze-oct11.json",
+  "commit": "4417f861bf8d79f063e0225a10522a7e944a6e73",
+  "limitations": [
+    "Focused eight rows only; no overall repository readiness claim",
+    "Renderer presentation not certified",
+    "UnknownChild client loss uses native tag lookup; normal TwoOwner source-loss additionally proves deallocation of retained client identities",
+    "Unsolicited callback-rendezvous retry diagnostics are not used as constructed-state proof; actual script/driver/appliedTransform inspected"
+  ],
+  "pushed": false,
+  "hostGitlinkUpdated": false
+}

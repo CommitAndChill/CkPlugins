@@ -1,0 +1,26 @@
+{
+  "gate": "MultiplayerTransformProductionScriptOct11",
+  "log": "Saved/Logs/MultiplayerTransformProductionScriptOct11.log",
+  "commit": "5728190f49b79e4c18fdb618480fedc0f53eb073",
+  "nativeBuild": "pass in MultiplayerTransformProductionOct11",
+  "editorBoots": 2,
+  "executed": 2,
+  "passed": 2,
+  "failed": 0,
+  "sourceHashMismatches": 0,
+  "touchedASDiagnostics": 0,
+  "errorEnsureAssertions": 0,
+  "ownedProcessesExited": true,
+  "logUnlocked": true,
+  "scope": "Transform shared actor-backed cubes production location rotation scale replication; ClientServer and ListenServer; NullRHI",
+  "checks": [
+    "movement replication disabled and root movable before composition",
+    "exact WithActor client driver association",
+    "production Location Rotation Scale entries received and applied",
+    "client actor and ECS pose match authority history on two distinct frames",
+    "authority-only timers",
+    "control receipts restart retirement and malformed controls"
+  ],
+  "remoteDiagnostics": "Snapshot retains station recipes config counters and authority text, without cube Transform/Origin/axes; vectors read client bridge",
+  "delivery": "CkTests local commit only; no push/host gitlink update"
+}

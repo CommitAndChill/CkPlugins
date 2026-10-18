@@ -1,0 +1,29 @@
+{
+  "family": "VoxelNav Flying vs Grounded",
+  "decision": "corrected",
+  "transport": "production EntityScript and Transform replication",
+  "authorityOnly": [
+    "VoxelNav volume and path",
+    "CrowdAgent",
+    "Velocity",
+    "Acceleration",
+    "EulerIntegrator"
+  ],
+  "clientPresentation": "actual replicated agent ECS Transform",
+  "gateLog": "Saved/Logs/MultiplayerVoxelNavTransformFloorOct11.log",
+  "physicalRows": 4,
+  "passed": 4,
+  "failed": 0,
+  "renderer": "NullRHI only; rendered appearance unverified",
+  "sourceHashes": ".scratch/multiplayer/voxelnav-transform-floor-oct11-source-hashes.json",
+  "groundedAuthoring": "floor-level endpoints; production grounding is bounded surface correction",
+  "checks": [
+    "both agents move on authority and both clients",
+    "listen-host presentation follows authority ECS",
+    "restart retires old authority/client handles",
+    "source loss retires replicas",
+    "malformed/stale/late controls reject without mutation"
+  ],
+  "freshLog": "no test errors, asserts, ensures, or touched VoxelNav AS warnings",
+  "commit": "1af8bf48f72e306c1e8f717add9bd02795bd7e3c"
+}

@@ -1,0 +1,61 @@
+{
+  "purpose": "Cross-machine continuation snapshot",
+  "branch": "feature/multiplayer-test-readiness",
+  "hostRepository": "https://github.com/CommitAndChill/CkPlugins.git",
+  "hostRevision": "The commit containing this file; read exact gitlinks from its tree",
+  "previousHostRevision": "434f81df03becb64674a4fd08d699c73dbd2d4da",
+  "newLogicalCommits": {
+    "CkFoundation": 9,
+    "CkGameplayDebugger": 4,
+    "CkTests": 49
+  },
+  "validation": "No new build or runtime tests performed during transfer. Scene Node remains unfinished and unverified.",
+  "submodules": [
+    {
+      "revision": "dff47a5ae2aa5dcce8636ad34e2c8236b5f3fb8e",
+      "published": true,
+      "path": "Plugins/CkFoundation",
+      "remote": "https://github.com/CommitAndChill/CkFoundation.git"
+    },
+    {
+      "revision": "ac58b24e2c62bddf899b69bd5af476fdef062574",
+      "published": true,
+      "path": "Plugins/CkGameplayDebugger",
+      "remote": "https://github.com/CommitAndChill/CkGameplayDebugger.git"
+    },
+    {
+      "revision": "4e785fc759c5eb9fec5d372424810fd18b9009a3",
+      "published": true,
+      "path": "Plugins/CkTests",
+      "remote": "https://github.com/CommitAndChill/CkTests.git"
+    },
+    {
+      "revision": "1faafede4d062d0e534f06edb537bbe88d58e854",
+      "published": true,
+      "path": "CkAuto",
+      "remote": "https://github.com/CommitAndChill/CkAuto.git"
+    },
+    {
+      "revision": "eca090f6d74e7faf212eb74c8e4cb5632c13993d",
+      "published": true,
+      "path": "Plugins/CkApplication",
+      "remote": "https://github.com/chainkemists/CkApplication.git"
+    },
+    {
+      "revision": "aca917e9f8bb6b52cdc1b51e9fea4d7df16c594e",
+      "published": true,
+      "path": "Plugins/GitLink",
+      "remote": "https://github.com/CommitAndChill/GitLink.git"
+    }
+  ],
+  "dependencyUrls": "Six unchanged dependencies retain their existing readable origins because corresponding CommitAndChill forks were not found. Modified plugins and CkAuto use CommitAndChill.",
+  "receivingInstructions": [
+    "Use an existing checkout on the receiving machine; preserve local work and close its editor before changing source or submodule revisions.",
+    "Fetch the host remote and use feature/multiplayer-test-readiness, then update already-initialized submodules to the exact gitlinks.",
+    "Read CONTINUATION_PROMPT_multiplayer_semantics_scene_node_oct11.md before resuming implementation.",
+    "Use Handoff/MultiplayerOct11 for portable evidence; .scratch and old raw logs were not transferred."
+  ],
+  "handoff": "CONTINUATION_PROMPT_multiplayer_semantics_scene_node_oct11.md",
+  "hostRuntimeCommit": "4cccaec58df65ce2c1a4a00cc31ee959c007322b",
+  "lfsTransfer": "All48requiredCkAutoLFSobjects uploaded and branch1faafede verified; no upload validation bypassed"
+}

@@ -1,0 +1,45 @@
+{
+  "family": "Scene Node",
+  "decisionRequired": "Approve a bounded CkFoundation public SceneNode composition API extension",
+  "recommended": "Replicate existing17 source actors, movement replication disabled; actual17 WithActor Transform identities; keep authority6root/11node scene/lifetime graph; remove17poseSnapshot projection.",
+  "reason": "AnchorOffset follows a foreign Unreal component. Existing public fresh-anchor API rejects an already constructed Transform/actor bridge. Ordinary SceneNode Add changes this station semantics.",
+  "api": {
+    "files": [
+      "Plugins/CkFoundation/Source/CkEcsExt/Public/CkEcsExt/SceneNode/CkSceneNode_Utils.h",
+      "Plugins/CkFoundation/Source/CkEcsExt/Public/CkEcsExt/SceneNode/CkSceneNode_Utils.cpp"
+    ],
+    "proposedSignature": "bool TryAdd_AnchorToExistingTransform(FCk_Handle_Transform& Child, FCk_Handle_Transform& Parent, USceneComponent* ForeignAnchor, FTransform Offset, FCk_Handle_SceneNode& Out)",
+    "scope": "Compose foreign SceneNode_UnrealAnchor input on an existing Transform leaf. Retain child own RootComponent as production output; no fragment/driver rewrites, no root-component rebind, no reparent/repair or new replication protocol.",
+    "guards": [
+      "Valid same-world/registry live child and parent; total malformed/default/stale checks",
+      "Registered same-world live foreign component; finite safe offset/ancestor composition",
+      "Movable child own root and exact actor bridge; no existing SceneNode/anchor/layer state",
+      "Known carrier deallocated and no allocated child dependents before composition",
+      "No partial mutation on rejected inputs; validate/rollback callback-sensitive registration",
+      "Use production externally-driven tag to prevent own actor SyncFrom overwriting foreign-anchor pose"
+    ],
+    "verification": [
+      "Real actor-backed replicated Transform follows separate foreign component while own actor root receives pose",
+      "Move foreign anchor independently from structural parent; verify offset and output",
+      "Reject invalid/stale/cross-world/static child/duplicate/unsafe offset cases with unchanged ECS and component state",
+      "Compatible existing fresh-anchor coverage",
+      "SceneNodeGym network CS/LS actual17client drivers L/R/S applied, meshes match fresh authorityhistory; no clientSceneNode/timers or custompose clones",
+      "Restart+retirement/source loss and existing unknown-closure/control invariants"
+    ]
+  },
+  "authorityLifetime": "generationOwner source-only worldroot child;6root WithActor targets plus11actual child actor WithActor targets under original parent graph; exact self ContextOwner override before capturedAdd;17capturedrequestcarriers.",
+  "clientLifetime": "Production self-owned WithActor reconstructs actor-linked entities under local worldroot. Compare source/gen/role actor+driver identities, not authority-only generation-owner chain.",
+  "actorScope": "Replace existing role0 plain scope with an identity-only replicated scope class, movement disabled, always relevant, owner-only relevancy disabled, and no ECS script. Preserve18actor ledger roles. Clients prove visual->scope->GameState after cross-channel owner references resolve; scope readiness does not gate initial WithActor construction.",
+  "actorScopeEvidence": "Astra source review: CK visual driver construction uses the visual itself once it has remote authority, not Actor.Owner; UE actor spawn does not depend on Owner. Replicating scope provides provenance rather than fixing construction. A rootless scope needs always relevancy. Scope remains ledger-controlled for generation and retirement.",
+  "strongestCounterargument": "17actor channels and public API surface; generic children reduce actorchannels but require another missing public Transform enable-existing-replication API plus new async generic/component lifecycle.",
+  "evidence": [
+    "CkEntityScript_Processor.cpp431-444: WithActor driver/self-owned publication",
+    "CkEntityReplicationDriver_Fragment.cpp229-233: clientself-owned worldroot",
+    "CkSceneNode_Utils.cpp624-643: freshanchor rejectsTransform/ownactor/dependenthistory",
+    "CkSceneNode_Processor.cpp110-145: foreignanchorinput",
+    "CkTransform_Processor.cpp748-767: ownrootoutput"
+  ],
+  "instruction": "User-supplied AGENTS.md: Escalate material product, architecture, risk, and scope decisions to the CTO.",
+  "implementationState": "CTO approved bounded extension; implementation draft changed; stopped by user before any build/test/commit",
+  "approval": "User explicitly answered Approve the bounded SceneNode API extension (Recommended); no approval remains pending"
+}
