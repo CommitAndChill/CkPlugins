@@ -18,3 +18,5 @@ Unique non-pointer work from the multiplayer, online-services research, UI-pipel
 - 9087317 editor guard documentation, 9cac142 AssetManagerEditor enablement, and 2d277c4 ISM specification fixes have patch-equivalent commits in current dev.
 
 Historical CkAuto PhantomLauncher lineage is excluded. No existing secondary checkout or its occupied local branch was changed. Backup refs preserve the pre-reconciliation dev and shader branch tips.
+
+The recovered startup probe failed on the current engine helper paths and is archived unchanged outside active compilation; see UiPipeline/StartupProbe.md for the failed receipt and remaining limitation.
