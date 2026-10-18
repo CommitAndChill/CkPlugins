@@ -1,6 +1,6 @@
 {
   "criterion": "Client-visible production state must use its production replication path. Local presentation and explicit remote diagnostics are separate scopes.",
-  "updated": "2026-10-11T12:53:26.0141754-07:00",
+  "updated": "2026-10-12T07:08:59.9399999-07:00",
   "registryCount": 92,
   "rows": [
     {
@@ -685,14 +685,19 @@
     },
     {
       "gym": "Scene Node",
-      "review": "pending",
-      "role": null,
-      "clientVisibleState": null,
-      "productionTransport": null,
-      "existingGymTransport": null,
-      "decision": null,
-      "evidence": [],
-      "focusedGate": null
+      "review": "verified-production-path",
+      "role": "Authority SceneNode simulation; two independent local owner station overlays",
+      "clientVisibleState": "17 actual replicated actor root meshes and labels per world, generation replacement and closure",
+      "productionTransport": "Existing WithActor Transform L/R/S replication; authority component anchors; metadata-only lifecycle and station snapshots",
+      "existingGymTransport": "Removed client pose simulation and cloning; identity and native driver receipt proofs",
+      "decision": "Retain multiplayer support through the approved existing-Transform composition seam",
+      "evidence": [
+        "Handoff/MultiplayerOct11/scene-node-production-oct12-green-evidence.json",
+        "968f9a3629f8a2b8032891220b79382b2cb9ae5d",
+        "2981531cb3b06107dba8122d16768d9d6e4d916e",
+        "0fac3c7627fc0c36aaa4d2551b148cce21911f04"
+      ],
+      "focusedGate": "SceneNode.Network 50/50: 48 Scene Node + 2 incidental Tween cases, CS/LS; no skips/contamination/ensures/touched-AS warnings. Rendered and abrupt GameState-loss acceptance unclaimed."
     },
     {
       "gym": "Scene Node + Tween",

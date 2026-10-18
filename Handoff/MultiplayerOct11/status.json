@@ -3,7 +3,7 @@
   "workspace": "D:/Repos/CkPlugins_3",
   "source": "D:/Repos/CkPlugins",
   "branch": "feature/multiplayer-test-readiness",
-  "state": "Scene Node concrete publicAPIproposal awaiting CTOscopeapproval; no edits/run/freeze.86pending.",
+  "state": "Scene Node focused production path verified locally; final50/50; no active run/freeze;85pending. Rebased WIP on fetched dev; no new push/host gitlink delivery.",
   "baseline": {
     "pid": 25360,
     "execSession": 18181,
@@ -6542,7 +6542,7 @@
     "reviewLedger": ".scratch/multiplayer/production-transport-review-oct11.json",
     "voxel": "committed 1af8bf48; focused production replication gate passed4/4",
     "goapMain": "committed88be497e; focused standalone gate1/1 passed; excluded multiplayer readiness by user",
-    "remaining": 86,
+    "remaining": 85,
     "delivery": "VoxelNav1af8bf48 GOAP88be497e Transform5728190f committedlocally; no push/hostgitlink",
     "activeRun": false,
     "transform": "committed5728190f; productionTransform two-topology focusedgate2/2passed",
@@ -6556,13 +6556,16 @@
       "totalObservedEditorBoots": 5
     },
     "sceneNode": {
-      "state": "Paused by user for usage; CTO-approved implementation in flight, unbuilt/untested/uncommitted",
+      "state": "Verified production path and committed locally; final50/50; rendered and abrupt GameState-loss acceptance unclaimed",
       "decision": "fix custom pose projection",
-      "consultation": "Astra ownership/API/lifetime reviews completed; three API findings fixed but unverified; source-loss quarantine retained",
+      "consultation": "Ownership/API/lifetime and seed-publication reviews reconciled with passing focused gates; non-destructive source-loss quarantine retained",
       "edits": true,
       "approvalProposal": ".scratch/multiplayer/scene-node-production-api-proposal-oct11.json",
-      "continuation": "CONTINUATION_PROMPT_multiplayer_semantics_scene_node_oct11.md",
-      "ownedManifest": ".scratch/multiplayer/scene-node-inflight-owned-oct11.json"
+      "continuation": "Handoff/MultiplayerOct11/production-semantics-PROGRESS-oct11.md",
+      "ownedManifest": ".scratch/multiplayer/scene-node-inflight-owned-oct11.json",
+      "finalEvidence": "Handoff/MultiplayerOct11/scene-node-production-oct12-green-evidence.json",
+      "localHeads": { "CkFoundation": "2981531cb3b06107dba8122d16768d9d6e4d916e", "CkTests": "0fac3c7627fc0c36aaa4d2551b148cce21911f04", "CkGameplayDebugger": "f90b65ca1680c62b00fd74bd6d088d848b5b33f1" },
+      "hostGitlinks": "New local plugin heads remain unstaged; no new delivery authorization"
     }
   },
   "engineLockCoordinationOct11": {

@@ -1,0 +1,217 @@
+{
+  "family": "Scene Node",
+  "review": "verified-production-path",
+  "date": "2026-10-12",
+  "integrationBase": "origin/dev 8a6665bd6",
+  "commits": {
+    "CkGameplayDebugger": [
+      "f90b65ca1680c62b00fd74bd6d088d848b5b33f1"
+    ],
+    "CkTests": [
+      "79fdf82a3cf4ce0072b40359963c8dafd1709576",
+      "0fac3c7627fc0c36aaa4d2551b148cce21911f04"
+    ],
+    "CkFoundation": [
+      "968f9a3629f8a2b8032891220b79382b2cb9ae5d",
+      "2981531cb3b06107dba8122d16768d9d6e4d916e"
+    ]
+  },
+  "nativeBuild": {
+    "seconds": 501.34,
+    "symbols": "None",
+    "succeeded": true,
+    "projectPCH": false,
+    "log": "Saved/Logs/MultiplayerRebase-SceneNode-Oct12-19.log"
+  },
+  "finalGate": {
+    "contaminated": 0,
+    "serialLane": "Network",
+    "touchedSceneNodeScriptWarnings": 0,
+    "ensures": 0,
+    "allProtectedByteIdentical": true,
+    "frozenSourcePaths": 24,
+    "protectedUnrelatedFiles": 8,
+    "skipped": 0,
+    "logSHA256": "02C023B5E68B0F64D17C0AB31173CF9274BB47EA70D507AEEE0F3982C9ECF334",
+    "failed": 0,
+    "exit": 0,
+    "selectedTests": [
+      "Ck.Gym.Network.SceneNodeTween.SharedTrio.ClientServer",
+      "Ck.Gym.Network.SceneNodeTween.SharedTrio.ListenServer",
+      "Ck.SceneNode.Network.ActorLedger.FullCohort.ClientServer",
+      "Ck.SceneNode.Network.ActorLedger.FullCohort.ListenServer",
+      "Ck.SceneNode.Network.EcsRoots.Construction.ClientServer",
+      "Ck.SceneNode.Network.EcsRoots.Construction.ListenServer",
+      "Ck.SceneNode.Network.ExistingTransform.ForeignAnchor.ClientServer",
+      "Ck.SceneNode.Network.ExistingTransform.ForeignAnchor.ListenServer",
+      "Ck.SceneNode.Network.Gym.ProductionTwoOwner.ClientServer",
+      "Ck.SceneNode.Network.Gym.ProductionTwoOwner.ListenServer",
+      "Ck.SceneNode.Network.Gym.Remote.NestedUnknownFrozenClosure.ClientServer",
+      "Ck.SceneNode.Network.Gym.Remote.NestedUnknownFrozenClosure.ListenServer",
+      "Ck.SceneNode.Network.Gym.Remote.UnknownClosure.ClientServer",
+      "Ck.SceneNode.Network.Gym.Remote.UnknownClosure.ListenServer",
+      "Ck.SceneNode.Network.Gym.Remote.UnrelatedPending.ClientServer",
+      "Ck.SceneNode.Network.Gym.Remote.UnrelatedPending.ListenServer",
+      "Ck.SceneNode.Network.Motion.ActiveActorLoss.ClientServer",
+      "Ck.SceneNode.Network.Motion.ActiveActorLoss.ListenServer",
+      "Ck.SceneNode.Network.Motion.ClosingDuringResume.ClientServer",
+      "Ck.SceneNode.Network.Motion.ClosingDuringResume.ListenServer",
+      "Ck.SceneNode.Network.Motion.FrameSampler.Production.ClientServer",
+      "Ck.SceneNode.Network.Motion.FrameSampler.Production.ListenServer",
+      "Ck.SceneNode.Network.Motion.FrameSampler.TransformUpdatedActorLoss.ClientServer",
+      "Ck.SceneNode.Network.Motion.FrameSampler.TransformUpdatedActorLoss.ListenServer",
+      "Ck.SceneNode.Network.Motion.FrameSampler.UnregisteredChild.ClientServer",
+      "Ck.SceneNode.Network.Motion.FrameSampler.UnregisteredChild.ListenServer",
+      "Ck.SceneNode.Network.Motion.Production.ClientServer",
+      "Ck.SceneNode.Network.Motion.Production.ListenServer",
+      "Ck.SceneNode.Network.Motion.Retirement.ForeignAllocatedDescendant.ClientServer",
+      "Ck.SceneNode.Network.Motion.Retirement.ForeignAllocatedDescendant.ListenServer",
+      "Ck.SceneNode.Network.Motion.Retirement.Production.ClientServer",
+      "Ck.SceneNode.Network.Motion.Retirement.Production.ListenServer",
+      "Ck.SceneNode.Network.Motion.Retirement.ReentrantUnexpectedActor.ClientServer",
+      "Ck.SceneNode.Network.Motion.Retirement.ReentrantUnexpectedActor.ListenServer",
+      "Ck.SceneNode.Network.Motion.Retirement.SuccessorProduction.ClientServer",
+      "Ck.SceneNode.Network.Motion.Retirement.SuccessorProduction.ListenServer",
+      "Ck.SceneNode.Network.NodeGraph.ActorLossAfterComposition.ClientServer",
+      "Ck.SceneNode.Network.NodeGraph.ActorLossAfterComposition.ListenServer",
+      "Ck.SceneNode.Network.NodeGraph.Construction.ClientServer",
+      "Ck.SceneNode.Network.NodeGraph.Construction.ListenServer",
+      "Ck.SceneNode.Network.PreallocatedAnchor.FreshLeaf.ClientServer",
+      "Ck.SceneNode.Network.PreallocatedAnchor.FreshLeaf.ListenServer",
+      "Ck.SceneNode.Network.SourceQueues.StopDrain.ClientServer",
+      "Ck.SceneNode.Network.SourceQueues.StopDrain.ListenServer",
+      "Ck.SceneNode.Network.StopReceipt.CapturedAdmission.ClientServer",
+      "Ck.SceneNode.Network.StopReceipt.CapturedAdmission.ListenServer",
+      "Ck.SceneNode.Network.StopReceipt.ExactTimers.ClientServer",
+      "Ck.SceneNode.Network.StopReceipt.ExactTimers.ListenServer",
+      "Ck.SceneNode.Network.StopReceipt.PendingReset.ClientServer",
+      "Ck.SceneNode.Network.StopReceipt.PendingReset.ListenServer"
+    ],
+    "freshDiscovery": true,
+    "log": "Saved/Logs/MultiplayerRebase-SceneNode-Oct12-20.log",
+    "SceneNodeCases": 48,
+    "frozenSourceChanges": 0,
+    "total": 50,
+    "rendererSkipped": true,
+    "incidentalSceneNodeTweenCases": 2,
+    "duration": "3m49s",
+    "passed": 50
+  },
+  "invariants": [
+    "17 real native Transform replicas and one identity-only scope per generation",
+    "Actual two-owner station presentation and controls across generations 1 through 3",
+    "Eleven moving node witnesses with native and visible authority-history matches",
+    "No client SceneNode or timer simulation tree",
+    "Physical actor serial absence and complete known ECS retirement",
+    "Structural unknown closure and retained unknown scope; no destructive recovery",
+    "Existing Transform unnamed-label preservation and named-label rejection",
+    "Half-scale seed publication survives refresh and anchor motion",
+    "Rejections preserve native data, label, root, pose and topology",
+    "Synchronous actor teardown excludes later transform output"
+  ],
+  "limits": [
+    "NullRHI does not prove rendered acceptance",
+    "Abrupt GameState-loss quarantine remains unproved",
+    "Scene Node + Tween is a separate pending production review",
+    "No repository-wide regression claim",
+    "No push or new host gitlink delivery"
+  ],
+  "sourceHashes": [
+    {
+      "sha256": "2722EDC0AA0798BF7D9875F21BA979F61CCBB266651B1B2839751132F0880580",
+      "path": "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_Catalog.as"
+    },
+    {
+      "sha256": "C2A82DC0A05F5158F21705D9841FFDA873CB916A5E0DFC7BC0B1F622A19539C1",
+      "path": "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_GameState.as"
+    },
+    {
+      "sha256": "20B953CAAF301FDD5A0B1F26B38F7A386FF5C926BFC51B781EEA66B54FADD629",
+      "path": "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_PlayerController.as"
+    },
+    {
+      "sha256": "9A56FBD4068268781484FB552A85DB702B6415F19B26F21B0E93CDC66C946A87",
+      "path": "Plugins/CkTests/Source/CkTests/Private/CkResourceInspector/CkResourceInspectorModel.cpp"
+    },
+    {
+      "sha256": "A655AA20DDE80DEC0406A4EEA3325C8B06B35EBED796AB37B2B3253FB6EF11A0",
+      "path": "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_ActorLedger.cpp"
+    },
+    {
+      "sha256": "D7503F8FACD9C95E8AE36BD4D9B0BB83DA769BF9B330E6E511D9E89B03A2B996",
+      "path": "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_RemoteVisuals.cpp"
+    },
+    {
+      "sha256": "8CFB6DAEA56A71C294E11BE7F7E7A3842CAAF1D8B67F1031DA793ED48DE7652E",
+      "path": "Plugins/CkTests/Source/CkTests/Private/CkSceneNodeGym_Retirement.cpp"
+    },
+    {
+      "sha256": "872A425FBB489B4D41E535477C479AC031A870DDD9F63CD0309F9D7626A83850",
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_ExistingTransformAnchor.spec.cpp"
+    },
+    {
+      "sha256": "63FEACF20F95AA46C5545E4A65CEF4194C21D2243C8D5502C1DF67A361A615DD",
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_Motion.spec.cpp"
+    },
+    {
+      "sha256": "B8E8E1D0C5740100EE7FCE294CC02FF1B0A02192440CDCB1BBF6E58B3E95FA86",
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_SceneNode_RemoteVisuals.spec.cpp"
+    },
+    {
+      "sha256": "6AD085143C36408FE8FF5EEB7DB34A2DF89BBA7E365C3C4755B9CA87458FCBCF",
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkGoap/Test_GoapGym_SharedWorld.spec.cpp"
+    },
+    {
+      "sha256": "BC7406F5E6373D36D5DA5D78E11A6EE9DBE220F1E6EB324083920A399E15DAD9",
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkGym/Test_SceneNodeGym_ProductionTwoOwner_Network.spec.cpp"
+    },
+    {
+      "sha256": "6E126134D6E008ADD1ADD5AA5CC7F6F6DE3585EC4AC7F85D7C76B595F367F0C0",
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkGym/Test_StationShowcaseGym_Network.spec.cpp"
+    },
+    {
+      "sha256": "5BE7ACA0F2945CA2BA78F85B375851F43406D09ED24E5FDAD1B6F62A15F683E2",
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkUsf/Test_Usf_GeneratesUsableMasters.cpp"
+    },
+    {
+      "sha256": "FE9329F9C9C6EA24981DD9B01646FFC4063CF2150CB63F536600DFD7D3D8BF7D",
+      "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkYoga/Test_UiTabsInteractions.cpp"
+    },
+    {
+      "sha256": "D357D7822E2F73FC8CABDC053F561AC68FEC8961AE6498225D89EC6B26C6E2E1",
+      "path": "Plugins/CkTests/Source/CkTests/Public/CkSceneNodeGym_ActorLedger.h"
+    },
+    {
+      "sha256": "60B4B911270A7299BBB1ADE22A90E6CC2E50B26BB0783175484714F1E7228496",
+      "path": "Plugins/CkTests/Source/CkTests/Public/CkSceneNodeGym_RemoteVisuals.h"
+    },
+    {
+      "sha256": "C075483852FFF0828E0B72F3E5EC928FBF495F24CE2164AB4D2652D9778EC2CC",
+      "path": "Plugins/CkFoundation/Source/CkRecord/Public/CkRecord/Record/CkRecord_Utils.h"
+    },
+    {
+      "sha256": "5657839C0D8B87303C7EA58512DFD2B96B5903C12F514F46F7F05D5CF6CCDDBF",
+      "path": "Plugins/CkFoundation/Source/CkEcsExt/Public/CkEcsExt/SceneNode/CkSceneNode_Utils.cpp"
+    },
+    {
+      "sha256": "1C15BDB589C1BEDDB148FF28B43877C20884C5DCAE1C2C4EFEC1DA452F41920A",
+      "path": "Plugins/CkGameplayDebugger/Source/CkEntityDebugOverlay/Private/Tests/CkDebugOverlay_SubsystemLifecycle.spec.cpp"
+    },
+    {
+      "sha256": "9F87EE56AEECEDC99480EC9D5820E7D5BA27A4BE6059FF821816A1267A1AAB5F",
+      "path": "Plugins/CkFoundation/Source/CkEcsExt/Public/CkEcsExt/Transform/CkTransform_Processor.cpp"
+    },
+    {
+      "sha256": "42B734312469D0056CF69943C998EFCB88619809BD33F288759C3B09A532FC9A",
+      "path": "Plugins/CkFoundation/Source/CkEcsExt/Public/CkEcsExt/Transform/CkTransform_Utils.cpp"
+    },
+    {
+      "sha256": "5189D1CA1A47184277711FBD693ACE412426734F8167638CC83FE6149A6151CE",
+      "path": "Plugins/CkFoundation/Source/CkEcsExt/Public/CkEcsExt/Transform/CkTransform_Utils.h"
+    },
+    {
+      "sha256": "13768456B52D2498A29D12A417A7C24342FF49435B90E76AB94BF3AE298F6766",
+      "path": "Plugins/CkTests/Script/CkSceneNode/CkSceneNodeGym_SourceVisuals.as"
+    }
+  ]
+}
