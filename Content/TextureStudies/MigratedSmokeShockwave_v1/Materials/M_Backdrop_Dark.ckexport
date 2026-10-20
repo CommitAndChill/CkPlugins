@@ -1,0 +1,61 @@
+{
+	"material": "M_Backdrop_Dark",
+	"packagePath": "/Game/TextureStudies/MigratedSmokeShockwave_v1/Materials/M_Backdrop_Dark",
+	"_meta":
+	{
+		"format": "CkAssetExporter sidecar - UTF-8 JSON export of the sibling .uasset of the same name",
+		"sourceHash": "252090f7ef873b601c65a9bf6b13a1e7",
+		"exporterVersion": 3
+	},
+	"blendMode": "BLEND_Opaque",
+	"twoSided": true,
+	"unlit": true,
+	"shadingModel": "MSM_Unlit",
+	"domain": "MD_Surface",
+	"connectedOutputs": [
+		"EmissiveColor"
+	],
+	"expressions":
+	{
+		"Custom": 1,
+		"TextureCoordinate": 1
+	},
+	"graph":
+	{
+		"nodes": [
+			{
+				"id": 0,
+				"class": "TextureCoordinate",
+				"name": "MaterialExpressionTextureCoordinate_0"
+			},
+			{
+				"id": 1,
+				"class": "Custom",
+				"name": "MaterialExpressionCustom_0",
+				"inputs": [
+					{
+						"index": 0,
+						"name": "UV",
+						"node": 0,
+						"output": 0
+					}
+				],
+				"props":
+				{
+					"Code": "return float3(.012,.012,.012);"
+				}
+			}
+		],
+		"outputs": [
+			{
+				"property": "MP_EmissiveColor",
+				"node": 1,
+				"output": 0
+			}
+		]
+	},
+	"scalarParams": [],
+	"vectorParams": [],
+	"textureParams": [],
+	"usedTextures": []
+}

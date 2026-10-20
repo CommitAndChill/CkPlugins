@@ -1,0 +1,642 @@
+{
+	"material": "MI_Shock_billows_Niagara",
+	"packagePath": "/Game/TextureStudies/MigratedSmokeShockwave_v1/Materials/MI_Shock_billows_Niagara",
+	"_meta":
+	{
+		"format": "CkAssetExporter sidecar - UTF-8 JSON export of the sibling .uasset of the same name",
+		"sourceHash": "b7c76fc799212dd42e74bdd42a869fb5",
+		"exporterVersion": 3
+	},
+	"parentChain": [
+		"/Game/TextureStudies/MigratedSmokeShockwave_v1/Materials/M_Flipbook_Lit.M_Flipbook_Lit"
+	],
+	"blendMode": "BLEND_Translucent",
+	"twoSided": true,
+	"unlit": false,
+	"shadingModel": "MSM_DefaultLit",
+	"domain": "MD_Surface",
+	"connectedOutputs": [
+		"BaseColor",
+		"Opacity",
+		"Normal"
+	],
+	"expressions":
+	{
+		"ComponentMask": 3,
+		"Constant": 1,
+		"Custom": 3,
+		"ParticleRelativeTime": 1,
+		"ScalarParameter": 14,
+		"TextureCoordinate": 1,
+		"TextureSampleParameter2D": 3,
+		"Time": 1,
+		"VectorParameter": 1
+	},
+	"graph":
+	{
+		"nodes": [
+			{
+				"id": 0,
+				"class": "TextureCoordinate",
+				"name": "MaterialExpressionTextureCoordinate_0"
+			},
+			{
+				"id": 1,
+				"class": "Time",
+				"name": "MaterialExpressionTime_0"
+			},
+			{
+				"id": 2,
+				"class": "ParticleRelativeTime",
+				"name": "MaterialExpressionParticleRelativeTime_0"
+			},
+			{
+				"id": 3,
+				"class": "ScalarParameter",
+				"name": "MaterialExpressionScalarParameter_0",
+				"props":
+				{
+					"ParameterName": "Manual",
+					"Group": "Playback"
+				}
+			},
+			{
+				"id": 4,
+				"class": "ScalarParameter",
+				"name": "MaterialExpressionScalarParameter_1",
+				"props":
+				{
+					"ParameterName": "Frame",
+					"Group": "Playback"
+				}
+			},
+			{
+				"id": 5,
+				"class": "ScalarParameter",
+				"name": "MaterialExpressionScalarParameter_2",
+				"props":
+				{
+					"DefaultValue": 1,
+					"ParameterName": "Speed",
+					"Group": "Playback"
+				}
+			},
+			{
+				"id": 6,
+				"class": "ScalarParameter",
+				"name": "MaterialExpressionScalarParameter_3",
+				"props":
+				{
+					"DefaultValue": 0.5,
+					"ParameterName": "Gap",
+					"Group": "Playback"
+				}
+			},
+			{
+				"id": 7,
+				"class": "ScalarParameter",
+				"name": "MaterialExpressionScalarParameter_4",
+				"props":
+				{
+					"ParameterName": "UseParticleAge",
+					"Group": "Playback"
+				}
+			},
+			{
+				"id": 8,
+				"class": "ScalarParameter",
+				"name": "MaterialExpressionScalarParameter_5",
+				"props":
+				{
+					"DefaultValue": 4,
+					"ParameterName": "Columns",
+					"Group": "Atlas"
+				}
+			},
+			{
+				"id": 9,
+				"class": "ScalarParameter",
+				"name": "MaterialExpressionScalarParameter_6",
+				"props":
+				{
+					"DefaultValue": 4,
+					"ParameterName": "Rows",
+					"Group": "Atlas"
+				}
+			},
+			{
+				"id": 10,
+				"class": "ScalarParameter",
+				"name": "MaterialExpressionScalarParameter_7",
+				"props":
+				{
+					"DefaultValue": 16,
+					"ParameterName": "Count",
+					"Group": "Atlas"
+				}
+			},
+			{
+				"id": 11,
+				"class": "ScalarParameter",
+				"name": "MaterialExpressionScalarParameter_8",
+				"props":
+				{
+					"DefaultValue": 8,
+					"ParameterName": "FPS",
+					"Group": "Atlas"
+				}
+			},
+			{
+				"id": 12,
+				"class": "ScalarParameter",
+				"name": "MaterialExpressionScalarParameter_9",
+				"props":
+				{
+					"DefaultValue": 256,
+					"ParameterName": "TilePixels",
+					"Group": "Atlas"
+				}
+			},
+			{
+				"id": 13,
+				"class": "Custom",
+				"name": "MaterialExpressionCustom_0",
+				"inputs": [
+					{
+						"index": 0,
+						"name": "UV",
+						"node": 0,
+						"output": 0
+					},
+					{
+						"index": 1,
+						"name": "Clock",
+						"node": 1,
+						"output": 0
+					},
+					{
+						"index": 2,
+						"name": "Age",
+						"node": 2,
+						"output": 0
+					},
+					{
+						"index": 3,
+						"name": "Manual",
+						"node": 3,
+						"output": 0
+					},
+					{
+						"index": 4,
+						"name": "Frame",
+						"node": 4,
+						"output": 0
+					},
+					{
+						"index": 5,
+						"name": "Speed",
+						"node": 5,
+						"output": 0
+					},
+					{
+						"index": 6,
+						"name": "Gap",
+						"node": 6,
+						"output": 0
+					},
+					{
+						"index": 7,
+						"name": "UseParticleAge",
+						"node": 7,
+						"output": 0
+					},
+					{
+						"index": 8,
+						"name": "Columns",
+						"node": 8,
+						"output": 0
+					},
+					{
+						"index": 9,
+						"name": "Rows",
+						"node": 9,
+						"output": 0
+					},
+					{
+						"index": 10,
+						"name": "Count",
+						"node": 10,
+						"output": 0
+					},
+					{
+						"index": 11,
+						"name": "FPS",
+						"node": 11,
+						"output": 0
+					},
+					{
+						"index": 12,
+						"name": "TilePixels",
+						"node": 12,
+						"output": 0
+					}
+				],
+				"props":
+				{
+					"Code": "float duration=Count/FPS;\nfloat clock=fmod(max(Clock*Speed,0.0),duration+max(Gap,0.0));\nfloat seconds=UseParticleAge>0.5 ? Age*duration : clock;\nfloat frame=Manual>0.5 ? clamp(floor(Frame),0.0,Count-1.0) : min(floor(seconds*FPS+0.0001),Count-1.0);\nfloat alive=Manual>0.5 ? 1.0 : (seconds<duration ? 1.0:0.0);\nfloat2 cell=float2(fmod(frame,Columns),floor(frame/Columns));\nfloat inset=0.5/TilePixels;\nreturn float3((cell+clamp(UV,inset,1.0-inset))/float2(Columns,Rows),alive);"
+				}
+			},
+			{
+				"id": 14,
+				"class": "ComponentMask",
+				"name": "MaterialExpressionComponentMask_0",
+				"inputs": [
+					{
+						"index": 0,
+						"name": "Input",
+						"node": 13,
+						"output": 0
+					}
+				],
+				"props":
+				{
+					"R": true,
+					"G": true
+				}
+			},
+			{
+				"id": 15,
+				"class": "ComponentMask",
+				"name": "MaterialExpressionComponentMask_1",
+				"inputs": [
+					{
+						"index": 0,
+						"name": "Input",
+						"node": 13,
+						"output": 0
+					}
+				],
+				"props":
+				{
+					"B": true
+				}
+			},
+			{
+				"id": 16,
+				"class": "TextureSampleParameter2D",
+				"name": "MaterialExpressionTextureSampleParameter2D_0",
+				"inputs": [
+					{
+						"index": 0,
+						"name": "Coordinates",
+						"node": 14,
+						"output": 0
+					}
+				],
+				"outputs": [
+					"RGB",
+					"R",
+					"G",
+					"B",
+					"A",
+					"RGBA"
+				],
+				"props":
+				{
+					"ParameterName": "ColorAtlas",
+					"Group": "Textures",
+					"Texture": "/Game/TextureStudies/MigratedSmokeShockwave_v1/Textures/T_Smoke_lit.T_Smoke_lit"
+				}
+			},
+			{
+				"id": 17,
+				"class": "TextureSampleParameter2D",
+				"name": "MaterialExpressionTextureSampleParameter2D_1",
+				"inputs": [
+					{
+						"index": 0,
+						"name": "Coordinates",
+						"node": 14,
+						"output": 0
+					}
+				],
+				"outputs": [
+					"RGB",
+					"R",
+					"G",
+					"B",
+					"A",
+					"RGBA"
+				],
+				"props":
+				{
+					"ParameterName": "OpacityAtlas",
+					"Group": "Textures",
+					"Texture": "/Game/TextureStudies/MigratedSmokeShockwave_v1/Textures/T_Smoke_opacity.T_Smoke_opacity",
+					"SamplerType": "SAMPLERTYPE_LinearGrayscale"
+				}
+			},
+			{
+				"id": 18,
+				"class": "ScalarParameter",
+				"name": "MaterialExpressionScalarParameter_10",
+				"props":
+				{
+					"ParameterName": "SeparateOpacity",
+					"Group": "Atlas"
+				}
+			},
+			{
+				"id": 19,
+				"class": "ScalarParameter",
+				"name": "MaterialExpressionScalarParameter_11",
+				"props":
+				{
+					"ParameterName": "NeutralColor",
+					"Group": "Atlas"
+				}
+			},
+			{
+				"id": 20,
+				"class": "VectorParameter",
+				"name": "MaterialExpressionVectorParameter_0",
+				"outputs": [
+					"RGB",
+					"R",
+					"G",
+					"B",
+					"A",
+					"RGBA"
+				],
+				"props":
+				{
+					"DefaultValue": "(R=1.000000,G=1.000000,B=1.000000,A=1.000000)",
+					"ParameterName": "Tint",
+					"Group": "Appearance"
+				}
+			},
+			{
+				"id": 21,
+				"class": "ScalarParameter",
+				"name": "MaterialExpressionScalarParameter_12",
+				"props":
+				{
+					"DefaultValue": 1,
+					"ParameterName": "ReviewVisibility",
+					"Group": "Atlas"
+				}
+			},
+			{
+				"id": 22,
+				"class": "Custom",
+				"name": "MaterialExpressionCustom_1",
+				"inputs": [
+					{
+						"index": 0,
+						"name": "C",
+						"node": 16,
+						"output": 5,
+						"mask": "rgba"
+					},
+					{
+						"index": 1,
+						"name": "A",
+						"node": 17,
+						"output": 1,
+						"mask": "r"
+					},
+					{
+						"index": 2,
+						"name": "NeutralColor",
+						"node": 19,
+						"output": 0
+					},
+					{
+						"index": 3,
+						"name": "Tint",
+						"node": 20,
+						"output": 0,
+						"mask": "rgb"
+					},
+					{
+						"index": 4,
+						"name": "SeparateOpacity",
+						"node": 18,
+						"output": 0
+					},
+					{
+						"index": 5,
+						"name": "Alive",
+						"node": 15,
+						"output": 0
+					},
+					{
+						"index": 6,
+						"name": "Visibility",
+						"node": 21,
+						"output": 0
+					}
+				],
+				"props":
+				{
+					"Code": "return float4(lerp(C.rgb,float3(1,1,1),NeutralColor)*Tint,lerp(C.a,A,SeparateOpacity)*Alive*Visibility);",
+					"OutputType": "CMOT_Float4"
+				}
+			},
+			{
+				"id": 23,
+				"class": "ComponentMask",
+				"name": "MaterialExpressionComponentMask_2",
+				"inputs": [
+					{
+						"index": 0,
+						"name": "Input",
+						"node": 22,
+						"output": 0
+					}
+				],
+				"props":
+				{
+					"A": true
+				}
+			},
+			{
+				"id": 24,
+				"class": "TextureSampleParameter2D",
+				"name": "MaterialExpressionTextureSampleParameter2D_2",
+				"inputs": [
+					{
+						"index": 0,
+						"name": "Coordinates",
+						"node": 14,
+						"output": 0
+					}
+				],
+				"outputs": [
+					"RGB",
+					"R",
+					"G",
+					"B",
+					"A",
+					"RGBA"
+				],
+				"props":
+				{
+					"ParameterName": "NormalAtlas",
+					"Group": "Textures",
+					"Texture": "/Game/TextureStudies/MigratedSmokeShockwave_v1/Textures/T_Shock_billows_N.T_Shock_billows_N",
+					"SamplerType": "SAMPLERTYPE_Normal"
+				}
+			},
+			{
+				"id": 25,
+				"class": "ScalarParameter",
+				"name": "MaterialExpressionScalarParameter_13",
+				"props":
+				{
+					"DefaultValue": 1,
+					"ParameterName": "NormalStrength",
+					"Group": "Atlas"
+				}
+			},
+			{
+				"id": 26,
+				"class": "Custom",
+				"name": "MaterialExpressionCustom_2",
+				"inputs": [
+					{
+						"index": 0,
+						"name": "N",
+						"node": 24,
+						"output": 0,
+						"mask": "rgb"
+					},
+					{
+						"index": 1,
+						"name": "Strength",
+						"node": 25,
+						"output": 0
+					}
+				],
+				"props":
+				{
+					"Code": "return normalize(lerp(float3(0,0,1),N,Strength));"
+				}
+			},
+			{
+				"id": 27,
+				"class": "Constant",
+				"name": "MaterialExpressionConstant_0",
+				"props":
+				{
+					"R": 0.85000002384185791
+				}
+			}
+		],
+		"outputs": [
+			{
+				"property": "MP_Opacity",
+				"node": 23,
+				"output": 0
+			},
+			{
+				"property": "MP_BaseColor",
+				"node": 22,
+				"output": 0
+			},
+			{
+				"property": "MP_Roughness",
+				"node": 27,
+				"output": 0
+			},
+			{
+				"property": "MP_Normal",
+				"node": 26,
+				"output": 0
+			}
+		]
+	},
+	"scalarParams": [
+		{
+			"name": "Manual",
+			"value": 0
+		},
+		{
+			"name": "Frame",
+			"value": 0
+		},
+		{
+			"name": "Speed",
+			"value": 1
+		},
+		{
+			"name": "Gap",
+			"value": 0.5
+		},
+		{
+			"name": "UseParticleAge",
+			"value": 1
+		},
+		{
+			"name": "Columns",
+			"value": 4
+		},
+		{
+			"name": "Rows",
+			"value": 8
+		},
+		{
+			"name": "Count",
+			"value": 32
+		},
+		{
+			"name": "FPS",
+			"value": 16
+		},
+		{
+			"name": "TilePixels",
+			"value": 256
+		},
+		{
+			"name": "SeparateOpacity",
+			"value": 1
+		},
+		{
+			"name": "NeutralColor",
+			"value": 1
+		},
+		{
+			"name": "ReviewVisibility",
+			"value": 1
+		},
+		{
+			"name": "NormalStrength",
+			"value": 1
+		}
+	],
+	"vectorParams": [
+		{
+			"name": "Tint",
+			"value": "RGBA(0.42, 0.32, 0.19, 1)"
+		}
+	],
+	"textureParams": [
+		{
+			"name": "ColorAtlas",
+			"value": "/Game/TextureStudies/MigratedSmokeShockwave_v1/Textures/T_Shock_billows.T_Shock_billows"
+		},
+		{
+			"name": "OpacityAtlas",
+			"value": "/Game/TextureStudies/MigratedSmokeShockwave_v1/Textures/T_Shock_billows_A.T_Shock_billows_A"
+		},
+		{
+			"name": "NormalAtlas",
+			"value": "/Game/TextureStudies/MigratedSmokeShockwave_v1/Textures/T_Shock_billows_N.T_Shock_billows_N"
+		}
+	],
+	"usedTextures": [
+		"/Game/TextureStudies/MigratedSmokeShockwave_v1/Textures/T_Shock_billows_N.T_Shock_billows_N",
+		"/Game/TextureStudies/MigratedSmokeShockwave_v1/Textures/T_Shock_billows.T_Shock_billows",
+		"/Game/TextureStudies/MigratedSmokeShockwave_v1/Textures/T_Shock_billows_A.T_Shock_billows_A"
+	]
+}

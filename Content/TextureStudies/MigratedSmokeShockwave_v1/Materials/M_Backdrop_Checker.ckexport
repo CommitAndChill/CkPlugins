@@ -1,0 +1,61 @@
+{
+	"material": "M_Backdrop_Checker",
+	"packagePath": "/Game/TextureStudies/MigratedSmokeShockwave_v1/Materials/M_Backdrop_Checker",
+	"_meta":
+	{
+		"format": "CkAssetExporter sidecar - UTF-8 JSON export of the sibling .uasset of the same name",
+		"sourceHash": "a235f16dca1a0d4237e51ac2b960646e",
+		"exporterVersion": 3
+	},
+	"blendMode": "BLEND_Opaque",
+	"twoSided": true,
+	"unlit": true,
+	"shadingModel": "MSM_Unlit",
+	"domain": "MD_Surface",
+	"connectedOutputs": [
+		"EmissiveColor"
+	],
+	"expressions":
+	{
+		"Custom": 1,
+		"TextureCoordinate": 1
+	},
+	"graph":
+	{
+		"nodes": [
+			{
+				"id": 0,
+				"class": "TextureCoordinate",
+				"name": "MaterialExpressionTextureCoordinate_0"
+			},
+			{
+				"id": 1,
+				"class": "Custom",
+				"name": "MaterialExpressionCustom_0",
+				"inputs": [
+					{
+						"index": 0,
+						"name": "UV",
+						"node": 0,
+						"output": 0
+					}
+				],
+				"props":
+				{
+					"Code": "float c=fmod(floor(UV.x*12)+floor(UV.y*12),2);return lerp(float3(.035,.035,.035),float3(.45,.45,.45),c);"
+				}
+			}
+		],
+		"outputs": [
+			{
+				"property": "MP_EmissiveColor",
+				"node": 1,
+				"output": 0
+			}
+		]
+	},
+	"scalarParams": [],
+	"vectorParams": [],
+	"textureParams": [],
+	"usedTextures": []
+}

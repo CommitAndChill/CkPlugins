@@ -1,0 +1,859 @@
+{
+	"_meta":
+	{
+		"format": "CkAssetExporter sidecar - UTF-8 JSON export of the sibling .uasset of the same name",
+		"sourceHash": "d6d5b9fc04c3e5144a8b1f20e2b9bebd",
+		"exporterVersion": 3
+	},
+	"system": "NS_Shockwave",
+	"packagePath": "/Game/TextureStudies/MigratedSmokeShockwave_v1/Niagara/NS_Shockwave",
+	"userParameters": [],
+	"systemState":
+	{
+		"stacks": [
+			{
+				"stage": "System Update",
+				"modules": [
+					{
+						"name": "System State",
+						"id": "SystemState",
+						"inputs": [
+							{
+								"name": "Inactive Response",
+								"value": "NewEnumerator0 (Complete (Let Emitters Finish then Kill The System))"
+							},
+							{
+								"name": "Loop Behavior",
+								"value": "NewEnumerator0 (Infinite)"
+							},
+							{
+								"name": "UseLoopDelay",
+								"value": "false"
+							}
+						]
+					}
+				],
+				"values": [
+					{
+						"name": "Billows.EmitterState.Loop Delay",
+						"value": "0"
+					},
+					{
+						"name": "Billows.EmitterState.Loop Duration",
+						"value": "2"
+					},
+					{
+						"name": "Billows.SpawnBurst_Instantaneous.Age",
+						"value": "0"
+					},
+					{
+						"name": "Billows.SpawnBurst_Instantaneous.Loop Count Limit",
+						"value": "1"
+					},
+					{
+						"name": "Billows.SpawnBurst_Instantaneous.Spawn Count",
+						"value": "1"
+					},
+					{
+						"name": "Billows.SpawnBurst_Instantaneous.Spawn Group",
+						"value": "0"
+					},
+					{
+						"name": "Billows.SpawnBurst_Instantaneous.Spawn Probability",
+						"value": "1"
+					},
+					{
+						"name": "Billows.SpawnBurst_Instantaneous.Spawn Time",
+						"value": "0"
+					},
+					{
+						"name": "Soil.EmitterState.Loop Delay",
+						"value": "0"
+					},
+					{
+						"name": "Soil.EmitterState.Loop Duration",
+						"value": "2"
+					},
+					{
+						"name": "Soil.SpawnBurst_Instantaneous.Age",
+						"value": "0"
+					},
+					{
+						"name": "Soil.SpawnBurst_Instantaneous.Loop Count Limit",
+						"value": "1"
+					},
+					{
+						"name": "Soil.SpawnBurst_Instantaneous.Spawn Count",
+						"value": "1"
+					},
+					{
+						"name": "Soil.SpawnBurst_Instantaneous.Spawn Group",
+						"value": "0"
+					},
+					{
+						"name": "Soil.SpawnBurst_Instantaneous.Spawn Probability",
+						"value": "1"
+					},
+					{
+						"name": "Soil.SpawnBurst_Instantaneous.Spawn Time",
+						"value": "0"
+					},
+					{
+						"name": "Streaks.EmitterState.Loop Delay",
+						"value": "0"
+					},
+					{
+						"name": "Streaks.EmitterState.Loop Duration",
+						"value": "2"
+					},
+					{
+						"name": "Streaks.SpawnBurst_Instantaneous.Age",
+						"value": "0"
+					},
+					{
+						"name": "Streaks.SpawnBurst_Instantaneous.Loop Count Limit",
+						"value": "1"
+					},
+					{
+						"name": "Streaks.SpawnBurst_Instantaneous.Spawn Count",
+						"value": "1"
+					},
+					{
+						"name": "Streaks.SpawnBurst_Instantaneous.Spawn Group",
+						"value": "0"
+					},
+					{
+						"name": "Streaks.SpawnBurst_Instantaneous.Spawn Probability",
+						"value": "1"
+					},
+					{
+						"name": "Streaks.SpawnBurst_Instantaneous.Spawn Time",
+						"value": "0"
+					},
+					{
+						"name": "SystemState.Loop Delay",
+						"value": "0"
+					},
+					{
+						"name": "SystemState.Loop Duration",
+						"value": "5"
+					}
+				]
+			}
+		],
+		"systemStateModule":
+		{
+			"found": true,
+			"module": "SystemState",
+			"name": "System State",
+			"enabled": true,
+			"inputs": [
+				{
+					"name": "Inactive Response",
+					"value": "NewEnumerator0 (Complete (Let Emitters Finish then Kill The System))"
+				},
+				{
+					"name": "Loop Behavior",
+					"value": "NewEnumerator0 (Infinite)"
+				},
+				{
+					"name": "UseLoopDelay",
+					"value": "false"
+				}
+			],
+			"values": [
+				{
+					"name": "Loop Delay",
+					"value": "0"
+				},
+				{
+					"name": "Loop Duration",
+					"value": "5"
+				}
+			]
+		}
+	},
+	"emitters": [
+		{
+			"name": "Streaks",
+			"enabled": true,
+			"sim": "CPU",
+			"localSpace": true,
+			"determinism": false,
+			"boundsMode": "Dynamic",
+			"stacks": [
+				{
+					"stage": "Emitter Update",
+					"modules": [
+						{
+							"name": "Emitter State",
+							"id": "EmitterState",
+							"inputs": [
+								{
+									"name": "ScaleSpawnCountCurve",
+									"value": ""
+								},
+								{
+									"name": "Enable Distance Culling",
+									"value": "false"
+								},
+								{
+									"name": "Enable Visibility Culling",
+									"value": "false"
+								},
+								{
+									"name": "Inactive Response",
+									"value": "NewEnumerator0 (Complete (Let Particles Finish then Kill Emitter))"
+								},
+								{
+									"name": "Life Cycle Mode",
+									"value": "NewEnumerator1 (Self)"
+								},
+								{
+									"name": "Loop Behavior",
+									"value": "NewEnumerator1 (Once)"
+								},
+								{
+									"name": "Loop Duration Mode",
+									"value": "NewEnumerator0 (Fixed)"
+								},
+								{
+									"name": "Scalability Mode",
+									"value": "NewEnumerator0 (System)"
+								},
+								{
+									"name": "Scale Spawn Count",
+									"value": "false"
+								},
+								{
+									"name": "UseLoopDelay",
+									"value": "false"
+								}
+							]
+						},
+						{
+							"name": "Spawn Burst Instantaneous",
+							"id": "SpawnBurst_Instantaneous",
+							"inputs": [
+								{
+									"name": "Use Spawn Probability",
+									"value": "false"
+								},
+								{
+									"name": "UseLoopCountLimit",
+									"value": "false"
+								}
+							]
+						}
+					],
+					"values": [
+						{
+							"name": "Streaks.EmitterState.Loop Delay",
+							"value": "0"
+						},
+						{
+							"name": "Streaks.EmitterState.Loop Duration",
+							"value": "2"
+						},
+						{
+							"name": "Streaks.SpawnBurst_Instantaneous.Age",
+							"value": "0"
+						},
+						{
+							"name": "Streaks.SpawnBurst_Instantaneous.Loop Count Limit",
+							"value": "1"
+						},
+						{
+							"name": "Streaks.SpawnBurst_Instantaneous.Spawn Count",
+							"value": "1"
+						},
+						{
+							"name": "Streaks.SpawnBurst_Instantaneous.Spawn Group",
+							"value": "0"
+						},
+						{
+							"name": "Streaks.SpawnBurst_Instantaneous.Spawn Probability",
+							"value": "1"
+						},
+						{
+							"name": "Streaks.SpawnBurst_Instantaneous.Spawn Time",
+							"value": "0"
+						}
+					]
+				},
+				{
+					"stage": "Particle Spawn",
+					"modules": [
+						{
+							"name": "Set (PARTICLES) Lifetime",
+							"id": "SetVariables_AE039DD645502E8541AEC8B684CBCE3F",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) Age",
+							"id": "SetVariables_E1BD540944F6FB529A10F9B6623EE795",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) NormalizedAge",
+							"id": "SetVariables_9CB8379545AD49878EFAA6B290B09274",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) Color",
+							"id": "SetVariables_22924EFD414A2D366558049B7A80E2CB",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) SpriteSize",
+							"id": "SetVariables_39C7E2D74C36083708128088A2F31A8E",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) SpriteRotation",
+							"id": "SetVariables_2E4B82854C73E1D5C5DEDEB91158B518",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) Velocity",
+							"id": "SetVariables_41DA9F7C469D16C841374E9EAB1D04A8",
+							"inputs": []
+						},
+						{
+							"name": "System Location",
+							"id": "SystemLocation",
+							"inputs": [
+								{
+									"name": "MaskSpawnGroup",
+									"value": "false"
+								}
+							]
+						}
+					],
+					"values": [
+						{
+							"name": "Streaks.SetVariables_22924EFD414A2D366558049B7A80E2CB.Particles.Color",
+							"value": "RGBA(1, 1, 1, 1)"
+						},
+						{
+							"name": "Streaks.SetVariables_2E4B82854C73E1D5C5DEDEB91158B518.Particles.SpriteRotation",
+							"value": "0"
+						},
+						{
+							"name": "Streaks.SetVariables_39C7E2D74C36083708128088A2F31A8E.Particles.SpriteSize",
+							"value": "(600, 600)"
+						},
+						{
+							"name": "Streaks.SetVariables_41DA9F7C469D16C841374E9EAB1D04A8.Particles.Velocity",
+							"value": "(0, 0, 0)"
+						},
+						{
+							"name": "Streaks.SetVariables_9CB8379545AD49878EFAA6B290B09274.Particles.NormalizedAge",
+							"value": "0"
+						},
+						{
+							"name": "Streaks.SetVariables_AE039DD645502E8541AEC8B684CBCE3F.Particles.Lifetime",
+							"value": "2"
+						},
+						{
+							"name": "Streaks.SetVariables_E1BD540944F6FB529A10F9B6623EE795.Particles.Age",
+							"value": "0"
+						},
+						{
+							"name": "Streaks.SystemLocation.Offset",
+							"value": "(0, 0, 0)"
+						},
+						{
+							"name": "Streaks.SystemLocation.Spawn Group Mask",
+							"value": "0"
+						}
+					]
+				},
+				{
+					"stage": "Particle Update",
+					"modules": [
+						{
+							"name": "Particle State",
+							"id": "ParticleState",
+							"inputs": [
+								{
+									"name": "Kill Particles When Lifetime Has Elapsed",
+									"value": "true"
+								}
+							]
+						}
+					],
+					"values": []
+				}
+			],
+			"eventHandlers": [],
+			"lifetimeResolved":
+			{
+				"source": "NO_MODULE"
+			},
+			"renderers": [
+				{
+					"type": "NiagaraSpriteRendererProperties",
+					"material": "/Game/TextureStudies/MigratedSmokeShockwave_v1/Materials/MI_Shock_streaks_Niagara.MI_Shock_streaks_Niagara",
+					"alignment": "Unaligned",
+					"facing": "FaceCamera",
+					"sortMode": "None"
+				}
+			]
+		},
+		{
+			"name": "Billows",
+			"enabled": true,
+			"sim": "CPU",
+			"localSpace": true,
+			"determinism": false,
+			"boundsMode": "Dynamic",
+			"stacks": [
+				{
+					"stage": "Emitter Update",
+					"modules": [
+						{
+							"name": "Emitter State",
+							"id": "EmitterState",
+							"inputs": [
+								{
+									"name": "ScaleSpawnCountCurve",
+									"value": ""
+								},
+								{
+									"name": "Enable Distance Culling",
+									"value": "false"
+								},
+								{
+									"name": "Enable Visibility Culling",
+									"value": "false"
+								},
+								{
+									"name": "Inactive Response",
+									"value": "NewEnumerator0 (Complete (Let Particles Finish then Kill Emitter))"
+								},
+								{
+									"name": "Life Cycle Mode",
+									"value": "NewEnumerator1 (Self)"
+								},
+								{
+									"name": "Loop Behavior",
+									"value": "NewEnumerator1 (Once)"
+								},
+								{
+									"name": "Loop Duration Mode",
+									"value": "NewEnumerator0 (Fixed)"
+								},
+								{
+									"name": "Scalability Mode",
+									"value": "NewEnumerator0 (System)"
+								},
+								{
+									"name": "Scale Spawn Count",
+									"value": "false"
+								},
+								{
+									"name": "UseLoopDelay",
+									"value": "false"
+								}
+							]
+						},
+						{
+							"name": "Spawn Burst Instantaneous",
+							"id": "SpawnBurst_Instantaneous",
+							"inputs": [
+								{
+									"name": "Use Spawn Probability",
+									"value": "false"
+								},
+								{
+									"name": "UseLoopCountLimit",
+									"value": "false"
+								}
+							]
+						}
+					],
+					"values": [
+						{
+							"name": "Billows.EmitterState.Loop Delay",
+							"value": "0"
+						},
+						{
+							"name": "Billows.EmitterState.Loop Duration",
+							"value": "2"
+						},
+						{
+							"name": "Billows.SpawnBurst_Instantaneous.Age",
+							"value": "0"
+						},
+						{
+							"name": "Billows.SpawnBurst_Instantaneous.Loop Count Limit",
+							"value": "1"
+						},
+						{
+							"name": "Billows.SpawnBurst_Instantaneous.Spawn Count",
+							"value": "1"
+						},
+						{
+							"name": "Billows.SpawnBurst_Instantaneous.Spawn Group",
+							"value": "0"
+						},
+						{
+							"name": "Billows.SpawnBurst_Instantaneous.Spawn Probability",
+							"value": "1"
+						},
+						{
+							"name": "Billows.SpawnBurst_Instantaneous.Spawn Time",
+							"value": "0"
+						}
+					]
+				},
+				{
+					"stage": "Particle Spawn",
+					"modules": [
+						{
+							"name": "Set (PARTICLES) Lifetime",
+							"id": "SetVariables_199054C74EAFCC86753448A94D5C90BD",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) Age",
+							"id": "SetVariables_3251B67245B217B31937CB9158F50AB6",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) NormalizedAge",
+							"id": "SetVariables_6A04665A41D92AAA4DAB44B9CAE80CB4",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) Color",
+							"id": "SetVariables_CCDE2ABA415CC384271403A8EBC073D2",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) SpriteSize",
+							"id": "SetVariables_003366844FF1F03FCD6001BB526D2DB4",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) SpriteRotation",
+							"id": "SetVariables_D3ABC3AC4647FEFBB7E781AF0318A8D9",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) Velocity",
+							"id": "SetVariables_EB5DB7C74BB650FC24E03EBB78950FF1",
+							"inputs": []
+						},
+						{
+							"name": "System Location",
+							"id": "SystemLocation",
+							"inputs": [
+								{
+									"name": "MaskSpawnGroup",
+									"value": "false"
+								}
+							]
+						}
+					],
+					"values": [
+						{
+							"name": "Billows.SetVariables_003366844FF1F03FCD6001BB526D2DB4.Particles.SpriteSize",
+							"value": "(600, 600)"
+						},
+						{
+							"name": "Billows.SetVariables_199054C74EAFCC86753448A94D5C90BD.Particles.Lifetime",
+							"value": "2"
+						},
+						{
+							"name": "Billows.SetVariables_3251B67245B217B31937CB9158F50AB6.Particles.Age",
+							"value": "0"
+						},
+						{
+							"name": "Billows.SetVariables_6A04665A41D92AAA4DAB44B9CAE80CB4.Particles.NormalizedAge",
+							"value": "0"
+						},
+						{
+							"name": "Billows.SetVariables_CCDE2ABA415CC384271403A8EBC073D2.Particles.Color",
+							"value": "RGBA(1, 1, 1, 1)"
+						},
+						{
+							"name": "Billows.SetVariables_D3ABC3AC4647FEFBB7E781AF0318A8D9.Particles.SpriteRotation",
+							"value": "0"
+						},
+						{
+							"name": "Billows.SetVariables_EB5DB7C74BB650FC24E03EBB78950FF1.Particles.Velocity",
+							"value": "(0, 0, 0)"
+						},
+						{
+							"name": "Billows.SystemLocation.Offset",
+							"value": "(0, 0, 0)"
+						},
+						{
+							"name": "Billows.SystemLocation.Spawn Group Mask",
+							"value": "0"
+						}
+					]
+				},
+				{
+					"stage": "Particle Update",
+					"modules": [
+						{
+							"name": "Particle State",
+							"id": "ParticleState",
+							"inputs": [
+								{
+									"name": "Kill Particles When Lifetime Has Elapsed",
+									"value": "true"
+								}
+							]
+						}
+					],
+					"values": []
+				}
+			],
+			"eventHandlers": [],
+			"lifetimeResolved":
+			{
+				"source": "NO_MODULE"
+			},
+			"renderers": [
+				{
+					"type": "NiagaraSpriteRendererProperties",
+					"material": "/Game/TextureStudies/MigratedSmokeShockwave_v1/Materials/MI_Shock_billows_Niagara.MI_Shock_billows_Niagara",
+					"alignment": "Unaligned",
+					"facing": "FaceCamera",
+					"sortMode": "None"
+				}
+			]
+		},
+		{
+			"name": "Soil",
+			"enabled": true,
+			"sim": "CPU",
+			"localSpace": true,
+			"determinism": false,
+			"boundsMode": "Dynamic",
+			"stacks": [
+				{
+					"stage": "Emitter Update",
+					"modules": [
+						{
+							"name": "Emitter State",
+							"id": "EmitterState",
+							"inputs": [
+								{
+									"name": "ScaleSpawnCountCurve",
+									"value": ""
+								},
+								{
+									"name": "Enable Distance Culling",
+									"value": "false"
+								},
+								{
+									"name": "Enable Visibility Culling",
+									"value": "false"
+								},
+								{
+									"name": "Inactive Response",
+									"value": "NewEnumerator0 (Complete (Let Particles Finish then Kill Emitter))"
+								},
+								{
+									"name": "Life Cycle Mode",
+									"value": "NewEnumerator1 (Self)"
+								},
+								{
+									"name": "Loop Behavior",
+									"value": "NewEnumerator1 (Once)"
+								},
+								{
+									"name": "Loop Duration Mode",
+									"value": "NewEnumerator0 (Fixed)"
+								},
+								{
+									"name": "Scalability Mode",
+									"value": "NewEnumerator0 (System)"
+								},
+								{
+									"name": "Scale Spawn Count",
+									"value": "false"
+								},
+								{
+									"name": "UseLoopDelay",
+									"value": "false"
+								}
+							]
+						},
+						{
+							"name": "Spawn Burst Instantaneous",
+							"id": "SpawnBurst_Instantaneous",
+							"inputs": [
+								{
+									"name": "Use Spawn Probability",
+									"value": "false"
+								},
+								{
+									"name": "UseLoopCountLimit",
+									"value": "false"
+								}
+							]
+						}
+					],
+					"values": [
+						{
+							"name": "Soil.EmitterState.Loop Delay",
+							"value": "0"
+						},
+						{
+							"name": "Soil.EmitterState.Loop Duration",
+							"value": "2"
+						},
+						{
+							"name": "Soil.SpawnBurst_Instantaneous.Age",
+							"value": "0"
+						},
+						{
+							"name": "Soil.SpawnBurst_Instantaneous.Loop Count Limit",
+							"value": "1"
+						},
+						{
+							"name": "Soil.SpawnBurst_Instantaneous.Spawn Count",
+							"value": "1"
+						},
+						{
+							"name": "Soil.SpawnBurst_Instantaneous.Spawn Group",
+							"value": "0"
+						},
+						{
+							"name": "Soil.SpawnBurst_Instantaneous.Spawn Probability",
+							"value": "1"
+						},
+						{
+							"name": "Soil.SpawnBurst_Instantaneous.Spawn Time",
+							"value": "0"
+						}
+					]
+				},
+				{
+					"stage": "Particle Spawn",
+					"modules": [
+						{
+							"name": "Set (PARTICLES) Lifetime",
+							"id": "SetVariables_4F5052E04713563C78ACD0BA40506860",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) Age",
+							"id": "SetVariables_BA8A9ACD43A280125D77D59CA995A7BA",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) NormalizedAge",
+							"id": "SetVariables_543BE83E4A6CD1AC16F1F38847C837AF",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) Color",
+							"id": "SetVariables_17BF955B4AE2053F613CDBA28924BFD5",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) SpriteSize",
+							"id": "SetVariables_477EC5594F819449B5618FA9475DF206",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) SpriteRotation",
+							"id": "SetVariables_328B7E794E605A591960D9B70DD2A2B9",
+							"inputs": []
+						},
+						{
+							"name": "Set (PARTICLES) Velocity",
+							"id": "SetVariables_A2C5464D4BD45794E0A81CB466E91580",
+							"inputs": []
+						},
+						{
+							"name": "System Location",
+							"id": "SystemLocation",
+							"inputs": [
+								{
+									"name": "MaskSpawnGroup",
+									"value": "false"
+								}
+							]
+						}
+					],
+					"values": [
+						{
+							"name": "Soil.SetVariables_17BF955B4AE2053F613CDBA28924BFD5.Particles.Color",
+							"value": "RGBA(1, 1, 1, 1)"
+						},
+						{
+							"name": "Soil.SetVariables_328B7E794E605A591960D9B70DD2A2B9.Particles.SpriteRotation",
+							"value": "0"
+						},
+						{
+							"name": "Soil.SetVariables_477EC5594F819449B5618FA9475DF206.Particles.SpriteSize",
+							"value": "(600, 600)"
+						},
+						{
+							"name": "Soil.SetVariables_4F5052E04713563C78ACD0BA40506860.Particles.Lifetime",
+							"value": "2"
+						},
+						{
+							"name": "Soil.SetVariables_543BE83E4A6CD1AC16F1F38847C837AF.Particles.NormalizedAge",
+							"value": "0"
+						},
+						{
+							"name": "Soil.SetVariables_A2C5464D4BD45794E0A81CB466E91580.Particles.Velocity",
+							"value": "(0, 0, 0)"
+						},
+						{
+							"name": "Soil.SetVariables_BA8A9ACD43A280125D77D59CA995A7BA.Particles.Age",
+							"value": "0"
+						},
+						{
+							"name": "Soil.SystemLocation.Offset",
+							"value": "(0, 0, 0)"
+						},
+						{
+							"name": "Soil.SystemLocation.Spawn Group Mask",
+							"value": "0"
+						}
+					]
+				},
+				{
+					"stage": "Particle Update",
+					"modules": [
+						{
+							"name": "Particle State",
+							"id": "ParticleState",
+							"inputs": [
+								{
+									"name": "Kill Particles When Lifetime Has Elapsed",
+									"value": "true"
+								}
+							]
+						}
+					],
+					"values": []
+				}
+			],
+			"eventHandlers": [],
+			"lifetimeResolved":
+			{
+				"source": "NO_MODULE"
+			},
+			"renderers": [
+				{
+					"type": "NiagaraSpriteRendererProperties",
+					"material": "/Game/TextureStudies/MigratedSmokeShockwave_v1/Materials/MI_Shock_soil_Niagara.MI_Shock_soil_Niagara",
+					"alignment": "Unaligned",
+					"facing": "FaceCamera",
+					"sortMode": "None"
+				}
+			]
+		}
+	]
+}
