@@ -10,6 +10,7 @@ public class CkPluginsTarget : TargetRules
 		Type = TargetType.Game;
 		bWithPushModel = true;
 		DefaultBuildSettings = BuildSettingsVersion.Latest;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_8;
 
 		ExtraModuleNames.Add("CkPlugins");
 	}

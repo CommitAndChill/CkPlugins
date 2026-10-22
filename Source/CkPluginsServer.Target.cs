@@ -11,6 +11,7 @@ public class CkPluginsServerTarget : TargetRules
 		Type = TargetType.Server;
 		bWithPushModel = true;
 		DefaultBuildSettings = BuildSettingsVersion.Latest;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_8;
 
 		ExtraModuleNames.Add("CkPlugins");
 	}
