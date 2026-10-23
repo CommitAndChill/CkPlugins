@@ -55,8 +55,11 @@ auto FCk_ProjectBinariesTest::RunTest(const FString&) -> bool
     if (!TestTrue(TEXT("CkUsfRenderer is loaded"), RendererStatus.bIsLoaded)
         || !TestFalse(TEXT("Loaded module has a file path"), RendererStatus.FilePath.IsEmpty()))
     { return false; }
-    TestEqual(TEXT("Loaded CkUsfRenderer belongs to the selected project's binaries"),
-        NormalizeDirectory(FPaths::GetPath(RendererStatus.FilePath)), ExpectedBinariesDirectory);
+    // The Shared build environment loads plugin modules from <Project>/Plugins/<Plugin>/Binaries/<Platform>; both stay inside the selected project.
+    const FString RendererDirectory = NormalizeDirectory(FPaths::GetPath(RendererStatus.FilePath));
+    TestTrue(FString::Printf(TEXT("Loaded CkUsfRenderer belongs to the selected project (%s or <Project>/Plugins/<Plugin>/Binaries/%s), got %s"),
+            *ExpectedBinariesDirectory, FPlatformProcess::GetBinariesSubdirectory(), *RendererDirectory),
+        FPaths::IsUnderDirectory(RendererDirectory, ExpectedProjectDirectory));
 
     AddInfo(FString::Printf(TEXT("Startup evidence: executable=%s; configuration=%s; project=%s; game-binaries=%s; renderer=%s"),
         FPlatformProcess::ExecutablePath(), LexToString(FApp::GetBuildConfiguration()),
