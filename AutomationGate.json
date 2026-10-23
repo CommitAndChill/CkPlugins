@@ -119,6 +119,20 @@
       "reason": "[owner: CkTests] failed in a headless lane on another test's console warning logged in its window: LogConsoleManager: Warning: Performance warning: Many (31) failed FindConsoleObject() for 'ck.astest.nonexistent.cvar'. Defined in Plugins/CkTests/Script/CkGroundNav/CkAutoTest_GroundNav_Rebuild_AdjacentPaintDoesNotReplan.as.",
       "evidence": "Slice B gate, 2026-10-08: toolbox v1.56 --test --no-live --discover-fresh, 4023 run / 3984 passed / 39 failed / 0 contaminated on 2 auto-sized editors, at CkFoundation cf25641a3 + CkPso port feature/ck-pso dac3c5388, CkTests 17b956d50 + CkPso port feature/ck-pso feb2c9f0, CkGameplayDebugger 11d89540a, CkAuto e0e756ed8 (toolbox v1.56), superproject 9b28853. Another project's test (BusterBlock_alt) held the engine shared for the whole run. Not red in the Slice A gates on the same pins without CkPso. Then green alone (--test --no-live --known-reds off --test-pattern <this path>, Saved/Logs/Test-SliceB-Alone-3.log).",
       "added": "2026-10-08"
+    },
+    {
+      "test": "Ck.ProceduralAnimation.Action.Editor.MountedToolkit.TwoTabsModesAndCapture",
+      "status": "red",
+      "reason": "[owner: CkTests] Lives in the CkPlugins host file because these two tests are not discovered in BusterBlock's build (CkTestsEditor is built there; the tests are absent from its list), and a plugin-list entry naming a test a host lacks exits 80. UE 5.8: renderer-only. Expected 'rendered endpoint X axis has real hit-proxy pixels' to be true (Test_ProceduralAction_MountedToolkit.cpp:838). Passed on 5.7 (CkPlugins gates 2026-10-01/02). Cause not traced; the 5.8 vertex-factory hit-proxy change (CkIskm_BatchedVertexFactory.ush guard) is the suspect.",
+      "evidence": "UE 5.8 port: CkPlugins_58 feature/ue58-upgrade 6763e22 (CkFoundation 380c95b52, CkTests f2126686, CkGameplayDebugger 8d10469c), UE 5.8.4 ue58_engine 2b39d4c518d3, UnrealToolbox v1.68; two full gates on one build 2026-10-22/23 (Gate58-Fixed1 4328 run/33 red, Gate58-Fixed2 4328/39, renderer pass ran in both): red in both; solo fresh-boot run Solo58-MountedToolkit.TwoTabsModesAndCapture.log 2026-10-23: red.",
+      "added": "2026-10-23"
+    },
+    {
+      "test": "Ck.ProceduralAnimation.Action.Editor.Undo.SubjectChangeRefreshesAppearance",
+      "status": "red",
+      "reason": "[owner: CkTests] Lives in the CkPlugins host file because these two tests are not discovered in BusterBlock's build (CkTestsEditor is built there; the tests are absent from its list), and a plugin-list entry naming a test a host lacks exits 80. UE 5.8: renderer-only. Expected 'clearing the subject changes the preview' to be true (Test_ProceduralAction_EditorConsolidation.cpp:339). Passed on 5.7. Cause not traced.",
+      "evidence": "UE 5.8 port: CkPlugins_58 6763e22 (CkFoundation 380c95b52, CkTests f2126686, CkGameplayDebugger 8d10469c), UE 5.8.4, UnrealToolbox v1.68; two full gates on one build 2026-10-22/23 (Gate58-Fixed1, Gate58-Fixed2): red in both; solo run Solo58-Undo.SubjectChangeRefreshesAppearance.log: red.",
+      "added": "2026-10-23"
     }
   ]
 }
