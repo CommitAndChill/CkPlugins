@@ -13,6 +13,18 @@
 	],
 	"Plugins": [
 		{
+			"Name": "AutoSizeComments",
+			"Enabled": false
+		},
+		{
+			"Name": "CkApplication",
+			"Enabled": false
+		},
+		{
+			"Name": "NodeGraphAssistant",
+			"Enabled": false
+		},
+		{
 			"Name": "OnlineSubsystem",
 			"Enabled": true
 		},
