@@ -58,13 +58,6 @@
       "added": "2026-10-08"
     },
     {
-      "test": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_GroundNav_Link_ShovedMidCrossingEndsTheCrossingAndResumes",
-      "status": "flaky",
-      "reason": "[owner: CkTests] failed in a headless lane on a log error from another editor: LogAssetRegistry OpenFile failed for Plugins/CkFoundation/Content/CkUsf/GeneratedLooksTest/P31288/M_CkUsf_Look_GeneratedPackageRootProbe.uasset (a CkUsf test's per-process scratch package). Defined in Plugins/CkTests/Script/CkGroundNav/CkAutoTest_GroundNav_Link_ShovedMidCrossingEndsTheCrossingAndResumes.as.",
-      "evidence": "Slice A gate of record, 2026-10-08: toolbox v1.56 (CkAuto e0e756ed8) --build --test --no-live --discover-fresh, 3993 run / 3955 passed / 38 failed / 0 contaminated on 3 auto-sized editors, at CkFoundation cf25641a3, CkTests 17b956d50, CkGameplayDebugger 11d89540a, superproject 33458aa. Another project's full gate and two engine builds were running on the machine at the same time. Then green alone (--test --no-live --test-pattern <this path>, Saved/Logs/Test-Alone-6.log).",
-      "added": "2026-10-08"
-    },
-    {
       "test": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_SpiderCourseTraversal",
       "status": "red",
       "reason": "OSCILLATES. [owner: CkTests] Red in gate 1 and red alone twice, green in gate 2 the same morning. Failure: FinishTest Failed at step 2/4 'verify two complete traversals and intact coverage': Ledge completed two route traversals with every leg replanted (1 traversals, 8/8 legs). Defined in Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_SpiderCourseTraversal.as. While listed it detects nothing: follow-up is to fix the test, then remove the entry (do not prune it on one pass).",
@@ -76,41 +69,6 @@
       "status": "flaky",
       "reason": "[owner: CkGameplayDebugger] renderer-only; failed in the real-renderer pass: Expected 'physical Tracks group-header navigation resolves its exact director' (spec.cpp:1733). Defined in Plugins/CkGameplayDebugger/Source/CkAudioDebugger/Private/Tests/CkAudioDebugger_AuthoredShell.spec.cpp.",
       "evidence": "Gate 2, 2026-10-08: toolbox v1.56 (CkAuto e0e756ed8) --test --no-live --known-reds prune, 3993 run / 3955 passed / 38 failed / 0 contaminated on 3 auto-sized editors, at CkFoundation cf25641a3, CkTests 17b956d50, CkGameplayDebugger 11d89540a, superproject 33458aa; it passed in gate 1 (--build --test --no-live --discover-fresh, same pins). Another project's full gate was running on the machine during gate 1 and at least part of gate 2. Then green alone (--test --no-live --test-pattern <this path>, Saved/Logs/Test-Alone-8.log).",
-      "added": "2026-10-08"
-    },
-    {
-      "test": "Ck.EntityScript.EditorServices.PendingAssetRename",
-      "status": "flaky",
-      "reason": "[owner: CkTests] Expected 'restored editor services replay SpawnParams removal' (Test_EntityScript_EditorServices.cpp:331), with DeleteAsset failed on its own /Game/EntitySpawnParams/EntitySpawnParams_CkEntityScriptEditorServices_<guid>_Final scratch asset. In-suite runs of this test file leave scratch assets under Content/EntitySpawnParams and Content/__CkEntityScriptEditorServices_<guid>/ and, through the editor's source-control provider, staged one in the superproject index. Defined in Plugins/CkTests/Source/CkTests/Private/UnitTests/CkEcs/Test_EntityScript_EditorServices.cpp.",
-      "evidence": "Gate 2, 2026-10-08: toolbox v1.56 (CkAuto e0e756ed8) --test --no-live --known-reds prune, 3993 run / 3955 passed / 38 failed / 0 contaminated on 3 auto-sized editors, at CkFoundation cf25641a3, CkTests 17b956d50, CkGameplayDebugger 11d89540a, superproject 33458aa; it passed in gate 1 (--build --test --no-live --discover-fresh, same pins). Another project's full gate was running on the machine during gate 1 and at least part of gate 2. Then green alone (--test --no-live --test-pattern <this path>, Saved/Logs/Test-Alone-9.log).",
-      "added": "2026-10-08"
-    },
-    {
-      "test": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_BeamTouchdownStaysInReach",
-      "status": "flaky",
-      "reason": "[owner: CkTests] failed in a headless lane on a log error from another editor: LogAssetRegistry OpenFile failed for Plugins/CkFoundation/Content/CkUsf/GeneratedLooksTest/P43876/M_CkUsf_Look_CelShadeGenerationProbe.uasset (a CkUsf test's per-process scratch package). Defined in Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_BeamTouchdownStaysInReach.as.",
-      "evidence": "Gate 2, 2026-10-08: toolbox v1.56 (CkAuto e0e756ed8) --test --no-live --known-reds prune, 3993 run / 3955 passed / 38 failed / 0 contaminated on 3 auto-sized editors, at CkFoundation cf25641a3, CkTests 17b956d50, CkGameplayDebugger 11d89540a, superproject 33458aa; it passed in gate 1 (--build --test --no-live --discover-fresh, same pins). Another project's full gate was running on the machine during gate 1 and at least part of gate 2. Then green alone (--test --no-live --test-pattern <this path>, Saved/Logs/Test-Alone-10.log).",
-      "added": "2026-10-08"
-    },
-    {
-      "test": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_OccludedPlantSteps",
-      "status": "flaky",
-      "reason": "[owner: CkTests] failed in a headless lane on a log error from another editor: LogAssetRegistry OpenFile failed for Plugins/CkFoundation/Content/CkUsf/GeneratedLooksTest/P43876/M_CkUsf_Look_HandDrawnGenerationProbe.uasset (a CkUsf test's per-process scratch package). Defined in Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_OccludedPlantSteps.as.",
-      "evidence": "Gate 2, 2026-10-08: toolbox v1.56 (CkAuto e0e756ed8) --test --no-live --known-reds prune, 3993 run / 3955 passed / 38 failed / 0 contaminated on 3 auto-sized editors, at CkFoundation cf25641a3, CkTests 17b956d50, CkGameplayDebugger 11d89540a, superproject 33458aa; it passed in gate 1 (--build --test --no-live --discover-fresh, same pins). Another project's full gate was running on the machine during gate 1 and at least part of gate 2. Then green alone (--test --no-live --test-pattern <this path>, Saved/Logs/Test-Alone-11.log).",
-      "added": "2026-10-08"
-    },
-    {
-      "test": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_Crowd_Grounding_StationaryAgentReGrounds",
-      "status": "flaky",
-      "reason": "[owner: CkTests] failed in a headless lane on a log error from another editor: LogAssetRegistry OpenFile failed for Plugins/CkFoundation/Content/CkUsf/GeneratedLooksTest/P34748/M_CkUsf_Look_CelShadeGenerationProbe.uasset (a CkUsf test's per-process scratch package). Defined in Plugins/CkTests/Script/CkCrowd/CkAutoTest_Crowd_Grounding_StationaryAgentReGrounds.as.",
-      "evidence": "Slice B gate, 2026-10-08: toolbox v1.56 --test --no-live --discover-fresh, 4023 run / 3984 passed / 39 failed / 0 contaminated on 2 auto-sized editors, at CkFoundation cf25641a3 + CkPso port feature/ck-pso dac3c5388, CkTests 17b956d50 + CkPso port feature/ck-pso feb2c9f0, CkGameplayDebugger 11d89540a, CkAuto e0e756ed8 (toolbox v1.56), superproject 9b28853. Another project's test (BusterBlock_alt) held the engine shared for the whole run. Not red in the Slice A gates on the same pins without CkPso. Then green alone (--test --no-live --known-reds off --test-pattern <this path>, Saved/Logs/Test-SliceB-Alone-1.log).",
-      "added": "2026-10-08"
-    },
-    {
-      "test": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_Crowd_NarrowGap_TraverseCalm",
-      "status": "flaky",
-      "reason": "[owner: CkTests] failed in a headless lane on a log error from another editor: LogAssetRegistry OpenFile failed for Plugins/CkFoundation/Content/CkUsf/GeneratedLooksTest/P34748/M_CkUsf_Look_ScreenDitherGenerationProbe.uasset (a CkUsf test's per-process scratch package). Defined in Plugins/CkTests/Script/CkCrowd/CkAutoTest_Crowd_NarrowGap_TraverseCalm.as.",
-      "evidence": "Slice B gate, 2026-10-08: toolbox v1.56 --test --no-live --discover-fresh, 4023 run / 3984 passed / 39 failed / 0 contaminated on 2 auto-sized editors, at CkFoundation cf25641a3 + CkPso port feature/ck-pso dac3c5388, CkTests 17b956d50 + CkPso port feature/ck-pso feb2c9f0, CkGameplayDebugger 11d89540a, CkAuto e0e756ed8 (toolbox v1.56), superproject 9b28853. Another project's test (BusterBlock_alt) held the engine shared for the whole run. Not red in the Slice A gates on the same pins without CkPso. Then green alone (--test --no-live --known-reds off --test-pattern <this path>, Saved/Logs/Test-SliceB-Alone-2.log).",
       "added": "2026-10-08"
     },
     {
