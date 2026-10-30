@@ -11,6 +11,7 @@ public class CkPluginsEditorTarget : TargetRules
 		Type = TargetType.Editor;
 		bWithPushModel = true;
 		DefaultBuildSettings = BuildSettingsVersion.Latest;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_8;
 
 		// Unique build environment produces a project-specific CkPluginsEditor.exe
 		// in $(ProjectDir)/Binaries/Win64/ with Build/Windows/Application.ico embedded
