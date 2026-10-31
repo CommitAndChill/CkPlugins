@@ -3,8 +3,8 @@
     "name": "CkPlugins"
   },
 	"engine": {
-		"gitSource": "https://github.com/Chainkemists/UnrealEngine-Internal",
-		"gitBranch": "main"
+		"gitSource": "https://github.com/CommitAndChill/UnrealEngine-Angelscript",
+		"gitBranch": "main-ck"
 	},
   "workflows": [
     {

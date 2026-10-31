@@ -4,7 +4,7 @@ This file provides shared instructions for coding agents working in this reposit
 
 ## Project Overview
 
-CkPlugins is an Unreal Engine 5.7 project (the `EngineAssociation` fork, currently 5.7.4) that serves as the **development host for the Chainkemists plugin ecosystem**. The host project itself is intentionally minimal — a default `GameModeBase` and a near-empty `Source/CkPlugins/` module. The real content is the plugin submodules under `Plugins/`, which are developed, tested, and iterated on inside this clean project before being consumed by downstream game projects.
+CkPlugins is an Unreal Engine 5.8 project (the `EngineAssociation` fork, currently 5.8.4 on `main-ck`) that serves as the **development host for the Chainkemists plugin ecosystem**. The host project itself is intentionally minimal — a default `GameModeBase` and a near-empty `Source/CkPlugins/` module. The real content is the plugin submodules under `Plugins/`, which are developed, tested, and iterated on inside this clean project before being consumed by downstream game projects.
 
 Use this project when you need to work on a Chainkemists plugin in isolation: you get a full UE project to compile against, the AngelScript runtime via CkFoundation, and the CkTests harness — without the weight of a full game project on top.
 
