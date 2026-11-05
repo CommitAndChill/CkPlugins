@@ -353,6 +353,13 @@ compile_commands.json
 # Local Claude workspace artifacts (per-machine, not source)
 Plugins/.claude/
 docs/
+# Portable verification records; all other workspace documentation stays local.
+!/docs/
+/docs/*
+!/docs/verification/
+/docs/verification/*
+!/docs/verification/UE58-Delivery.md
+!/docs/verification/UE58-Walker-Exclusions.json
 .superpowers/
 .utoolbox/
 Config/DynamicHandleTypes.json

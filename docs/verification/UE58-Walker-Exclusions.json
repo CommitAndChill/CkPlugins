@@ -1,0 +1,3987 @@
+{
+  "scope": "Walker automation excluded for the 2026-11-04 UE 5.8 delivery by explicit maintainer instruction",
+  "excludedCount": 368,
+  "defaultGateChangedPermanently": false,
+  "assertionsAndDeadlinesChanged": false,
+  "knownRedsChanged": false,
+  "excludedTests": [
+    {
+      "name": "Ck.ProceduralAnimation.Action.Articulation.LegacyOptionalBindings",
+      "reason": "Actual walker composition or walker-only production control: Add_Walker540 and565; gait and BodyPose settling required",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Articulation/Test_ProceduralArticulation_LegacyPoseCapture.cpp",
+          "line": 502,
+          "sha256": "A0E50E34C5B0FDB2000D1841E8B38312216FF2FBC28E0138DB9D1CEAFFA7BC67"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Clip.ScaledLegacyPartsPreserveVisuals",
+      "reason": "actual Add_Walker at ScaledParts.cpp248; dedicated sibling112 retained",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Action/Test_ProceduralAction_ScaledParts.cpp",
+          "line": 183,
+          "sha256": "CFA6E3EE27BC3769F102694B0B32EF18D9CCE488C306A90646790CFA9FAC6F76"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Clip.WalkingLimbWithoutSupportPolicyIsRejected",
+      "reason": "Actual walker composition or walker-only production control: AddWalker937; Get_IsWalkerSettled939; Get_PlantedCount977",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Action/Test_ProceduralAction_Clip.cpp",
+          "line": 909,
+          "sha256": "5AFB35C0D7D6E4B28FFB7DEF0AF3A16A063F631C6F2D42F5D8D9BAD1CA1D055D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Diagnostics.ReturnTimeoutCarriesElapsedAndLimit",
+      "reason": "Actual walker composition or walker-only production control: AddWalker115; Get_IsWalkerSettled117; walking return timeout",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Action/Test_ProceduralAction_Diagnostics.cpp",
+          "line": 94,
+          "sha256": "4E0E1E7D54D0E5ECB0A6D3F128F1848848663DB41842F506A48993A918221F34"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Editor.PreviewScenario.InvalidAndDetach",
+      "reason": "Actual walker composition or walker-only production control: MakeWalkingConfig334; successful StartClip369; TickOncePerEditorFrame260; Walking producer Add_Walker259",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTestsEditor/Private/CkProceduralAnimation/Test_ProceduralAction_PreviewScenario.cpp",
+          "line": 324,
+          "sha256": "C3D2C566BBBDC15C937959EE578127EED2D4441E61DD7CB9576938A4EFF59F7C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Editor.PreviewScenario.ReplayFloorLossRecovery",
+      "reason": "Actual walker composition or walker-only production control: MakeWalkingConfig301; StartClip314; TickOncePerEditorFrame153; Walking producer Add_Walker259",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTestsEditor/Private/CkProceduralAnimation/Test_ProceduralAction_PreviewScenario.cpp",
+          "line": 290,
+          "sha256": "C3D2C566BBBDC15C937959EE578127EED2D4441E61DD7CB9576938A4EFF59F7C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Editor.SolverWorld.WalkingBodyClip",
+      "reason": "MakeWalkingConfig at899, actual Walking subject pipeline",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTestsEditor/Private/CkProceduralAnimation/Test_ProceduralAction_SolverWorld.cpp",
+          "line": 889,
+          "sha256": "7C152267BDAAE5659D3B14CD7ABA7D9AE6092DD09B3D59E307C02D3516A03207"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Editor.SolverWorld.WalkingBorrowReturn",
+      "reason": "MakeWalkingConfig at871, actual Walking subject pipeline",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTestsEditor/Private/CkProceduralAnimation/Test_ProceduralAction_SolverWorld.cpp",
+          "line": 860,
+          "sha256": "7C152267BDAAE5659D3B14CD7ABA7D9AE6092DD09B3D59E307C02D3516A03207"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.ExtractionBaseline.LegacySettledPoses",
+      "reason": "Actual walker composition or walker-only production control: Add_Walker249; requires actual gait and settled legacy poses",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Articulation/Test_ProceduralArticulation_LegacyPoseCapture.cpp",
+          "line": 210,
+          "sha256": "A0E50E34C5B0FDB2000D1841E8B38312216FF2FBC28E0138DB9D1CEAFFA7BC67"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Gait.BipedBorrowRequiresRemainingSupport",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_SnapshotPie.cpp",
+          "line": 1070,
+          "sha256": "C4745E4533110E69AC3A11EF51E42929CB2455D8EB4D524CBD5C6D4D0704C25F"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Gait.BorrowDuringSwing",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_SnapshotPie.cpp",
+          "line": 1398,
+          "sha256": "C4745E4533110E69AC3A11EF51E42929CB2455D8EB4D524CBD5C6D4D0704C25F"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Gait.BorrowedDetachInterrupts",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_SnapshotPie.cpp",
+          "line": 1232,
+          "sha256": "C4745E4533110E69AC3A11EF51E42929CB2455D8EB4D524CBD5C6D4D0704C25F"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Gait.BorrowedDisableInterrupts",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_SnapshotPie.cpp",
+          "line": 1317,
+          "sha256": "C4745E4533110E69AC3A11EF51E42929CB2455D8EB4D524CBD5C6D4D0704C25F"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Gait.ContactLossCancelsBorrow",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_RecoveryPie.cpp",
+          "line": 1202,
+          "sha256": "15F8306A5477FC2D533E6ACCF83598EFAE37F2E598874FE856470AB3079D2129"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Gait.DetachDuringPendingReturn",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_RecoveryPie.cpp",
+          "line": 1309,
+          "sha256": "15F8306A5477FC2D533E6ACCF83598EFAE37F2E598874FE856470AB3079D2129"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Gait.DisableDuringReturn",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_RecoveryPie.cpp",
+          "line": 1441,
+          "sha256": "15F8306A5477FC2D533E6ACCF83598EFAE37F2E598874FE856470AB3079D2129"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Gait.FootedWalkingBorrowEntersPlayingWithoutRollFlip",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Action/Test_ProceduralAction_FootedWalkingBorrow.cpp",
+          "line": 62,
+          "sha256": "05577E87A965912BB2B6D76B1FA073763C06C9D28D031BED80712051D51AC1C7"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Gait.MovedRootReturnTrustsActualContact",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_RecoveryPie.cpp",
+          "line": 634,
+          "sha256": "15F8306A5477FC2D533E6ACCF83598EFAE37F2E598874FE856470AB3079D2129"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Gait.NoFloorFailureAndExplicitRecovery",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_RecoveryPie.cpp",
+          "line": 304,
+          "sha256": "15F8306A5477FC2D533E6ACCF83598EFAE37F2E598874FE856470AB3079D2129"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Gait.PhysicsDerivedWithdrawal",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_SnapshotPie.cpp",
+          "line": 991,
+          "sha256": "C4745E4533110E69AC3A11EF51E42929CB2455D8EB4D524CBD5C6D4D0704C25F"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Gait.ProtectionIdleAndCachedPlane",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_SnapshotPie.cpp",
+          "line": 841,
+          "sha256": "C4745E4533110E69AC3A11EF51E42929CB2455D8EB4D524CBD5C6D4D0704C25F"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Gait.TwoBorrowersPreserveSupport",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_SnapshotPie.cpp",
+          "line": 1127,
+          "sha256": "C4745E4533110E69AC3A11EF51E42929CB2455D8EB4D524CBD5C6D4D0704C25F"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.GaitCore.AtomicTrustedReplant",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Participation.cpp",
+          "line": 165,
+          "sha256": "AB2912E513334FFA3E46C9EADFBA0883EFB439293C9C6D56F9FF04C0ECD97A07"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.GaitCore.DefaultPathParityAndPreparedSwing",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Participation.cpp",
+          "line": 102,
+          "sha256": "AB2912E513334FFA3E46C9EADFBA0883EFB439293C9C6D56F9FF04C0ECD97A07"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.GaitCore.ParticipationAndTakeoffGuard",
+      "reason": "Gait/recovery participation or borrowed-limb walker integration",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Participation.cpp",
+          "line": 29,
+          "sha256": "AB2912E513334FFA3E46C9EADFBA0883EFB439293C9C6D56F9FF04C0ECD97A07"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Lifecycle.CancelWhileCancellingSucceeds",
+      "reason": "Actual walker composition or walker-only production control: AddSettledWalker704 -> helper AddWalker249",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Action/Test_ProceduralAction_Lifecycle.cpp",
+          "line": 691,
+          "sha256": "A9871DFB95BAE8D98F9699DE4AEC1371690C319DE040D597880AA61B385BF091"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Lifecycle.CapacityExhaustionEnsures",
+      "reason": "Actual walker composition or walker-only production control: AddSettledWalker535 -> helper AddWalker249",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Action/Test_ProceduralAction_Lifecycle.cpp",
+          "line": 522,
+          "sha256": "A9871DFB95BAE8D98F9699DE4AEC1371690C319DE040D597880AA61B385BF091"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Lifecycle.ClearFaultRequestRecovers",
+      "reason": "Actual walker composition or walker-only production control: AddSettledWalker446 -> helper AddWalker249",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Action/Test_ProceduralAction_Lifecycle.cpp",
+          "line": 430,
+          "sha256": "A9871DFB95BAE8D98F9699DE4AEC1371690C319DE040D597880AA61B385BF091"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Lifecycle.DetachedClaimedLegReleasesItsClaim",
+      "reason": "Actual walker composition or walker-only production control: AddSettledWalker296 -> helper AddWalker249",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Action/Test_ProceduralAction_Lifecycle.cpp",
+          "line": 279,
+          "sha256": "A9871DFB95BAE8D98F9699DE4AEC1371690C319DE040D597880AA61B385BF091"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Lifecycle.ExplicitTerminalExpiresUnacknowledged",
+      "reason": "Actual walker composition or walker-only production control: AddSettledWalker584 -> helper AddWalker249",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Action/Test_ProceduralAction_Lifecycle.cpp",
+          "line": 568,
+          "sha256": "A9871DFB95BAE8D98F9699DE4AEC1371690C319DE040D597880AA61B385BF091"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Lifecycle.PlayerEndPlayFinishesActions",
+      "reason": "Actual walker composition or walker-only production control: AddSettledWalker641 -> helper AddWalker249",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Action/Test_ProceduralAction_Lifecycle.cpp",
+          "line": 629,
+          "sha256": "A9871DFB95BAE8D98F9699DE4AEC1371690C319DE040D597880AA61B385BF091"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Lifecycle.TransientFaultRearms",
+      "reason": "Actual walker composition or walker-only production control: AddSettledWalker390 -> helper AddWalker249",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Action/Test_ProceduralAction_Lifecycle.cpp",
+          "line": 377,
+          "sha256": "A9871DFB95BAE8D98F9699DE4AEC1371690C319DE040D597880AA61B385BF091"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Action.Perf.ProductionClipMatrix",
+      "reason": "mixed Scenario WalkerIdle/Walking/Borrowed invokes AddWalker212/237/556; indivisible test",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Action/Test_ProceduralAction_Performance.cpp",
+          "line": 498,
+          "sha256": "FD6640C8729CD0C6740417C5A55701A2A44D612450BE7ADDA29D090433C149E0"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Articulation.Query.RecoverUnplantedUsesDrainTimeSet",
+      "reason": "Actual walker composition or walker-only production control: AddUnplantedPairCommands432 -> helper AddWalker140",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Articulation/Test_ProceduralArticulation_Query.cpp",
+          "line": 420,
+          "sha256": "266C82DAD446C1A914F05468A86AE0F92FB2DAFDF85315569076B6E05B22B28F"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Articulation.Query.UnplantedIdsInTopologyOrder",
+      "reason": "Actual walker composition or walker-only production control: AddUnplantedPairCommands317 -> helper AddWalker140",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Articulation/Test_ProceduralArticulation_Query.cpp",
+          "line": 305,
+          "sha256": "266C82DAD446C1A914F05468A86AE0F92FB2DAFDF85315569076B6E05B22B28F"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodyConform.CollinearFeetUnderdetermined",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralBodySupport.cpp",
+          "line": 414,
+          "sha256": "40F351098F6A04D5ADD6E09EC183A53AD848C311A2FD870F6F8EF210A49C4410"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodyConform.FewerThanThreeFeetUnderdetermined",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralBodySupport.cpp",
+          "line": 383,
+          "sha256": "40F351098F6A04D5ADD6E09EC183A53AD848C311A2FD870F6F8EF210A49C4410"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodyConform.FlatFeetGiveIdentity",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralBodySupport.cpp",
+          "line": 258,
+          "sha256": "40F351098F6A04D5ADD6E09EC183A53AD848C311A2FD870F6F8EF210A49C4410"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodyConform.HeightFollowsTheFeetAndIsClamped",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralBodySupport.cpp",
+          "line": 353,
+          "sha256": "40F351098F6A04D5ADD6E09EC183A53AD848C311A2FD870F6F8EF210A49C4410"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodyConform.MalformedFeetMalformed",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralBodySupport.cpp",
+          "line": 453,
+          "sha256": "40F351098F6A04D5ADD6E09EC183A53AD848C311A2FD870F6F8EF210A49C4410"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodyConform.SlewAdvancesAtMostTheRatePerFrame",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralBodySupport.cpp",
+          "line": 532,
+          "sha256": "40F351098F6A04D5ADD6E09EC183A53AD848C311A2FD870F6F8EF210A49C4410"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodyConform.SlewRejectsMalformedInput",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralBodySupport.cpp",
+          "line": 595,
+          "sha256": "40F351098F6A04D5ADD6E09EC183A53AD848C311A2FD870F6F8EF210A49C4410"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodyConform.SlopedFeetTiltToThePlane",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralBodySupport.cpp",
+          "line": 285,
+          "sha256": "40F351098F6A04D5ADD6E09EC183A53AD848C311A2FD870F6F8EF210A49C4410"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodyConform.TiltIsClamped",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralBodySupport.cpp",
+          "line": 323,
+          "sha256": "40F351098F6A04D5ADD6E09EC183A53AD848C311A2FD870F6F8EF210A49C4410"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodyPose.PresentationEasesSupportTiltJumpWithBodyStill",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/BodyPose/Test_ProceduralBodyPose_TiltSteps.cpp",
+          "line": 940,
+          "sha256": "C06EF2F7F64E6E8B642AB38FC5D689A93E229982EF03D3CFB4A7A8A6F7A3C088"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodyPose.PresentationLagIsBoundedThroughSustainedRotation",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/BodyPose/Test_ProceduralBodyPose_TiltSteps.cpp",
+          "line": 840,
+          "sha256": "C06EF2F7F64E6E8B642AB38FC5D689A93E229982EF03D3CFB4A7A8A6F7A3C088"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodyPose.PresentationStaysSmoothThroughBodyTiltSteps",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/BodyPose/Test_ProceduralBodyPose_TiltSteps.cpp",
+          "line": 755,
+          "sha256": "C06EF2F7F64E6E8B642AB38FC5D689A93E229982EF03D3CFB4A7A8A6F7A3C088"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodySupport.DropScalesWithMissingSupport",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralBodySupport.cpp",
+          "line": 48,
+          "sha256": "40F351098F6A04D5ADD6E09EC183A53AD848C311A2FD870F6F8EF210A49C4410"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodySupport.NoLegsCollapsesWithoutTilt",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralBodySupport.cpp",
+          "line": 119,
+          "sha256": "40F351098F6A04D5ADD6E09EC183A53AD848C311A2FD870F6F8EF210A49C4410"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodySupport.PosedReachProjectionKeepsRecordedPostPlant",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralBodySupport.cpp",
+          "line": 642,
+          "sha256": "40F351098F6A04D5ADD6E09EC183A53AD848C311A2FD870F6F8EF210A49C4410"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodySupport.RejectsMalformedInput",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralBodySupport.cpp",
+          "line": 147,
+          "sha256": "40F351098F6A04D5ADD6E09EC183A53AD848C311A2FD870F6F8EF210A49C4410"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.BodySupport.TiltDipsTheUnsupportedSide",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralBodySupport.cpp",
+          "line": 84,
+          "sha256": "40F351098F6A04D5ADD6E09EC183A53AD848C311A2FD870F6F8EF210A49C4410"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.AllActualStartsObservable",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralTwoPlacementRuntime.cpp",
+          "line": 193,
+          "sha256": "315279CAC7AE98A3D7E7F17803FA1AAF0AF008040FB8679457D4F6A245A6B416"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.FenceArithmeticAndRecordedExit",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralTwoPlacementRuntime.cpp",
+          "line": 251,
+          "sha256": "315279CAC7AE98A3D7E7F17803FA1AAF0AF008040FB8679457D4F6A245A6B416"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.FuturePlantedExitReach",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralContactStaging.cpp",
+          "line": 262,
+          "sha256": "856A508656E995708681FD576209D0F7E17F67C495AAC5053E7EBD2CE0E670DE"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.IntermediateAuthorityAndActualStart",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralTwoPlacementRuntime.cpp",
+          "line": 63,
+          "sha256": "315279CAC7AE98A3D7E7F17803FA1AAF0AF008040FB8679457D4F6A245A6B416"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.IntermediateInvalidIntentPreservesOrdinary",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralTwoPlacementRuntime.cpp",
+          "line": 143,
+          "sha256": "315279CAC7AE98A3D7E7F17803FA1AAF0AF008040FB8679457D4F6A245A6B416"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.InvalidIntentNoAuthority",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralContactStaging.cpp",
+          "line": 59,
+          "sha256": "856A508656E995708681FD576209D0F7E17F67C495AAC5053E7EBD2CE0E670DE"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.LegacyAndSimultaneousBudget",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralContactStaging.cpp",
+          "line": 199,
+          "sha256": "856A508656E995708681FD576209D0F7E17F67C495AAC5053E7EBD2CE0E670DE"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.NativeTouchdown",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralContactStaging.cpp",
+          "line": 154,
+          "sha256": "856A508656E995708681FD576209D0F7E17F67C495AAC5053E7EBD2CE0E670DE"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.PreparationCardinalGeometry",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralContactStaging.cpp",
+          "line": 705,
+          "sha256": "856A508656E995708681FD576209D0F7E17F67C495AAC5053E7EBD2CE0E670DE"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.PreparationFenceFourActualStarts",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralTwoPlacementRuntime.cpp",
+          "line": 414,
+          "sha256": "315279CAC7AE98A3D7E7F17803FA1AAF0AF008040FB8679457D4F6A245A6B416"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.PreparationGeometry",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralContactStaging.cpp",
+          "line": 580,
+          "sha256": "856A508656E995708681FD576209D0F7E17F67C495AAC5053E7EBD2CE0E670DE"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.PreparationInvalidAndAmbiguous",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralContactStaging.cpp",
+          "line": 655,
+          "sha256": "856A508656E995708681FD576209D0F7E17F67C495AAC5053E7EBD2CE0E670DE"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.ScheduleGuardAndRenewal",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralContactStaging.cpp",
+          "line": 113,
+          "sha256": "856A508656E995708681FD576209D0F7E17F67C495AAC5053E7EBD2CE0E670DE"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.TwoPlacementGeometry",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralContactStaging.cpp",
+          "line": 328,
+          "sha256": "856A508656E995708681FD576209D0F7E17F67C495AAC5053E7EBD2CE0E670DE"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.ContactStaging.Core.UnwrappedClockTravel",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralContactStaging.cpp",
+          "line": 224,
+          "sha256": "856A508656E995708681FD576209D0F7E17F67C495AAC5053E7EBD2CE0E670DE"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.HeightPlanning.AdaptiveSettingsPreserveDisabledCallers",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 901,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.HeightPlanning.AllowsBoundedUpwardRecovery",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 503,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.HeightPlanning.BeamFloorGoalPreservesSimulationAndPosedAnchors",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 59,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.HeightPlanning.BeamStanceGoalIsNotRestrictedByFixedFloorSeed",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 108,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.HeightPlanning.EnvelopeChecksRealJoltSweepRotationAndBudget",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 971,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.HeightPlanning.EnvelopeRejectsUnavailableContextWithoutQueries",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 931,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.HeightPlanning.MalformedPoseNeverCallsAdmission",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 870,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.HeightPlanning.PoseAdmissionChecksEmptyAndAnchoredCandidates",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 795,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.HeightPlanning.PoseAdmissionRequiresProvenBase",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 833,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.HeightPlanning.RecoveryRetryClosedUnionsAnd65Components",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 352,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.HeightPlanning.RecoveryRetryPinnedPosts03",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 314,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.HeightPlanning.RecoveryRetryRejectsMalformedAndBoundaryInput",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 421,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.HeightPlanning.RejectsFloorGoalConflictingWithElevatedPlant",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 482,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.HeightPlanning.RejectsMalformedIntervals",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 532,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.SupportReturn.AtomicAdoptionAndRates",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSupportReturn.cpp",
+          "line": 196,
+          "sha256": "B6A57B0B8BB7969CD329AD5E21B67B259827283B9EE01A0D5CB14C7ADDCDF29D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.SupportReturn.ContactEligibility",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSupportReturn.cpp",
+          "line": 74,
+          "sha256": "B6A57B0B8BB7969CD329AD5E21B67B259827283B9EE01A0D5CB14C7ADDCDF29D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Core.SupportReturn.RoomAndConfirmation",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSupportReturn.cpp",
+          "line": 125,
+          "sha256": "B6A57B0B8BB7969CD329AD5E21B67B259827283B9EE01A0D5CB14C7ADDCDF29D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Debugger.PIE.LegActions",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Debugger/Test_ProceduralAnimationDebugger_Pie.cpp",
+          "line": 643,
+          "sha256": "8C5F10F9FB72C51CEDB5F36BCF64225FCFD3C388B457D07F0E2B4BD81DFB2157"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Debugger.PIE.RealGymSnapshotAndLifecycle",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Debugger/Test_ProceduralAnimationDebugger_Pie.cpp",
+          "line": 234,
+          "sha256": "8C5F10F9FB72C51CEDB5F36BCF64225FCFD3C388B457D07F0E2B4BD81DFB2157"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Diagnostic.NativePillarsPoseWitnessGeometryOnly",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralPillarsPoseWitnessGeometry.cpp",
+          "line": 38,
+          "sha256": "9F782313E6ACD137F702153F6EDC83A44163750096CDC778400BCC878FEE8ABD"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Diagnostic.NativePostsWitnessGeometryOnly",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralPostsWitnessGeometry.cpp",
+          "line": 41,
+          "sha256": "DCCE158AB86C487B5CFD033174BFD22A0556776B4D7E91694C227D47A0031370"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.FeetPlane.FitsThreeFeetExactly",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFeetPlane.cpp",
+          "line": 87,
+          "sha256": "A7B517A4E0B78EAB682522B68DA7AA0DF7B096E6F6B411C9977D0E1C6A708B05"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.FeetPlane.MalformedInputsWriteNothing",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFeetPlane.cpp",
+          "line": 247,
+          "sha256": "A7B517A4E0B78EAB682522B68DA7AA0DF7B096E6F6B411C9977D0E1C6A708B05"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.FeetPlane.TooSteepBeyondMaxAngle",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFeetPlane.cpp",
+          "line": 212,
+          "sha256": "A7B517A4E0B78EAB682522B68DA7AA0DF7B096E6F6B411C9977D0E1C6A708B05"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.FeetPlane.UnderdeterminedBelowThreeOrCollinear",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFeetPlane.cpp",
+          "line": 172,
+          "sha256": "A7B517A4E0B78EAB682522B68DA7AA0DF7B096E6F6B411C9977D0E1C6A708B05"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.FeetPlane.WeightsScaleInfluence",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFeetPlane.cpp",
+          "line": 120,
+          "sha256": "A7B517A4E0B78EAB682522B68DA7AA0DF7B096E6F6B411C9977D0E1C6A708B05"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.ContinuityPrefersPlantHeight",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFoothold.cpp",
+          "line": 182,
+          "sha256": "CC896DAA88AF3DB3FD372A6C650768EA33E1B8734A3B30333A914992C81F9799"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.FaceIdealCompetesOnCost",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFoothold.cpp",
+          "line": 601,
+          "sha256": "CC896DAA88AF3DB3FD372A6C650768EA33E1B8734A3B30333A914992C81F9799"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.LevelEnoughGateOnEitherSide",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFoothold.cpp",
+          "line": 121,
+          "sha256": "CC896DAA88AF3DB3FD372A6C650768EA33E1B8734A3B30333A914992C81F9799"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.PlantQuery.CapturedGeometry",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkFoundation/Source/CkProceduralAnimation/Private/Tests/CkProceduralPlantQuery.spec.inl",
+          "line": 126,
+          "sha256": "82BFA783A1EB79EC2CDFC7A109EB704986B2AC737578F68B20FD7ACC1FF8914C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.PlantQuery.HipBodyGeometry",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkFoundation/Source/CkProceduralAnimation/Private/Tests/CkProceduralPlantQuery.spec.inl",
+          "line": 380,
+          "sha256": "82BFA783A1EB79EC2CDFC7A109EB704986B2AC737578F68B20FD7ACC1FF8914C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.PlantQuery.HipBodyInvalid",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkFoundation/Source/CkProceduralAnimation/Private/Tests/CkProceduralPlantQuery.spec.inl",
+          "line": 437,
+          "sha256": "82BFA783A1EB79EC2CDFC7A109EB704986B2AC737578F68B20FD7ACC1FF8914C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.PlantQuery.HipBodyReservationsAndIdentity",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkFoundation/Source/CkProceduralAnimation/Private/Tests/CkProceduralPlantQuery.spec.inl",
+          "line": 500,
+          "sha256": "82BFA783A1EB79EC2CDFC7A109EB704986B2AC737578F68B20FD7ACC1FF8914C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.PlantQuery.InvalidAndFloatCell",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkFoundation/Source/CkProceduralAnimation/Private/Tests/CkProceduralPlantQuery.spec.inl",
+          "line": 242,
+          "sha256": "82BFA783A1EB79EC2CDFC7A109EB704986B2AC737578F68B20FD7ACC1FF8914C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.PlantQuery.ProbeIdentity",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkFoundation/Source/CkProceduralAnimation/Private/Tests/CkProceduralPlantQuery.spec.inl",
+          "line": 634,
+          "sha256": "82BFA783A1EB79EC2CDFC7A109EB704986B2AC737578F68B20FD7ACC1FF8914C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.PlantQuery.Reservations",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkFoundation/Source/CkProceduralAnimation/Private/Tests/CkProceduralPlantQuery.spec.inl",
+          "line": 168,
+          "sha256": "82BFA783A1EB79EC2CDFC7A109EB704986B2AC737578F68B20FD7ACC1FF8914C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.PlantQuery.SeedFailureMetadata",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkFoundation/Source/CkProceduralAnimation/Private/Tests/CkProceduralPlantQuery.spec.inl",
+          "line": 559,
+          "sha256": "82BFA783A1EB79EC2CDFC7A109EB704986B2AC737578F68B20FD7ACC1FF8914C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.PlantQuery.TiltedGeometry",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkFoundation/Source/CkProceduralAnimation/Private/Tests/CkProceduralPlantQuery.spec.inl",
+          "line": 713,
+          "sha256": "82BFA783A1EB79EC2CDFC7A109EB704986B2AC737578F68B20FD7ACC1FF8914C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.PlantQuery.TiltedInvalid",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkFoundation/Source/CkProceduralAnimation/Private/Tests/CkProceduralPlantQuery.spec.inl",
+          "line": 755,
+          "sha256": "82BFA783A1EB79EC2CDFC7A109EB704986B2AC737578F68B20FD7ACC1FF8914C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.PlantQuery.TiltedReservations",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkFoundation/Source/CkProceduralAnimation/Private/Tests/CkProceduralPlantQuery.spec.inl",
+          "line": 829,
+          "sha256": "82BFA783A1EB79EC2CDFC7A109EB704986B2AC737578F68B20FD7ACC1FF8914C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.RecoveryBoundaryDeclinesInvalidGeometry",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralRecoveryBoundary.cpp",
+          "line": 128,
+          "sha256": "6FC2CB93E8C666490996ACC3374DFF282F58F2C0C477DDC19D6D3D8C21A4DE06"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.RecoveryBoundaryOriginalGeometry",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralRecoveryBoundary.cpp",
+          "line": 25,
+          "sha256": "6FC2CB93E8C666490996ACC3374DFF282F58F2C0C477DDC19D6D3D8C21A4DE06"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.RecoveryBoundaryReservationBatch",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralRecoveryBoundary.cpp",
+          "line": 68,
+          "sha256": "6FC2CB93E8C666490996ACC3374DFF282F58F2C0C477DDC19D6D3D8C21A4DE06"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.RejectsInboardCandidates",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFoothold.cpp",
+          "line": 307,
+          "sha256": "CC896DAA88AF3DB3FD372A6C650768EA33E1B8734A3B30333A914992C81F9799"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.RejectsMalformedInput",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFoothold.cpp",
+          "line": 258,
+          "sha256": "CC896DAA88AF3DB3FD372A6C650768EA33E1B8734A3B30333A914992C81F9799"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.RejectsUnderBodyCandidates",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFoothold.cpp",
+          "line": 353,
+          "sha256": "CC896DAA88AF3DB3FD372A6C650768EA33E1B8734A3B30333A914992C81F9799"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.SelectsNearestUsable",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFoothold.cpp",
+          "line": 64,
+          "sha256": "CC896DAA88AF3DB3FD372A6C650768EA33E1B8734A3B30333A914992C81F9799"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.SkipsEveryNonUsableVerdict",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFoothold.cpp",
+          "line": 90,
+          "sha256": "CC896DAA88AF3DB3FD372A6C650768EA33E1B8734A3B30333A914992C81F9799"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.SlopeWeightPrefersLevelOverVertical",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFoothold.cpp",
+          "line": 147,
+          "sha256": "CC896DAA88AF3DB3FD372A6C650768EA33E1B8734A3B30333A914992C81F9799"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Foothold.TransitionSlopeReference",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFoothold.cpp",
+          "line": 214,
+          "sha256": "CC896DAA88AF3DB3FD372A6C650768EA33E1B8734A3B30333A914992C81F9799"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.AirborneTucksThenReplants",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 676,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.AllLegsDisabledStepSucceedsWithoutMotion",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_EnableDisable.cpp",
+          "line": 365,
+          "sha256": "EEA63002F60B7DB679CD4945336BD1C014BA000600661F6CD1DC20D41E54A9B0"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.BipedNeverBothFeetAirborne",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Biped.cpp",
+          "line": 60,
+          "sha256": "24FD5E2F58D9D0A36EDC4E792B639176BC4C004D9CBAF3B4F9B1EDF0CA870EB5"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.BipedSettleConvergesFromStraddle",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Biped.cpp",
+          "line": 141,
+          "sha256": "24FD5E2F58D9D0A36EDC4E792B639176BC4C004D9CBAF3B4F9B1EDF0CA870EB5"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.CadenceFloorFromReach",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_CadenceFloor.cpp",
+          "line": 160,
+          "sha256": "0419364234259C9A5E635D5B479CE395EA37175A1013541AB77E4D89C62B5C03"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.CadenceScalesWithSpeed",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 398,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.CatchStepExpiresUnfired",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_CatchStep.cpp",
+          "line": 393,
+          "sha256": "44DCF716D67DE5A901A2825ADD757E59E3A0A2E9AC3C6742630ACF075F8C3BC9"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.CatchStepFiresOutsideWindow",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_CatchStep.cpp",
+          "line": 52,
+          "sha256": "44DCF716D67DE5A901A2825ADD757E59E3A0A2E9AC3C6742630ACF075F8C3BC9"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.CatchStepRefusesInvalidLeg",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_CatchStep.cpp",
+          "line": 314,
+          "sha256": "44DCF716D67DE5A901A2825ADD757E59E3A0A2E9AC3C6742630ACF075F8C3BC9"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.CatchStepWaitsForInhibition",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_CatchStep.cpp",
+          "line": 207,
+          "sha256": "44DCF716D67DE5A901A2825ADD757E59E3A0A2E9AC3C6742630ACF075F8C3BC9"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.CommittedLandingFollowsLiftedPullback",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 2522,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.CommittedLandingPie.LifecycleAndTerrainRemoval",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_CommittedLandingPie.cpp",
+          "line": 1246,
+          "sha256": "85933D163604FBF7BCF9EE2B1D5D62CE1794C22C25CE2665726F165302B145F9"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.CommittedLandingPie.MotionAndPresentation",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_CommittedLandingPie.cpp",
+          "line": 1232,
+          "sha256": "85933D163604FBF7BCF9EE2B1D5D62CE1794C22C25CE2665726F165302B145F9"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.ContactGraceIsTimestepIndependent",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Contracts.cpp",
+          "line": 122,
+          "sha256": "A6FCF1C9EE8B8D3AAFE171D6299E2861CB56DA7C03732E7218D7AB873A639D96"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.DisabledLegFreezesAndLeavesSchedule",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_EnableDisable.cpp",
+          "line": 180,
+          "sha256": "EEA63002F60B7DB679CD4945336BD1C014BA000600661F6CD1DC20D41E54A9B0"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.DisabledLegsDoNotConsumeSwingBudget",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_EnableDisable.cpp",
+          "line": 311,
+          "sha256": "EEA63002F60B7DB679CD4945336BD1C014BA000600661F6CD1DC20D41E54A9B0"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.DisplacementIsClampedThenVerified",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 2160,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.EmergencyStepIgnoresWindow",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 282,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.FaceTargetGetsNoDisplacement",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 2203,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.FootOrientationHandlesParallelFacingAndNormal",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Contracts.cpp",
+          "line": 247,
+          "sha256": "A6FCF1C9EE8B8D3AAFE171D6299E2861CB56DA7C03732E7218D7AB873A639D96"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.FootReservationPredicate",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 2386,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.FootReservationsProtectCommittedContacts",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 2416,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.FootRotationConformsWithoutSkate",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 824,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.FootholdTargetLandsWithoutOvershoot",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 1626,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.FoundGroundStillLifts",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 1861,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.HardOverstretchStepsBeyondThePhaseSchedule",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 1189,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.HipQueryNative.LowerRoofAdmission",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_CommittedLandingPie.cpp",
+          "line": 2263,
+          "sha256": "85933D163604FBF7BCF9EE2B1D5D62CE1794C22C25CE2665726F165302B145F9"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.HipQueryNative.RejectionPreservesNativeStance",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_CommittedLandingPie.cpp",
+          "line": 2275,
+          "sha256": "85933D163604FBF7BCF9EE2B1D5D62CE1794C22C25CE2665726F165302B145F9"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.IndexStabilityUnderPatternsWithDisabledLeg",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_EnableDisable.cpp",
+          "line": 425,
+          "sha256": "EEA63002F60B7DB679CD4945336BD1C014BA000600661F6CD1DC20D41E54A9B0"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.InhibitedEmergencyGetsPriority",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 591,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.InvalidInputIsAtomic",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Contracts.cpp",
+          "line": 22,
+          "sha256": "A6FCF1C9EE8B8D3AAFE171D6299E2861CB56DA7C03732E7218D7AB873A639D96"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.KeepPolicyClearsPriorRedistribution",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_EnableDisable.cpp",
+          "line": 769,
+          "sha256": "EEA63002F60B7DB679CD4945336BD1C014BA000600661F6CD1DC20D41E54A9B0"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.LandingLiftsOntoGroundUnderTheLandingPoint",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 864,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.LandingOnIdealDoesNotRetrigger",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 525,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.LandingProbeLiftsASwingOntoAStep",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_SnapshotPie.cpp",
+          "line": 629,
+          "sha256": "C4745E4533110E69AC3A11EF51E42929CB2455D8EB4D524CBD5C6D4D0704C25F"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.LandingWithoutGroundAfterTheFreezePullsBack",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 1818,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.LandingWithoutGroundDropsTheOvershoot",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 1782,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.LateJoin.DoesNotDelayReservedGroup",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_LateJoin.cpp",
+          "line": 63,
+          "sha256": "CA57FD4209FBBFE86075EF7BFA86A6309E8E7E4E59410E5D54EAB05737466197"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.LateJoin.PreservesLateBudgetAndZeroTimeGuards",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_LateJoin.cpp",
+          "line": 131,
+          "sha256": "CA57FD4209FBBFE86075EF7BFA86A6309E8E7E4E59410E5D54EAB05737466197"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.LegLossKeepsAuthoredOffsetsByDefault",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_EnableDisable.cpp",
+          "line": 569,
+          "sha256": "EEA63002F60B7DB679CD4945336BD1C014BA000600661F6CD1DC20D41E54A9B0"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.LegLossRedistributesOffsetsWhenPolicySet",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_EnableDisable.cpp",
+          "line": 492,
+          "sha256": "EEA63002F60B7DB679CD4945336BD1C014BA000600661F6CD1DC20D41E54A9B0"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.MidSwingSupportLossPreservesRenderedPose",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Contracts.cpp",
+          "line": 364,
+          "sha256": "A6FCF1C9EE8B8D3AAFE171D6299E2861CB56DA7C03732E7218D7AB873A639D96"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.NativeRecoveryCore.AtomicLandingAndCommittedTarget",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_NativeRecoveryCore.cpp",
+          "line": 221,
+          "sha256": "01AE4AF72AC320BBF520B62F78F4C94B1DEBD0C6883AE30B1F6753E7EEC5A4E6"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.NativeRecoveryCore.CatchStartsFromWaitingEmission",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_NativeRecoveryCore.cpp",
+          "line": 504,
+          "sha256": "01AE4AF72AC320BBF520B62F78F4C94B1DEBD0C6883AE30B1F6753E7EEC5A4E6"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.NativeRecoveryCore.EvolvingAcceptedPlantReservations",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_NativeRecoveryCore.cpp",
+          "line": 392,
+          "sha256": "01AE4AF72AC320BBF520B62F78F4C94B1DEBD0C6883AE30B1F6753E7EEC5A4E6"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.NativeRecoveryCore.InvalidReadOnlyAndMalformedResolver",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_NativeRecoveryCore.cpp",
+          "line": 283,
+          "sha256": "01AE4AF72AC320BBF520B62F78F4C94B1DEBD0C6883AE30B1F6753E7EEC5A4E6"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.NativeRecoveryCore.LegacyAndWaitingCapabilityLatch",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_NativeRecoveryCore.cpp",
+          "line": 96,
+          "sha256": "01AE4AF72AC320BBF520B62F78F4C94B1DEBD0C6883AE30B1F6753E7EEC5A4E6"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.NativeRecoveryCore.LifecycleAndFlightOwnershipExceptions",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_NativeRecoveryCore.cpp",
+          "line": 434,
+          "sha256": "01AE4AF72AC320BBF520B62F78F4C94B1DEBD0C6883AE30B1F6753E7EEC5A4E6"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.NativeRecoveryPie",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_NativeAutomaticRecoveryPie.cpp",
+          "line": 530,
+          "sha256": "DC9270EC3EF21EA61FE63D3E8694E60E031E152D1B045EFB480F8E87AF8FC7C6"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.NegativeDeltaPreservesVelocityHistory",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Contracts.cpp",
+          "line": 420,
+          "sha256": "A6FCF1C9EE8B8D3AAFE171D6299E2861CB56DA7C03732E7218D7AB873A639D96"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.NonfiniteSwingPhaseDoesNotIndexSamples",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Contracts.cpp",
+          "line": 338,
+          "sha256": "A6FCF1C9EE8B8D3AAFE171D6299E2861CB56DA7C03732E7218D7AB873A639D96"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.ObstacleClearanceLiftsSwings",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 526,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.OccludedPlantIsAnEmergency",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 1460,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.OwnedSelection.ActualPreparationWindows",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralOwnedSelection.cpp",
+          "line": 146,
+          "sha256": "B9628BDDCC625A940B76129B719A0F445638962D1C25439F68D21D6432596A6D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.OwnedSelection.AllBeginPaths",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralOwnedSelection.cpp",
+          "line": 340,
+          "sha256": "B9628BDDCC625A940B76129B719A0F445638962D1C25439F68D21D6432596A6D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.OwnedSelection.CommittedNativeContact",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralOwnedSelection.cpp",
+          "line": 284,
+          "sha256": "B9628BDDCC625A940B76129B719A0F445638962D1C25439F68D21D6432596A6D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.OwnedSelection.GuardedFourCommitBoundary",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralOwnedSelection.cpp",
+          "line": 396,
+          "sha256": "B9628BDDCC625A940B76129B719A0F445638962D1C25439F68D21D6432596A6D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.OwnedSelection.MalformedAndReadOnly",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralOwnedSelection.cpp",
+          "line": 80,
+          "sha256": "B9628BDDCC625A940B76129B719A0F445638962D1C25439F68D21D6432596A6D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.OwnedSelection.OrdinaryEquivalence",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralOwnedSelection.cpp",
+          "line": 454,
+          "sha256": "B9628BDDCC625A940B76129B719A0F445638962D1C25439F68D21D6432596A6D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.OwnedSelection.RevocationAndFrozenVisits",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralOwnedSelection.cpp",
+          "line": 197,
+          "sha256": "B9628BDDCC625A940B76129B719A0F445638962D1C25439F68D21D6432596A6D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.PacedIntentAdvancesCadenceWithoutChangingPatternOrSettle",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 443,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.PatternSwitchIsContinuous",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 745,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.PhaseGroupsAlternate",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 246,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.PlantRecordsTrustAtTouchdown",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 1054,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.PlantTrustFollowsTheLandingGround",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 1161,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.PlantTrustPersistsThroughTheStance",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 1281,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.PosedHipReachPressureReleasesAPlant",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 1489,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.PreviewDoesNotInitializePatternState",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Contracts.cpp",
+          "line": 94,
+          "sha256": "A6FCF1C9EE8B8D3AAFE171D6299E2861CB56DA7C03732E7218D7AB873A639D96"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.ProbeRetriesAreBoundedAndDropConvexLean",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Contracts.cpp",
+          "line": 165,
+          "sha256": "A6FCF1C9EE8B8D3AAFE171D6299E2861CB56DA7C03732E7218D7AB873A639D96"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.PullBackTargetIsFrozen",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 1995,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.ReachClampsSwingTargets",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 270,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.ReachJoinsEmergencyAndKeepsInhibition",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 374,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.RedistributionRevertsWhenAllLegsReturn",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_EnableDisable.cpp",
+          "line": 693,
+          "sha256": "EEA63002F60B7DB679CD4945336BD1C014BA000600661F6CD1DC20D41E54A9B0"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.ReenableWhileAirborneStartsFromFrozenPose",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_EnableDisable.cpp",
+          "line": 613,
+          "sha256": "EEA63002F60B7DB679CD4945336BD1C014BA000600661F6CD1DC20D41E54A9B0"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.ReenabledLegSwingsFromFrozenPose",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_EnableDisable.cpp",
+          "line": 244,
+          "sha256": "EEA63002F60B7DB679CD4945336BD1C014BA000600661F6CD1DC20D41E54A9B0"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.ScheduleAdvanceBeatsStranding",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 961,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.SetDisabledPoseMovesFrozenLegAndReenableStartsThere",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_EnableDisable.cpp",
+          "line": 836,
+          "sha256": "EEA63002F60B7DB679CD4945336BD1C014BA000600661F6CD1DC20D41E54A9B0"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.SetPlantedPoseMovesPlantsOnly",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 570,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.SettingRangesRejectWithoutMutation",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Contracts.cpp",
+          "line": 268,
+          "sha256": "A6FCF1C9EE8B8D3AAFE171D6299E2861CB56DA7C03732E7218D7AB873A639D96"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.SettleStepsHomeAtRest",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 611,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.ShortSwingLiftsWhenTheFreezeSnapCrossesARiser",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 1085,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.SpinInPlaceKeepsFeetWithinReach",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 763,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.StandingHoldsPlant",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 155,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.StepCompletesOnTarget",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 192,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.StraightWalkNeverStepsBeyondTheSchedule",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 1363,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.StrokeOvershootPullsThrough",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 881,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.SupportFrameReexpressionPreservesWorldPlantsAndRequests",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Contracts.cpp",
+          "line": 190,
+          "sha256": "A6FCF1C9EE8B8D3AAFE171D6299E2861CB56DA7C03732E7218D7AB873A639D96"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.SupportWeightOfAnUntrustedSwingFadesToNothing",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_SupportWeight.cpp",
+          "line": 28,
+          "sha256": "E1E6E98620CE8518E5E14C93B2E1BB8FED343ACE747C525ECE147A8E56C5F33D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.SwingBudgetCaps",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 359,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.SwingKeepsItsTargetsTrust",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 1225,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.SwingPointFollowsTheSolverArc",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_SwingProfile.cpp",
+          "line": 80,
+          "sha256": "F5F52A86EE9D3F191E11B2341FFEB0EFA8C026103BDC7433D66747AB5AEBE279"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.SwingProfileDefaultsAreInert",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_SwingProfile.cpp",
+          "line": 12,
+          "sha256": "F5F52A86EE9D3F191E11B2341FFEB0EFA8C026103BDC7433D66747AB5AEBE279"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.SwingProfileRejectsNonfiniteSamplesAtomically",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Contracts.cpp",
+          "line": 222,
+          "sha256": "A6FCF1C9EE8B8D3AAFE171D6299E2861CB56DA7C03732E7218D7AB873A639D96"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.SwingProfileSamplesTheCurve",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_SwingProfile.cpp",
+          "line": 40,
+          "sha256": "F5F52A86EE9D3F191E11B2341FFEB0EFA8C026103BDC7433D66747AB5AEBE279"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.TiltedSeedNative.PlaneAdmission",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_CommittedLandingPie.cpp",
+          "line": 2286,
+          "sha256": "85933D163604FBF7BCF9EE2B1D5D62CE1794C22C25CE2665726F165302B145F9"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.TiltedSeedNative.RejectionPreservesNativeStance",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_CommittedLandingPie.cpp",
+          "line": 2299,
+          "sha256": "85933D163604FBF7BCF9EE2B1D5D62CE1794C22C25CE2665726F165302B145F9"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.TouchdownAdmissionKeepsAvailableFallback",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralFootTouchdown_Admission.cpp",
+          "line": 11,
+          "sha256": "A5D2029BF71036887FF613E9F7E322FAD36849FB183B341E584C3454527EB6E1"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.TouchdownSettlesOntoTheHit",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 1391,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.TraceAxisLeansOutward",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_SwingProfile.cpp",
+          "line": 123,
+          "sha256": "F5F52A86EE9D3F191E11B2341FFEB0EFA8C026103BDC7433D66747AB5AEBE279"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.TrustedTargetIsNotClamped",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 1924,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.UntrustedPlantRecoversToNearbyGround",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 2253,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.VelocityIsFrameInvariant",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 100,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.VelocityTracker",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 64,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.YawLeadTurnsTheQueryAboutTheBody",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_SnapshotPie.cpp",
+          "line": 742,
+          "sha256": "C4745E4533110E69AC3A11EF51E42929CB2455D8EB4D524CBD5C6D4D0704C25F"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.YawRateIgnoresTiltSteps",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 687,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.ZeroDtIsAPureRead",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Solver.cpp",
+          "line": 323,
+          "sha256": "5A057D0C0E10447E6D8BD7AD89A637585FDBED18D2FAC26C1884301FCEA3C803"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Gait.ZeroReachKeepsLegacySchedule",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralGait_Reach.cpp",
+          "line": 469,
+          "sha256": "FFC0CD1F9539AF7C43B200317862E64468D6793E3E5FB5EE30F0D1D66AB1A7B3"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.PacingRelease.RejectedTrialReportsOnlyBlockingAnchors",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralPacingRelease.cpp",
+          "line": 141,
+          "sha256": "F2187D5A5E5555F3C53DCDC082F93B08D82623CE744E203CB493FD7398B36177"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.PacingRelease.ReliefPriorityAndExceptionalGroupLimit",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralPacingRelease.cpp",
+          "line": 321,
+          "sha256": "F2187D5A5E5555F3C53DCDC082F93B08D82623CE744E203CB493FD7398B36177"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.PacingRelease.ValidatedReliefUsesBudgetedBeyondSchedule",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralPacingRelease.cpp",
+          "line": 228,
+          "sha256": "F2187D5A5E5555F3C53DCDC082F93B08D82623CE744E203CB493FD7398B36177"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.Rig.AutoPicksCurveAndExplicitSolversApply",
+      "reason": "Actual walker composition or walker-only production control: Add_Walker213; Get_IsSettled219; current gait/rig publication226",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Rig/Test_ProceduralRig_ChainSolver.cpp",
+          "line": 147,
+          "sha256": "8F73A3347E38126D24FD558EAD2B4EB1738853EDF78312BAEE18558491CA4170"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.ClimbPlantMustPersistThroughConfirmation",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 543,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.ClimbRequiresAPlantOnTheObservedFace",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 477,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.ClimbsAFaceAboveStepHeight",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1762,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.CoastKeepsTheLastAcceptedSource",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1132,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.CommittedLanding.ContactCorrectionRequiresLandingFit",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralCommittedLandingPace.cpp",
+          "line": 360,
+          "sha256": "0D268286B428BB4A749CB2B1ACE6BAF169DFBC6A86D9C77E24B2F5174621ACCD"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.CommittedLanding.EmptyCompatibilityAndFullFastPath",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralCommittedLandingPace.cpp",
+          "line": 412,
+          "sha256": "0D268286B428BB4A749CB2B1ACE6BAF169DFBC6A86D9C77E24B2F5174621ACCD"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.CommittedLanding.StrictSimulationAndPosedPhysical",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralCommittedLandingPace.cpp",
+          "line": 70,
+          "sha256": "0D268286B428BB4A749CB2B1ACE6BAF169DFBC6A86D9C77E24B2F5174621ACCD"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.CommittedLanding.TranslationTurnAndMultipleConstraints",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralCommittedLandingPace.cpp",
+          "line": 188,
+          "sha256": "0D268286B428BB4A749CB2B1ACE6BAF169DFBC6A86D9C77E24B2F5174621ACCD"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.CommittedLanding.ZeroWithdrawalPreservesPhysicalStance",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralCommittedLandingPace.cpp",
+          "line": 252,
+          "sha256": "0D268286B428BB4A749CB2B1ACE6BAF169DFBC6A86D9C77E24B2F5174621ACCD"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.ConcaveCornerStillAdopts",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2509,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.ContactCorrection.FreshBlockedContactAtomicAdmission",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2843,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.ContactCorrection.NativePostsAndEnvelopeAtomicity",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 3333,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.ContactCorrection.NoGraceFallOrPendingCoast",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2925,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.ContactCorrection.OriginalReachToleranceAndMalformedAnchors",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2995,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.CrestObservationWaitsForATrustedPlant",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 151,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.DownRayStartingInsideASolidIsAMiss",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 815,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.FallFromAWallLandsAlongTheSteer",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 351,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.FallLandingKeepsTheTravelTangent",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 306,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.FallLandsOnAFaceWithRoom",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2393,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.FallRefusesAFaceWithoutRoom",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2339,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.FanRefusesAFaceWithoutRoom",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2436,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.FeetContactOverAMissCarriesThePlanesNormal",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1443,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.FeetSupportCarriesTheDownRaysNormal",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1394,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.FeetSupportEndsAtTheFootprint",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1497,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.FeetSupportHeightFollowsTheTiltedPlane",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1558,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.FeetSupportHoldsTheBodyOverAMiss",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1208,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.FeetSupportIsIgnoredWhenThePlaneIsSteepToTheSupport",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1244,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.FeetSupportLiftsTheBodyAboveALowerHit",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1285,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.FeetSupportNeverLowersTheBody",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1358,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.FlatFloorHoldsClearanceFromTheDownRay",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 219,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.HeightPlanning.NativePlaneClipPublication",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 3296,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.HeightPlanning.NativePlaneClipUnattributedAtomicRejection",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralHeightPlanning.cpp",
+          "line": 3313,
+          "sha256": "D452A41D14375A5D42F5E79313C5167E7324FB1F20C2FCD9AB5208379038463D"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.HeightPlanning.NativeRecoveryBoundarySameCall",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralRecoveryBoundaryNative.cpp",
+          "line": 840,
+          "sha256": "1FEE33B1A265BD3362AF644B2B4BFD640DD8443D900627C21E092E5FDBC2EDCD"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.HeightPlanning.NativeRecoveryOriginalSuccessNoContinuation",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralRecoveryBoundaryNative.cpp",
+          "line": 856,
+          "sha256": "1FEE33B1A265BD3362AF644B2B4BFD640DD8443D900627C21E092E5FDBC2EDCD"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.LargeTurnWaitsForConfirmation",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 421,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.LookAheadCarriesOntoATopEdge",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 921,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.LookAheadHoldsTheTopOverALowerFloor",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 958,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.LookAheadLocalizesBeveledCrest",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion_LookAheadRecovery.cpp",
+          "line": 206,
+          "sha256": "C359BC021830AECCEB801CC3DD628C916EDD1BA042C5BB96C975073424790646"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.LookAheadRecoversCylinderSecant",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion_LookAheadRecovery.cpp",
+          "line": 143,
+          "sha256": "C359BC021830AECCEB801CC3DD628C916EDD1BA042C5BB96C975073424790646"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.LostSupportAdoptsAtOnce",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 875,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.LowFaceIsNeverSeenByTheForwardRay",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1857,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.NarrowGapSlideStopsMidGap",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2591,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.PacedAirborneBaselineStillChecksReach",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2750,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.PendingContactCoastsNoLongerThanTheConfirmTime",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 651,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.RefusedFaceIsSlidAlongUnderClimb",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2542,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.SeamGrazeKeepsThePendingContactPending",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 758,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.ShortGrazeIsNeverAdopted",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 712,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.SlideKeepsTheWallEvenWithAPlantedFoot",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 612,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.SlideNeverProposesTheFace",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2209,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.SlidesAlongAnObliqueWall",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1946,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.SnapshotShowsThePendingContact",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Gait/Test_ProceduralGait_SnapshotPie.cpp",
+          "line": 1505,
+          "sha256": "C4745E4533110E69AC3A11EF51E42929CB2455D8EB4D524CBD5C6D4D0704C25F"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.SteerFloorKeepsTheTangentOnAnUndercutFacet",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 257,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.StepBeatsSlide",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2250,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.StepHeightZeroClimbsEveryFace",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1819,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.SteppingUpFollowsTheDownRay",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1039,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.StepsOntoAFaceAboveClearanceWithinStepHeight",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1709,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.StoppedBodyPastACrestKeepsTheTop",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1083,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.StopsAgainstAHeadOnWallWithSlide",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2149,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.SupportReturn.NativeBodyClaimInterruptsConfirmation",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSupportReturnNative.cpp",
+          "line": 977,
+          "sha256": "81283E8890115096FECF9FEC6C68DCEB091DE4DC38A166AF9B01799346265494"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.SupportReturn.NativeConfirmedCommitAndNextStep",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSupportReturnNative.cpp",
+          "line": 949,
+          "sha256": "81283E8890115096FECF9FEC6C68DCEB091DE4DC38A166AF9B01799346265494"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.SupportReturn.NativeNoPoseEnvelopeReserveDeclines",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSupportReturnNative.cpp",
+          "line": 991,
+          "sha256": "81283E8890115096FECF9FEC6C68DCEB091DE4DC38A166AF9B01799346265494"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.SupportReturn.NativeOwnedColliderRejects",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSupportReturnNative.cpp",
+          "line": 963,
+          "sha256": "81283E8890115096FECF9FEC6C68DCEB091DE4DC38A166AF9B01799346265494"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.TurnOnlyPaceReportsAttemptedStanceMotion",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2700,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.UnsetFeetSupportKeepsTheRayPath",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 1607,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.VoluntaryPacePreservesPhysics",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2640,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.WalkingOffAnEdgeFollowsTheLowerFloor",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 998,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SurfaceMotion.WallFollowingEndsWhenTheSteeringTurnsAway",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSurfaceMotion.cpp",
+          "line": 2044,
+          "sha256": "AC9470D8F7CD2EB7639250B17EB2794A38911D10B53FB7A94957E3A691EE4A1C"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SwingReach.BoundsElevatedArcAfterLiftoff",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSwingReach.cpp",
+          "line": 59,
+          "sha256": "5761EE748A9B088FA3F3595E12E8C2E188172533A858D7F77FD2F0A755698021"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SwingReach.CurrentSwingEndpointCanConstrainPresentation",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSwingReach.cpp",
+          "line": 194,
+          "sha256": "5761EE748A9B088FA3F3595E12E8C2E188172533A858D7F77FD2F0A755698021"
+        }
+      ]
+    },
+    {
+      "name": "Ck.ProceduralAnimation.SwingReach.ZeroReachRetainsAuthoredArc",
+      "reason": "walker gait/SurfaceMotion/body-support/height/feet/foothold/contact/recovery/owned-selection or walker gym/native diagnosis",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Source/CkTests/Private/UnitTests/CkProceduralAnimation/Core/Test_ProceduralSwingReach.cpp",
+          "line": 150,
+          "sha256": "5761EE748A9B088FA3F3595E12E8C2E188172533A858D7F77FD2F0A755698021"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_PaViz_NavigationFocus",
+      "reason": "PaViz walker visualization gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_PaViz_NavigationFocus.as",
+          "sha256": "D9E2AD6B194D7399F33A64CD0790A021E579F12D76EE8482673F6EB7C9DE84BE"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_PaViz_StressTelemetryA",
+      "reason": "PaViz walker visualization gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_PaViz_StressTelemetryA.as",
+          "sha256": "5784838CEF15267911988EE023925F01B0C21DE60A642CFF382D3D3DA5D6491B"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_PaViz_StressTelemetryB",
+      "reason": "PaViz walker visualization gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_PaViz_StressTelemetryB.as",
+          "sha256": "850F8C78960C5E3C33A2B872E0ECA03EBCD637EA72F447BA8A91B59B19BAB99C"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_PaViz_StressTelemetryC",
+      "reason": "PaViz walker visualization gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_PaViz_StressTelemetryC.as",
+          "sha256": "15B63F27360049F83AAC2AD54CC2B660372F59BB906617F4BB6ADEFA1ED0E06B"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_PaViz_StressVisual",
+      "reason": "PaViz walker visualization gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_PaViz_StressVisual.as",
+          "sha256": "0C4322FCD0EB589D4481A2DB21A9A1D9E49479453F93C43BF50530B9F04B4693"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_PaViz_Telemetry",
+      "reason": "PaViz walker visualization gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_PaViz_Telemetry.as",
+          "sha256": "29E96A1920D02517D92564B7449A30D7233175C29DB5771257EA262B98AD1FA0"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_PaViz_Visual",
+      "reason": "PaViz walker visualization gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_PaViz_Visual.as",
+          "sha256": "AED7D9458104897C7F780435D1FFD292A236EA130A228BFC7208E9B6BAD7AF84"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_AdmissionAndRequestLifetime",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_AdmissionAndRequestLifetime.as",
+          "sha256": "CB40555CFB6F3EE79F47807FB4910C77D8CA1C03481BD45FB86C596BAAB0609D"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_ApplyPresetRetunesLiveGait",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_ApplyPresetRetunesLiveGait.as",
+          "sha256": "F707AB226496B0FE522468CAB4201005090826EC230E99C373B3FB0ABF78AC54"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_BeamTouchdownStaysInReach",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_BeamTouchdownStaysInReach.as",
+          "sha256": "92C62B89261A534146177FEB20FCDAC7C4963BF977BCA48D240114CAB136A5F9"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_BipedPacesAndReverses",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_BipedPacesAndReverses.as",
+          "sha256": "CE1F6EAF009D909318DF551EA077E220A53D69404EC01EBD0D50BB49F082B48F"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_BodyPoseAdmissionRejects",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_BodyPoseAdmissionRejects.as",
+          "sha256": "5C90CF82623043A6AA7F9D080EF147F2BB9E622C4FE336C8BD1B856F72EDE365"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_BodyPosePresentationTracksOffset",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_BodyPosePresentationTracksOffset.as",
+          "sha256": "C37102E6F85A6E2DBD1AB8E79D1FCB499942E736D16B6A7B8C46C88FB5EA8892"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_BodyPoseSagsTowardLostLegs",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_BodyPoseSagsTowardLostLegs.as",
+          "sha256": "53820A9FD414188A43F8AB992928B98CAB39ECA13ADC68F333F2F39B046012CB"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_BorrowingSweep",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_BorrowingSweep.as",
+          "sha256": "73131E88872891901177DEF2686388F8AFB9D2A223CD29A82261235D9C9D7F5B"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_BuriedProbeFindsActualSurface",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_BuriedProbeFindsActualSurface.as",
+          "sha256": "9D4BE1BFECB97BE9DCB4602221F3C71631FA6C075D92A388432B665B0A5B629D"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_CentipedeSegmentsFollowHeadOnChain",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_CentipedeSegmentsFollowHeadOnChain.as",
+          "sha256": "7D82A7830A71B0EB830AA52BA90A845895341B857F6A62E94AE05DC55B7EA95E"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_CentipedeWaveReplantsEveryLeg",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_CentipedeWaveReplantsEveryLeg.as",
+          "sha256": "B8C53F95976DC90FEDA24F44C0F360105ACAE95F36343F112FEAAAE1B6223D08"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_CirclesCylinderUpAndDown",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_CirclesCylinderUpAndDown.as",
+          "sha256": "8CDD853B7E56972D6DF373CF60484977784E527620D5BBF05C39754AE995446E"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_CompletesConcaveLoop",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_CompletesConcaveLoop.as",
+          "sha256": "30CAD04ECABC905AA0E117CA9B39E703FAC5148268F7B65B4E811DA1706B8613"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_CrossesStairsAndHump",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_CrossesStairsAndHump.as",
+          "sha256": "0FB6AA2F0C8A83DAFDC9E12A5F4C1620443C5D7B59F29A650C4F35086FCF6C28"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_CurvedSupportKeepsFootSpread",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_CurvedSupportKeepsFootSpread.as",
+          "sha256": "ADE90760CF3C5F7B3635CAA2D8274AAA288C773BBE15E33EC45F6F84757FBB12"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_CylinderHeightSourceDiagnostics",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_CylinderHeightSourceDiagnostics.as",
+          "sha256": "2814AC0E255D59822DA48F50D6F4FEA2D75715DB302A3ED7B4C737C17BC434A4"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_DetachKeepsLegInRecordWithDetachedStatus",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_DetachKeepsLegInRecordWithDetachedStatus.as",
+          "sha256": "5707139B1024B39E6E1C47B454D1D9FEFF8A26ED56688D96D335A0B1F423F13A"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_DetachLegReleasesPartsAndRebalances",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_DetachLegReleasesPartsAndRebalances.as",
+          "sha256": "BF0996DC538676D2646FE0A8C9C725F9F3203EFF5BEAAF3E705D167CE680FB03"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_DetachTransfersOwnershipWhenRequested",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_DetachTransfersOwnershipWhenRequested.as",
+          "sha256": "085CC01685253DAF7912B6C239C931AB8D5639D7DF88479CC56F60CBB834DA22"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_DetachTransfersPartsToLegAndLegToWorld",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_DetachTransfersPartsToLegAndLegToWorld.as",
+          "sha256": "4C7C2F87DD761B816FB9BF10F78108CAD67ABC68B91CBBC9A75A00518F9B05C1"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_DisableLegFreezesBodyRelative",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_DisableLegFreezesBodyRelative.as",
+          "sha256": "D5575CDC68E79AE4AE9ACD4E702A814D00A6DD534D8283AF5A6F4D7C8107CDA4"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_FaceFootWeighsNothing",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_FaceFootWeighsNothing.as",
+          "sha256": "F190F30163DE7D9AC67E6817310E0398923CCCF565459B004B04209AF73C542A"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_FaceIdealFindsNarrowTopInReach",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_FaceIdealFindsNarrowTopInReach.as",
+          "sha256": "C770F787587D9B35499628219578E1B02B5F11784A5DA920ADDFE21FC52BFADD"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_FaceIdealYieldsToATopInReach",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_FaceIdealYieldsToATopInReach.as",
+          "sha256": "539AF428B3906D9C569B02A3E96ADEE447A9302F4233A90A0259EE74A03A17AD"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_FeetPlaneFitsGroundPointsOnly",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_FeetPlaneFitsGroundPointsOnly.as",
+          "sha256": "417703D74AAE5444D787A88620E5D45797AA8F6DC41152FCF49B81FE65B69E6C"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_FeetPlaneIgnoresAirPlants",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_FeetPlaneIgnoresAirPlants.as",
+          "sha256": "3920C14A46EB4097FB57979315A08BD8FFB5E41B5817E0126AC738B797F05D74"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_FootReservationsKeepDistinctLandings",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_FootReservationsKeepDistinctLandings.as",
+          "sha256": "3C7CE77095444354E88A2E852ECF41F953F1EA8EE1EE6CEA94127150F1D2BF97"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_FootfallSignalsFireOnPlantAndLift",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_FootfallSignalsFireOnPlantAndLift.as",
+          "sha256": "04A0D73041FE0A1A84A22F092E84075E894340E76A51D768BBACB1869A1F28DC"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_FootholdAvoidsOccludedTarget",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_FootholdAvoidsOccludedTarget.as",
+          "sha256": "04283DEF38BA2CA5A67FBE8062C5F47B33F34DE0E2D652A7718CCED814BD487D"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_FootholdLandsOnPillarTop",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_FootholdLandsOnPillarTop.as",
+          "sha256": "0551F9D658889A7C6873706115A9F3381DFEBC7096DBF3A56D94B5F7C6689115"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_FrontFootAnticipatesLedge",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_FrontFootAnticipatesLedge.as",
+          "sha256": "831F1CABE1604735A413E072990C69E63643168F3FB501681FD1BE0DE0841427"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_GaitAddRejectsADetachedLeg",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_GaitAddRejectsADetachedLeg.as",
+          "sha256": "B7599D88A5762550661105FA2FE0A7D069BFD1C9E4A772222900569DFCE2C0FD"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_GaitAdmissionRejects",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_GaitAdmissionRejects.as",
+          "sha256": "1373B33068FB652C93C98F02E6CE557D95D3ABDE919EB4B9E744FDAA76EE7B69"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_IntactApproachDiagnostics",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_IntactApproachDiagnostics.as",
+          "sha256": "74195A2BE9F42C386F9F701E1C6325E3F1602D27933DD2C51F65606035C5A300"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_LeanedFaceHitYieldsToLevelGround",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_LeanedFaceHitYieldsToLevelGround.as",
+          "sha256": "9A38252335300A84DD05F279624CA38581B6BC9D231635152CD7B00F2CA43AF7"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_LegAndPresetRequestsComplete",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_LegAndPresetRequestsComplete.as",
+          "sha256": "6A201C2DF13E41368DBC82A1A2C599DA2668E1C524EB1B97FC9CBA4B776C4F36"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_LegAndRigAdmissionRejects",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_LegAndRigAdmissionRejects.as",
+          "sha256": "2EC132DC12AFCF87EBBC890B8354BC896D33A0587C0DEDB0BB76F3640BA695DB"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_LegSetChangedFiresOnDisableAndEnable",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_LegSetChangedFiresOnDisableAndEnable.as",
+          "sha256": "2F1C87D2268021AF449D91B53EAD67FEDB090A908CF00597028674D515A284A2"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_LongChainsStayConnected",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_LongChainsStayConnected.as",
+          "sha256": "E21E2366C3A3ED0A1BB9F13160B4CE8BF7ECB6CAE9C5F03CE21EDDC001D8C84E"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_NeighborCapsulesPreserveGait",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_NeighborCapsulesPreserveGait.as",
+          "sha256": "7C8AF70FE3B565B6BDE125A597D4723C7CA9384B7D40281544679A4C2CE08858"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_OccludedPlantSteps",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_OccludedPlantSteps.as",
+          "sha256": "7BF35C0092EB0D9CE01E8F467280E88B2A30634083C1BE71121741C3765E4EAD"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_PillarCrossingRenderedTraversal",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_PillarCrossingRenderedTraversal.as",
+          "sha256": "DDD9FA2991E0BAE0A6B439FF959F21E08E73E5797F55FAA7C24C187F99D120E6"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_PillarsEngageSteppedTops",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_PillarsEngageSteppedTops.as",
+          "sha256": "A16BBAB1ECFF1C08CED144E62022BE7AC0B30558E2F4F5DD2FD329E3295D1768"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_PlantedFeetLiftTheBody",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_PlantedFeetLiftTheBody.as",
+          "sha256": "71C5D3A73CCF13C2E7F32383707D8ACDD0BAE6EE3D7DC1BA047292955E20B069"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_PlantedReachPacesPillarCrossing",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_PlantedReachPacesPillarCrossing.as",
+          "sha256": "09786D99545F965590171B88FBAA899782079B2D5B3C459B8975749C81A8663C"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_PostsBeastPosedReach",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_PostsBeastPosedReach.as",
+          "sha256": "71AE116030ECD8E58BD06C2ED7D62035F610F3FA6DD21C53886DC172350564B6"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_PostsCentipedeReturns",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_PostsCentipedeReturns.as",
+          "sha256": "580CD064246E7777B2BEE722D410173443BEE6DF1FA0E60F84AAEEDEECF8B17C"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_ReprobedHitBeyondTargetReachIsUnreachable",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_ReprobedHitBeyondTargetReachIsUnreachable.as",
+          "sha256": "25A56FABF53A0A0EDB1CC67DE31347B7CDFB628D338A8459CEB4F7809319A31F"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_ResetAndOwnerDestruction",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_ResetAndOwnerDestruction.as",
+          "sha256": "BF3F1F907CD5F9BA4E639BE902D216FD846FE87E6A80AC0FEDBBBB4C6E3E8B51"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_RigSwivelsTheKneeAroundAPillar",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_RigSwivelsTheKneeAroundAPillar.as",
+          "sha256": "5E3650E89284172E47DA1A7D8EC0746923D921B89ABC9F821DEE38A865F8C25A"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_SlidePolicyStopsAtLedge",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_SlidePolicyStopsAtLedge.as",
+          "sha256": "E5617C59399974A80DD990BF2A9053C5A50B033CA9C4D609A3E561F2BDC1BC92"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_SpiderCourseTraversal",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_SpiderCourseTraversal.as",
+          "sha256": "BFB7DDE2A4309DBDE70F9009C15EA2AE06C7D8CE519AA8FE12D70766689B43B3"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_SpiderInteractiveRosterDiagnostics",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_SpiderInteractiveRosterDiagnostics.as",
+          "sha256": "9E3FCA94DFE61FD300EDF25BCBF690F433C8AD32A89F755E0B3979828225CCB0"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_SteeringRequestRejects",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_SteeringRequestRejects.as",
+          "sha256": "DB4C5316DB33D61998C3992B752058AD0180689BC11FF4B4B3C7A7B48FCCD67F"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_StepUpOntoABlockAboveClearance",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_StepUpOntoABlockAboveClearance.as",
+          "sha256": "CA5616F1BC1A70155CCDADC3C8E6991415DCE74F2D1B9C13AFEFCA55F269543D"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_SurfaceMotionAdmissionRejects",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_SurfaceMotionAdmissionRejects.as",
+          "sha256": "AB6DA5E67365654C03F988D85025E897E758406639BAFAFAC31339320B4B0A1E"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_SwivelPreservesAuthoredBend",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_SwivelPreservesAuthoredBend.as",
+          "sha256": "A31EE8ABB1563D1F8700059177A781EDA0E96D793591B106FABD323C9752A5A1"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_TrailingHoldDoesNotStopTheSearch",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_TrailingHoldDoesNotStopTheSearch.as",
+          "sha256": "F1B2441F45C11F202A34850C812B42A8129778C6CCF1C07528655ECD83445483"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_TraversesRampAndWall",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_TraversesRampAndWall.as",
+          "sha256": "D7E9042DC65A163EE6F75CEC0CE449FAD24C5099CDBA25399353A33E0C464F98"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_TrustedSwingSurvivesFutureSearchLoss",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_TrustedSwingSurvivesFutureSearchLoss.as",
+          "sha256": "78B8DD881AB6BD2D819C519D7A2EE68E9610E7F48B1EACE651316AE9837A7498"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_WalkQualityOnHump",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_WalkQualityOnHump.as",
+          "sha256": "EC82C43B44D4F3E108AB67661FE1BAB036A250F385121DFAC6EEF85EB068CF9A"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_WalkerAdmissionRejects",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_WalkerAdmissionRejects.as",
+          "sha256": "7DBDFF7E8FF9EAA22DA6985EDE8A1D9F3BD6AB31B9EE5CC70293A37E92B28476"
+        }
+      ]
+    },
+    {
+      "name": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_WalksOnNonOriginFloor",
+      "reason": "walker AS route/visualization composed gym",
+      "sources": [
+        {
+          "path": "Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_WalksOnNonOriginFloor.as",
+          "sha256": "EEDB94B762CBA85D8C100E4EC411D2F41C3ACB1D233A2FA8DF265559E54562A7"
+        }
+      ]
+    }
+  ]
+}
