@@ -87,9 +87,9 @@
     },
     {
       "test": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_BeamTouchdownStaysInReach",
-      "status": "flaky",
-      "reason": "[owner: CkTests] failed in a headless lane on a log error from another editor: LogAssetRegistry OpenFile failed for Plugins/CkFoundation/Content/CkUsf/GeneratedLooksTest/P43876/M_CkUsf_Look_CelShadeGenerationProbe.uasset (a CkUsf test's per-process scratch package). Defined in Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_BeamTouchdownStaysInReach.as.",
-      "evidence": "Gate 2, 2026-10-08: toolbox v1.56 (CkAuto e0e756ed8) --test --no-live --known-reds prune, 3993 run / 3955 passed / 38 failed / 0 contaminated on 3 auto-sized editors, at CkFoundation cf25641a3, CkTests 17b956d50, CkGameplayDebugger 11d89540a, superproject 33458aa; it passed in gate 1 (--build --test --no-live --discover-fresh, same pins). Another project's full gate was running on the machine during gate 1 and at least part of gate 2. Then green alone (--test --no-live --test-pattern <this path>, Saved/Logs/Test-Alone-10.log).",
+      "status": "red",
+      "reason": "OSCILLATES - listed red, not flaky: it fails alone as well as in gates, so as flaky its solo re-run can fail and turn it NEW (Gate-PinBump); a pass reports 'Now passing'. [owner: CkTests] Step 1/4 'the Beast crosses the beam and returns': condition 'Check_Traversal' did not hold - the walker stall class in test-infra-speed analysis/05 (parked, a gait decision). The 2026-10-08 reason (a CkUsf scratch-package log error from another editor) no longer matches any failure. Defined in Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_BeamTouchdownStaysInReach.as.",
+      "evidence": "CkPlugins_gatespeed, UE 5.8.4: failed (same step 1/4 traversal timeout) in 6 of 9 fresh-boot full gates 2026-11-15/16 - Gate-S2-full (pre-campaign plugin tree, toolbox v1.81), Gate-S2-Bprime2, Gate-S2-ESfix, Gate-v185-release, Gate-v186, Gate-PinBump - and passed in Gate-S2-Bprime, Gate-S2-ESfix2, Gate-v186-release. Gate-PinBump (CkFoundation 308173be8, CkTests 234aff9c, CkGameplayDebugger 504dcaaa, toolbox v1.86): failed in lane 2/9, failed its listed-flaky solo re-run, passed the NEW-failure re-run.",
       "added": "2026-10-08"
     },
     {
