@@ -38,7 +38,7 @@
 		},
 		{
 			"Name": "GitLink",
-			"Enabled": true,
+			"Enabled": false,
 			"TargetAllowList": [
 				"Editor"
 			]
