@@ -25,6 +25,21 @@
 
 ## Current state
 
+### November 19 integration verification
+
+The Win64 Development Editor built with CkFoundation `d7e0c6f3baa4f3a4ff6293c55c1518d896ca10e5` and CkTests `cd2e9815ce57af7a3febefda3557fd1c9e54365a`. An earlier unity build exposed two C4459 errors where a shared compilation unit brought a file-scope alias named `Failure` into scope. Qualifying the type at its uses resolved both errors.
+
+All **109 selected Editor tests passed**, including all 102 release-manifest cases by name, all eight snapshot initialization cases, pooled-row capture, duplicate-key inspection and the rendered procedural-animation gym. Nine tests used a real renderer. Toolbox reported zero failed, skipped or contaminated tests. Binding regeneration took two preparatory boots after a stale-binding diagnostic. Discovery found both CkEcs capacity cases under a root outside the host’s default test population. Running the same selection with `--project-prefix CkEcs` reused the freshly built binaries and discovery cache. The test log contained no ensure failures or AngelScript compilation failures. [Release case list](evidence/phase-8-profiling/integration06-release.csv)
+
+The Win64 Development dedicated server built and staged from the same plugin revisions. The binary had SHA-256 `CC005624749F7DD26FA7C054ACF02034F48A7545A4F67651726BE1332628FF87`. At both densities, the authority saved and restored the two-board manifest before client join. Standard inspection parsed the physical slot with zero errors, two warnings and two tagged shared claims. Independent table decoding verified two Generic relay rows and two board rows in each slot. The tagged Generic key was the only repeated GUID. The 50% and 90% slots contained 3,174 and 5,710 entities and 3,170 and 5,706 payloads, respectively.
+
+| Occupancy | Object rows | Physical slot SHA-256 | Restored manifest SHA-1 |
+| --- | ---: | --- | --- |
+| 50% | 3,168 | `0ec15c07775843072d64544b9e99680415e4087138dd348c4ffa39856b0bab97` | `97F2FD0D77DC507F9F02A726FE1BD560F095D026` |
+| 90% | 5,704 | `d6d71c4496971a7075b56cc2c9788fd236be6fd610efe4fa4910075dcdefcb62` | `2698F1FBDAEF0B7CC738C74BBB396CCCDFEAA146` |
+
+**Phase 8 remains blocked.** Each packaged server recorded `cleanBoot=false` with the same 60 AngelScript and four loader diagnostics as its earlier baseline. Neither run produced a new ensure or fatal error. Single warmup restores took 1,058.753 ms and 1,755.983 ms at 50% and 90%, respectively. The p95 comparison remains the five-run series below. These authority-only observations cover save inspection and restoration of the expected manifest. The outstanding release gates are the 250 ms authority restore and 1 s late-join p95 budgets, grid-owned memory attribution, clean packaged startup, clean rendered exit and maintainer sign-off. [Recorded performance measurements](evidence/r2a-restore-summary.csv) · [Late-join evidence](evidence/r1-join.md)
+
 ### ActorRelay.Generic save inspection
 
 **The packaged duplicate-key inspection blocker is closed for newly written saves.** ActorRelay channels intentionally share a group key so descendants of multiple saved channels can reconnect to one live channel. Each channel still needs a distinct saved row for owner references. The old inspector had no serialized record of the sharing policy and reported the identical GUID as an error. All three pooled round-trip tests reproduced the failure before the fix. Pre-fix gate (source workstation, `actorrelay-key-red.log`)
