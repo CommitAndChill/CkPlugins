@@ -1,0 +1,23 @@
+case,role,qpc,source_line,marker
+db781cbf38a34eadb2e49b4112cb95d2,client,28424405032187,771,took 0.0001 seconds to start up
+db781cbf38a34eadb2e49b4112cb95d2,client,28424488006270,169,HexDense [client] phase=0
+db781cbf38a34eadb2e49b4112cb95d2,client,28424488122847,15659,"UEngine::Browse Started Browse: ""127.0.0.1:18462/CkTests/TestGyms/TestGyms_CkTests_Level?Name=Player"""
+db781cbf38a34eadb2e49b4112cb95d2,client,28424488122894,15691,Browse: 127.0.0.1:18462/CkTests/TestGyms/TestGyms_CkTests_Level?Name=Player
+db781cbf38a34eadb2e49b4112cb95d2,client,28424490946380,16171,LoadMap: 127.0.0.1:18462/CkTests/CkGrid/HexGrid/HexPackagedAcceptance?Name=Player?game=/Script/Engine.GameModeBase
+db781cbf38a34eadb2e49b4112cb95d2,client,28424491077236,770,took   1.13ms
+db781cbf38a34eadb2e49b4112cb95d2,client,28424491814484,16695,Took 0.086811 seconds to LoadMap(/CkTests/CkGrid/HexGrid/HexPackagedAcceptance)
+db781cbf38a34eadb2e49b4112cb95d2,client,28424491814522,16712,UEngine::LoadMap Load map complete /CkTests/CkGrid/HexGrid/HexPackagedAcceptance
+db781cbf38a34eadb2e49b4112cb95d2,client,28424492885438,169,HexDense [client] phase=5
+db781cbf38a34eadb2e49b4112cb95d2,client,28424533789935,169,HexDense [client] phase=6
+db781cbf38a34eadb2e49b4112cb95d2,client,28424541960650,174,HexDense [client] OBSERVED_INSPECTION_REJECTED phase=6 cursor=0 both dense board projections and every occupant identity matched
+34681d6298b1407fafd4defdf7928d4d,client,28425620290354,771,took 0.0001 seconds to start up
+34681d6298b1407fafd4defdf7928d4d,client,28425703446465,169,HexDense [client] phase=0
+34681d6298b1407fafd4defdf7928d4d,client,28425703564277,15659,"UEngine::Browse Started Browse: ""127.0.0.1:18462/CkTests/TestGyms/TestGyms_CkTests_Level?Name=Player"""
+34681d6298b1407fafd4defdf7928d4d,client,28425703564338,15691,Browse: 127.0.0.1:18462/CkTests/TestGyms/TestGyms_CkTests_Level?Name=Player
+34681d6298b1407fafd4defdf7928d4d,client,28425706433167,16171,LoadMap: 127.0.0.1:18462/CkTests/CkGrid/HexGrid/HexPackagedAcceptance?Name=Player?game=/Script/Engine.GameModeBase
+34681d6298b1407fafd4defdf7928d4d,client,28425706563916,770,took   1.08ms
+34681d6298b1407fafd4defdf7928d4d,client,28425707285514,16695,Took 0.085235 seconds to LoadMap(/CkTests/CkGrid/HexGrid/HexPackagedAcceptance)
+34681d6298b1407fafd4defdf7928d4d,client,28425707285539,16712,UEngine::LoadMap Load map complete /CkTests/CkGrid/HexGrid/HexPackagedAcceptance
+34681d6298b1407fafd4defdf7928d4d,client,28425708344236,169,HexDense [client] phase=5
+34681d6298b1407fafd4defdf7928d4d,client,28425784367456,169,HexDense [client] phase=6
+34681d6298b1407fafd4defdf7928d4d,client,28425798632954,174,HexDense [client] OBSERVED_INSPECTION_REJECTED phase=6 cursor=0 both dense board projections and every occupant identity matched

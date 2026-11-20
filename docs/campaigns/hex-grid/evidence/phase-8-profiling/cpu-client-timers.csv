@@ -1,0 +1,109 @@
+cap,first_frame,last_frame,frames,timer,approx_exclusive_total_ms,approx_outer_inclusive_total_ms,frames_present
+3,1673,5389,3717,STAT_FTicker_Tick,1977.44,2248.78,3717
+3,1673,5389,3717,ck::FProcessor_Transform_SyncFromActor [ForEachEntity],460.91,460.91,3717
+3,1673,5389,3717,ForEachObjectOfClasses_Implementation,263.91,263.91,3717
+3,1673,5389,3717,Scheduler::EmptyViewCheck,241.61,241.61,3717
+3,1673,5389,3717,Scheduler::Dispatch,219.3,2605.62,3717
+3,1673,5389,3717,WaitForTasks,215.59,215.59,3716
+3,1673,5389,3717,FCk_Request_EntityScript_SpawnEntity,215.59,442.32,227
+3,1673,5389,3717,FCk_Request_EntityScript_SpawnEntity_CreateObject,178.42,208.15,227
+3,1673,5389,3717,ReplicationReader_ReadObjects,156.11,382.85,308
+3,1673,5389,3717,Blueprint Time,133.81,170.98,229
+3,1673,5389,3717,ck::FProcessor_ReplicatedFragments_Dispatch,133.81,141.25,225
+3,1673,5389,3717,ck::FProcessor_Transform_SyncFromActor [CollectEntities],111.51,111.51,3717
+3,1673,5389,3717,Scheduler::MainPass,107.79,2713.41,3717
+3,1673,5389,3717,ProcessLocalPlayerSlateOperations,104.08,111.51,3717
+3,1673,5389,3717,STAT_IsCursorDirectlyOverSlateWindow,89.21,89.21,3717
+3,1673,5389,3717,ConstructObject,81.77,170.98,227
+3,1673,5389,3717,Request_Create_Entity,70.62,70.62,227
+3,1673,5389,3717,[TG_PrePhysics] EcsScheduler_Actor,66.91,2955.02,3717
+3,1673,5389,3717,ProcessUntilTasksComplete,59.47,3549.73,3717
+3,1673,5389,3717,GameNetDriver,48.32,100.36,3717
+3,1673,5389,3717,FDequantizeAndApplyHelper_Apply,44.6,59.47,229
+3,1673,5389,3717,GameEngine Tick,44.6,4869.27,3717
+3,1673,5389,3717,FrameTime,40.89,7575.25,3717
+3,1673,5389,3717,UPlayerInput::EvaluateInputDelegates,37.17,40.89,3717
+3,1673,5389,3717,Scheduler::Pump,37.17,226.74,3717
+3,1673,5389,3717,Update Camera Time,37.17,37.17,3717
+3,1673,5389,3717,ck::FProcessor_EntityScript_BeginPlay,33.45,33.45,227
+3,1673,5389,3717,STAT_TaskGraph_EnqueueFromOtherThread_Trigger,33.45,33.45,3717
+3,1673,5389,3717,TickableGameObjects Time,29.74,85.49,3717
+3,1673,5389,3717,Net Tick Time,29.74,761.98,3717
+3,1673,5389,3717,Ck_AutoTest_NetSubject_MixedGridObject_UE,29.74,70.62,223
+3,1673,5389,3717,DestroyEntities_EnTTDestroy,29.74,29.74,3717
+3,1673,5389,3717,FReplicationFragmentUtil_CreateAndRegisterFragmentsForObject,26.02,40.89,227
+3,1673,5389,3717,Queue Ticks,26.02,26.02,3717
+3,1673,5389,3717,FTickFunctionTask,26.02,3230.07,3717
+3,1673,5389,3717,MakeUniqueObjectName,22.3,22.3,227
+3,1673,5389,3717,[Scene] - StartFrame,22.3,40.89,3717
+3,1673,5389,3717,World Tick Time,22.3,4713.16,3717
+3,1673,5389,3717,Flip Results,22.3,44.6,3717
+3,1673,5389,3717,FWaitingQueue_Unpark_SignalWaitingThread,22.3,22.3,3717
+3,1673,5389,3717,ck::FProcessor_EntityScript_FinishConstruction,22.3,22.3,227
+3,1673,5389,3717,Slate App Input,22.3,130.09,3717
+3,1673,5389,3717,FEngineLoop_UpdateTimeAndHandleMaxTickRate,18.59,18.59,3717
+3,1673,5389,3717,ck::FProcessor_Transform_HandleRequests,18.59,22.3,225
+3,1673,5389,3717,SpawnActor,18.59,118.94,227
+3,1673,5389,3717,ck::FProcessor_ByteAttributeModifier_ComputeAll,18.59,52.04,3717
+3,1673,5389,3717,UWorld_Tick,18.59,4742.89,3717
+3,1673,5389,3717,FCoreDelegates::OnEndFrame,18.59,22.3,3717
+12,1533,1743,211,FCk_Request_EntityScript_SpawnEntity,213.11,391.4,72
+12,1533,1743,211,ck::FProcessor_ReplicatedFragments_Dispatch,174.5,182.94,72
+12,1533,1743,211,ReplicationReader_ReadObjects,157.83,386.34,118
+12,1533,1743,211,STAT_FTicker_Tick,150.86,167.11,211
+12,1533,1743,211,Blueprint Time,135.25,175.76,72
+12,1533,1743,211,FCk_Request_EntityScript_SpawnEntity_CreateObject,133.99,159.09,72
+12,1533,1743,211,ConstructObject,74.91,165.21,72
+12,1533,1743,211,Request_Create_Entity,73.22,73.85,72
+12,1533,1743,211,FDequantizeAndApplyHelper_Apply,48.74,63.09,72
+12,1533,1743,211,ck::FProcessor_EntityScript_BeginPlay,34.82,34.82,72
+12,1533,1743,211,FReplicationFragmentUtil_CreateAndRegisterFragmentsForObject,29.33,42.2,72
+12,1533,1743,211,Ck_AutoTest_NetSubject_MixedGridObject_UE,29.12,68.79,72
+12,1533,1743,211,ck::FProcessor_Transform_SyncFromActor [ForEachEntity],26.8,26.8,211
+12,1533,1743,211,MakeUniqueObjectName,22.79,22.79,72
+12,1533,1743,211,Scheduler::EmptyViewCheck,21.1,21.1,211
+12,1533,1743,211,ck::FProcessor_Transform_HandleRequests,20.05,20.68,72
+12,1533,1743,211,WaitForTasks,20.05,20.05,211
+12,1533,1743,211,SpawnActor,19.83,116.89,72
+12,1533,1743,211,ck::FProcessor_EntityScript_FinishConstruction,19.83,21.1,72
+12,1533,1743,211,FReplicationReader::DispatchStateData,18.78,315.02,118
+12,1533,1743,211,Scheduler::Dispatch,16.67,642.28,211
+12,1533,1743,211,FReplicationReader_UpdateObjectReferenceTracking,15.82,15.82,72
+12,1533,1743,211,ForEachObjectOfClasses_Implementation,15.61,15.61,211
+12,1533,1743,211,PropertyReplicationFragment_InvokeRepNotifies,15.19,181.25,72
+12,1533,1743,211,ck::FProcessor_ReplicationDriver_FireOnDependentReplicationComplete,14.98,34.18,72
+12,1533,1743,211,FDequantizeAndApplyHelper_Init,13.93,13.93,72
+12,1533,1743,211,UNetConnection_ReceivedPacket,12.87,720.14,118
+12,1533,1743,211,PostInitProperties,10.13,10.13,72
+12,1533,1743,211,DestroyEntities_EnTTDestroy,9.92,9.92,211
+12,1533,1743,211,Ck_Fragment_EntityReplicationDriver_Rep_LifetimeConditionals,8.44,8.44,72
+12,1533,1743,211,Ck_Fragment_EntityReplicationDriver_Rep,8.23,30.81,72
+12,1533,1743,211,ck::FProcessor_EntityScript_SpawnEntity_HandleRequests,8.02,406.39,72
+12,1533,1743,211,STAT_AActor_RegisterAllComponents,8.02,15.4,72
+12,1533,1743,211,FReplicationStateDescriptorBuilder_CreateDescriptorForClass,7.17,8.02,72
+12,1533,1743,211,Scheduler::MainPass,6.96,649.46,211
+12,1533,1743,211,ck::FProcessor_Transform_SyncFromActor [CollectEntities],6.33,6.33,211
+12,1533,1743,211,NetActorFactory_InstantiateReplicatedObjectFromHeader,6.33,125.54,72
+12,1533,1743,211,EntityLifetime::Request_DestroyEntity,6.33,6.96,72
+12,1533,1743,211,STAT_IsCursorDirectlyOverSlateWindow,6.12,6.12,211
+12,1533,1743,211,ProcessLocalPlayerSlateOperations,5.7,6.33,211
+12,1533,1743,211,Ck_AutoTest_NetSubject_MixedGridObjectEntityScript_UE,5.49,5.91,72
+12,1533,1743,211,SceneComponent,5.49,8.23,72
+12,1533,1743,211,STAT_LocalPlayer_HandlePlayerControllerChanged,5.28,5.49,1
+12,1533,1743,211,GameNetDriver,5.28,10.97,211
+12,1533,1743,211,PropertyReplicationFragment_ApplyReplicatedState,5.28,14.14,72
+12,1533,1743,211,ck::FFragment_Signal_OnReplicationComplete,5.06,18.99,72
+12,1533,1743,211,DefaultSceneRoot,4.85,7.17,72
+12,1533,1743,211,Net Tick Time,4.85,733.23,211
+12,1533,1743,211,GameEngine Tick,4.64,1714.8,211
+12,1533,1743,211,IpNetDriver Socket RecvFrom,4.22,4.22,211
+12,1533,1743,211,ProcessUntilTasksComplete,4.01,934.73,211
+12,1533,1743,211,[TG_PrePhysics] EcsScheduler_Actor,3.8,886.2,211
+12,1533,1743,211,Scheduler::Pump,3.8,237.16,211
+12,1533,1743,211,FDequantizeAndApplyHelper_CallLegacyPostApplyFunctions,3.38,184.84,72
+12,1533,1743,211,FrameTime,3.17,1913.14,211
+12,1533,1743,211,UDataStreamChannel_ReceivedBunch,3.17,706.43,118
+12,1533,1743,211,Ck_AutoTest_NetSubject_MixedGridObject_UE_LifetimeConditionals,3.17,3.17,72
+12,1533,1743,211,PacketHandler Incoming_Internal,2.95,2.95,118
+12,1533,1743,211,UPlayerInput::EvaluateInputDelegates,2.74,2.95,211
+12,1533,1743,211,Update Camera Time,2.74,2.74,211

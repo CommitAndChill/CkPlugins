@@ -1,0 +1,125 @@
+{
+  "status": "observed-with-scored-usable-interval",
+  "cleanReleaseGate": false,
+  "inspectionPassed": false,
+  "bootRuntimeClean": false,
+  "physicalLinkQualified": false,
+  "kernelDeliveryIndependentlyVerified": false,
+  "manifestSha1": "b0105857d5085c57e80982d94e50652315ca610f",
+  "typedBytes": {
+    "cells_per_board": "3169",
+    "placements_per_board": "2852",
+    "boards": "2",
+    "save_request_ms": "261.815503",
+    "load_to_verified_manifest_ms": "2035.193000",
+    "main_slot_bytes": "11500259",
+    "board_payload_rows": "2",
+    "board_payload_bytes": "8187644",
+    "object_identity_rows": "5704",
+    "object_identity_bytes": "941160"
+  },
+  "clientUpperBound": {
+    "subsystem_init_before_browse_to_verified_manifest_ms": "2381.845400",
+    "observed_open_to_verified_manifest_ms": "1891.194001"
+  },
+  "relay": {
+    "strictWholeFlowPassed": false,
+    "rejection": "endpoint unreachable notification; whole-flow delivery is unqualified"
+  },
+  "usableInterval": {
+    "measurement_through_usable_passed": true,
+    "errors": [],
+    "cutoff_perf_counter": 2838580.7201633,
+    "endpoint_delivery_qualified": false,
+    "physical_link_qualified": false,
+    "directions": {
+      "0": {
+        "received_by_cutoff": 66,
+        "forwarded_by_cutoff": 65,
+        "pending_not_overdue_at_cutoff": 1,
+        "max_lateness_ms": 0.6301002576947212,
+        "windows": {
+          "0.01": {
+            "peak_wire_bits": 1304,
+            "allowed_wire_bits": 150656.0
+          },
+          "0.1": {
+            "peak_wire_bits": 4408,
+            "allowed_wire_bits": 1050656.0
+          }
+        }
+      },
+      "1": {
+        "received_by_cutoff": 956,
+        "forwarded_by_cutoff": 955,
+        "pending_not_overdue_at_cutoff": 1,
+        "max_lateness_ms": 1.1599021963775158,
+        "windows": {
+          "0.01": {
+            "peak_wire_bits": 115104,
+            "allowed_wire_bits": 157920.0
+          },
+          "0.1": {
+            "peak_wire_bits": 1008336,
+            "allowed_wire_bits": 1057920.0
+          }
+        }
+      }
+    },
+    "whole_flow_endpoint_unreachable_events": [
+      1,
+      3
+    ],
+    "whole_flow_send_failures": [
+      0,
+      0
+    ],
+    "whole_flow_unforwarded_accepted_datagrams": [
+      0,
+      0
+    ]
+  },
+  "measurementCutoff": {
+    "run": "06C90F737E8E48199287D22BCD884844",
+    "receipt": "${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap12\\973a53d0115e4595831d7834882f8ece\\fixture\\06C90F737E8E48199287D22BCD884844\\observation-client-observed",
+    "manifestSha1": "B0105857D5085C57E80982D94E50652315CA610F",
+    "roles": {
+      "server": {
+        "pid": 13888,
+        "parentPid": 20256,
+        "executable": "${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\pkg-e56062cd651247e3a1578902c8965616\\WindowsServer\\CkPlugins\\Binaries\\Win64\\CkPluginsServer.exe",
+        "commandLine": "\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\pkg-e56062cd651247e3a1578902c8965616\\WindowsServer\\CkPlugins\\Binaries\\Win64\\CkPluginsServer.exe\" /CkTests/CkGrid/HexGrid/HexPackagedAcceptance -port=18461 -abslog=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap12\\973a53d0115e4595831d7834882f8ece\\fixture\\06c90f737e8e48199287d22bcd884844-server.log\" -unattended -nosplash -nosound -CkHexRun=06c90f737e8e48199287d22bcd884844 -CkHexEvidence=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap12\\973a53d0115e4595831d7834882f8ece\\fixture\" -CkHexObserveRelayCollision -CkHexDenseAcceptance -CkHexDensity=90 -PktLag=0 -NetTrace=3 -trace=net,cpu,frame,bookmark,log -statnamedevents -ini:Engine:[/Script/Engine.Player]:ConfiguredInternetSpeed=1250000 -ini:Engine:[/Script/Engine.Player]:ConfiguredLanSpeed=1250000 -ini:Engine:[/Script/OnlineSubsystemUtils.IpNetDriver]:MaxClientRate=1250000 -ini:Engine:[/Script/OnlineSubsystemUtils.IpNetDriver]:MaxInternetClientRate=1250000 -MULTIHOME=127.0.0.1 -UserDir=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap12\\973a53d0115e4595831d7834882f8ece\\fixture\\06c90f737e8e48199287d22bcd884844-server-user\" -ExecCmds=\"net.Iris.ReplicationWriterMaxAllowedPacketsIfNotHugeObject 12,net.Iris.ReplicationWriterMaxAllowedPacketsIfNotHugeObject\" -MULTIHOME=127.0.0.1 -tracefile=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap12\\973a53d0115e4595831d7834882f8ece\\fixture\\06c90f737e8e48199287d22bcd884844-server.utrace\"",
+        "creationUtc": "2026-11-19T17:11:38.5957850Z"
+      },
+      "client": {
+        "pid": 38028,
+        "parentPid": 20256,
+        "executable": "${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\pkg-f9cd9722fe824a469496c99bf5eb7b45\\Windows\\CkPlugins\\Binaries\\Win64\\CkPlugins.exe",
+        "commandLine": "\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\pkg-f9cd9722fe824a469496c99bf5eb7b45\\Windows\\CkPlugins\\Binaries\\Win64\\CkPlugins.exe\" 127.0.0.1:18462 -nullrhi -abslog=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap12\\973a53d0115e4595831d7834882f8ece\\fixture\\06c90f737e8e48199287d22bcd884844-client.log\" -unattended -nosplash -nosound -CkHexRun=06c90f737e8e48199287d22bcd884844 -CkHexEvidence=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap12\\973a53d0115e4595831d7834882f8ece\\fixture\" -CkHexObserveRelayCollision -CkHexDenseAcceptance -CkHexDensity=90 -PktLag=0 -NetTrace=3 -trace=net,cpu,frame,bookmark,log -statnamedevents -ini:Engine:[/Script/Engine.Player]:ConfiguredInternetSpeed=1250000 -ini:Engine:[/Script/Engine.Player]:ConfiguredLanSpeed=1250000 -ini:Engine:[/Script/OnlineSubsystemUtils.IpNetDriver]:MaxClientRate=1250000 -ini:Engine:[/Script/OnlineSubsystemUtils.IpNetDriver]:MaxInternetClientRate=1250000 -UserDir=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap12\\973a53d0115e4595831d7834882f8ece\\fixture\\06c90f737e8e48199287d22bcd884844-client-user\" -tracefile=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap12\\973a53d0115e4595831d7834882f8ece\\fixture\\06c90f737e8e48199287d22bcd884844-client.utrace\"",
+        "creationUtc": "2026-11-19T17:12:04.2499550Z"
+      }
+    },
+    "cutoffPerfCounter": 2838580.7201633,
+    "clock": "QueryPerformanceCounter",
+    "stopwatchFrequency": 10000000,
+    "boundary": "supervisor detected and hash-verified client-observed receipt",
+    "observedUtc": "2026-11-19T17:12:17.6907625Z"
+  },
+  "traceArtifacts": {
+    "server": {
+      "path": "${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap12\\973a53d0115e4595831d7834882f8ece\\fixture\\06c90f737e8e48199287d22bcd884844-server.utrace",
+      "bytes": 22359148,
+      "sha256": "e1732d17cf175cd34fe26c9062d55bbe457683077cd9ecb4d823c5b74aa0ce30",
+      "header": "2CRT",
+      "packetEventsDecoded": false
+    },
+    "client": {
+      "path": "${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap12\\973a53d0115e4595831d7834882f8ece\\fixture\\06c90f737e8e48199287d22bcd884844-client.utrace",
+      "bytes": 27292509,
+      "sha256": "be3c1bd0382ce3648bd83919e33d61c26ac70a125c7d14ce555467d1180feb99",
+      "header": "2CRT",
+      "packetEventsDecoded": false
+    }
+  },
+  "limitation": "Trace containers and identities checked; packet streams not decoded. Relay proof covers recv-to-send only."
+}

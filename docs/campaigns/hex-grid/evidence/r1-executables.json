@@ -1,0 +1,12 @@
+{
+  "server": {
+    "path": "${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\pkg-e56062cd651247e3a1578902c8965616\\WindowsServer\\CkPlugins\\Binaries\\Win64\\CkPluginsServer.exe",
+    "sha256": "556915b670c473503c20ac131719af34c628205b3921693784daea4815ba21fc",
+    "bytes": 454869504
+  },
+  "client": {
+    "path": "${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\pkg-f9cd9722fe824a469496c99bf5eb7b45\\Windows\\CkPlugins\\Binaries\\Win64\\CkPlugins.exe",
+    "sha256": "86c05c2255d92e2fcd54c4a5290603083215b6b5c91d452c42f9105722653b2c",
+    "bytes": 474379264
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "status": "observed-with-scored-usable-interval",
+  "cleanReleaseGate": false,
+  "inspectionPassed": false,
+  "bootRuntimeClean": false,
+  "physicalLinkQualified": false,
+  "kernelDeliveryIndependentlyVerified": false,
+  "manifestSha1": "411cefa22195aa248b2b1674648df3053fdd8962",
+  "typedBytes": {
+    "cells_per_board": "3169",
+    "placements_per_board": "2852",
+    "boards": "2",
+    "save_request_ms": "262.234200",
+    "load_to_verified_manifest_ms": "2022.308901",
+    "main_slot_bytes": "11500259",
+    "board_payload_rows": "2",
+    "board_payload_bytes": "8187644",
+    "object_identity_rows": "5704",
+    "object_identity_bytes": "941160"
+  },
+  "clientUpperBound": {
+    "subsystem_init_before_browse_to_verified_manifest_ms": "8024.517301",
+    "observed_open_to_verified_manifest_ms": "7599.944200"
+  },
+  "relay": {
+    "strictWholeFlowPassed": false,
+    "rejection": "endpoint unreachable notification; whole-flow delivery is unqualified"
+  },
+  "usableInterval": {
+    "measurement_through_usable_passed": true,
+    "errors": [],
+    "cutoff_perf_counter": 2838537.6972439,
+    "endpoint_delivery_qualified": false,
+    "physical_link_qualified": false,
+    "directions": {
+      "0": {
+        "received_by_cutoff": 260,
+        "forwarded_by_cutoff": 260,
+        "pending_not_overdue_at_cutoff": 0,
+        "max_lateness_ms": 0.8767000399529934,
+        "windows": {
+          "0.01": {
+            "peak_wire_bits": 976,
+            "allowed_wire_bits": 150672.0
+          },
+          "0.1": {
+            "peak_wire_bits": 4248,
+            "allowed_wire_bits": 1050672.0
+          }
+        }
+      },
+      "1": {
+        "received_by_cutoff": 979,
+        "forwarded_by_cutoff": 978,
+        "pending_not_overdue_at_cutoff": 1,
+        "max_lateness_ms": 1.076298300176859,
+        "windows": {
+          "0.01": {
+            "peak_wire_bits": 110336,
+            "allowed_wire_bits": 157904.0
+          },
+          "0.1": {
+            "peak_wire_bits": 1009136,
+            "allowed_wire_bits": 1057904.0
+          }
+        }
+      }
+    },
+    "whole_flow_endpoint_unreachable_events": [
+      1,
+      3
+    ],
+    "whole_flow_send_failures": [
+      0,
+      0
+    ],
+    "whole_flow_unforwarded_accepted_datagrams": [
+      0,
+      0
+    ]
+  },
+  "measurementCutoff": {
+    "run": "CB0597C0549E40A5BAFA9F0A45A7EA2E",
+    "receipt": "${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap3\\8ad4d946388d4fe4b12793be20daa951\\fixture\\CB0597C0549E40A5BAFA9F0A45A7EA2E\\observation-client-observed",
+    "manifestSha1": "411CEFA22195AA248B2B1674648DF3053FDD8962",
+    "roles": {
+      "server": {
+        "pid": 22240,
+        "parentPid": 19472,
+        "executable": "${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\pkg-e56062cd651247e3a1578902c8965616\\WindowsServer\\CkPlugins\\Binaries\\Win64\\CkPluginsServer.exe",
+        "commandLine": "\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\pkg-e56062cd651247e3a1578902c8965616\\WindowsServer\\CkPlugins\\Binaries\\Win64\\CkPluginsServer.exe\" /CkTests/CkGrid/HexGrid/HexPackagedAcceptance -port=18461 -abslog=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap3\\8ad4d946388d4fe4b12793be20daa951\\fixture\\cb0597c0549e40a5bafa9f0a45a7ea2e-server.log\" -unattended -nosplash -nosound -CkHexRun=cb0597c0549e40a5bafa9f0a45a7ea2e -CkHexEvidence=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap3\\8ad4d946388d4fe4b12793be20daa951\\fixture\" -CkHexObserveRelayCollision -CkHexDenseAcceptance -CkHexDensity=90 -PktLag=0 -NetTrace=3 -trace=net,cpu,frame,bookmark,log -statnamedevents -ini:Engine:[/Script/Engine.Player]:ConfiguredInternetSpeed=1250000 -ini:Engine:[/Script/Engine.Player]:ConfiguredLanSpeed=1250000 -ini:Engine:[/Script/OnlineSubsystemUtils.IpNetDriver]:MaxClientRate=1250000 -ini:Engine:[/Script/OnlineSubsystemUtils.IpNetDriver]:MaxInternetClientRate=1250000 -MULTIHOME=127.0.0.1 -UserDir=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap3\\8ad4d946388d4fe4b12793be20daa951\\fixture\\cb0597c0549e40a5bafa9f0a45a7ea2e-server-user\" -ExecCmds=\"net.Iris.ReplicationWriterMaxAllowedPacketsIfNotHugeObject 3,net.Iris.ReplicationWriterMaxAllowedPacketsIfNotHugeObject\" -MULTIHOME=127.0.0.1 -tracefile=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap3\\8ad4d946388d4fe4b12793be20daa951\\fixture\\cb0597c0549e40a5bafa9f0a45a7ea2e-server.utrace\"",
+        "creationUtc": "2026-11-19T17:10:49.6445410Z"
+      },
+      "client": {
+        "pid": 24432,
+        "parentPid": 19472,
+        "executable": "${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\pkg-f9cd9722fe824a469496c99bf5eb7b45\\Windows\\CkPlugins\\Binaries\\Win64\\CkPlugins.exe",
+        "commandLine": "\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\pkg-f9cd9722fe824a469496c99bf5eb7b45\\Windows\\CkPlugins\\Binaries\\Win64\\CkPlugins.exe\" 127.0.0.1:18462 -nullrhi -abslog=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap3\\8ad4d946388d4fe4b12793be20daa951\\fixture\\cb0597c0549e40a5bafa9f0a45a7ea2e-client.log\" -unattended -nosplash -nosound -CkHexRun=cb0597c0549e40a5bafa9f0a45a7ea2e -CkHexEvidence=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap3\\8ad4d946388d4fe4b12793be20daa951\\fixture\" -CkHexObserveRelayCollision -CkHexDenseAcceptance -CkHexDensity=90 -PktLag=0 -NetTrace=3 -trace=net,cpu,frame,bookmark,log -statnamedevents -ini:Engine:[/Script/Engine.Player]:ConfiguredInternetSpeed=1250000 -ini:Engine:[/Script/Engine.Player]:ConfiguredLanSpeed=1250000 -ini:Engine:[/Script/OnlineSubsystemUtils.IpNetDriver]:MaxClientRate=1250000 -ini:Engine:[/Script/OnlineSubsystemUtils.IpNetDriver]:MaxInternetClientRate=1250000 -UserDir=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap3\\8ad4d946388d4fe4b12793be20daa951\\fixture\\cb0597c0549e40a5bafa9f0a45a7ea2e-client-user\" -tracefile=\"${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap3\\8ad4d946388d4fe4b12793be20daa951\\fixture\\cb0597c0549e40a5bafa9f0a45a7ea2e-client.utrace\"",
+        "creationUtc": "2026-11-19T17:11:15.6453510Z"
+      }
+    },
+    "cutoffPerfCounter": 2838537.6972439,
+    "clock": "QueryPerformanceCounter",
+    "stopwatchFrequency": 10000000,
+    "boundary": "supervisor detected and hash-verified client-observed receipt",
+    "observedUtc": "2026-11-19T17:11:34.6693095Z"
+  },
+  "traceArtifacts": {
+    "server": {
+      "path": "${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap3\\8ad4d946388d4fe4b12793be20daa951\\fixture\\cb0597c0549e40a5bafa9f0a45a7ea2e-server.utrace",
+      "bytes": 25565945,
+      "sha256": "ef8444b3012e146e393428c9f86279bf0fbfea22b6f71085f576bd0228f8a0dc",
+      "header": "2CRT",
+      "packetEventsDecoded": false
+    },
+    "client": {
+      "path": "${SOURCE_CHECKOUT}\\Saved\\Automation\\HexPhase8\\profile-cap3\\8ad4d946388d4fe4b12793be20daa951\\fixture\\cb0597c0549e40a5bafa9f0a45a7ea2e-client.utrace",
+      "bytes": 72122604,
+      "sha256": "eebd121f12e8413ab27b34ca14372a03277f5e743c632178e78c48771e3bed04",
+      "header": "2CRT",
+      "packetEventsDecoded": false
+    }
+  },
+  "limitation": "Trace containers and identities checked; packet streams not decoded. Relay proof covers recv-to-send only."
+}

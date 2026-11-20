@@ -1,0 +1,67 @@
+case,role,qpc,source_line,marker
+db781cbf38a34eadb2e49b4112cb95d2,server,28424211813619,771,took 0.0001 seconds to start up
+db781cbf38a34eadb2e49b4112cb95d2,server,28424292836472,169,HexDense [server] phase=0
+db781cbf38a34eadb2e49b4112cb95d2,server,28424292935390,15659,"UEngine::Browse Started Browse: ""/CkTests/CkGrid/HexGrid/HexPackagedAcceptance?Name=Player"""
+db781cbf38a34eadb2e49b4112cb95d2,server,28424292935510,15691,Browse: /CkTests/CkGrid/HexGrid/HexPackagedAcceptance?Name=Player
+db781cbf38a34eadb2e49b4112cb95d2,server,28424292936098,16171,LoadMap: /CkTests/CkGrid/HexGrid/HexPackagedAcceptance?Name=Player
+db781cbf38a34eadb2e49b4112cb95d2,server,28424293125278,770,took   2.78ms
+db781cbf38a34eadb2e49b4112cb95d2,server,28424293815406,16695,Took 0.087928 seconds to LoadMap(/CkTests/CkGrid/HexGrid/HexPackagedAcceptance)
+db781cbf38a34eadb2e49b4112cb95d2,server,28424293815532,16712,UEngine::LoadMap Load map complete /CkTests/CkGrid/HexGrid/HexPackagedAcceptance
+db781cbf38a34eadb2e49b4112cb95d2,server,28424294586296,169,HexDense [server] phase=1
+db781cbf38a34eadb2e49b4112cb95d2,server,28424327821556,169,HexDense [server] phase=2
+db781cbf38a34eadb2e49b4112cb95d2,server,28424360929514,169,HexDense [server] phase=3
+db781cbf38a34eadb2e49b4112cb95d2,server,28424362957139,13,"Request_Save TIMING slot [HexDense_53d59a4528a0499898cc0b1e1d8c9bbe]: total [142.61ms] = pump [1.34ms] ([0] passes) + capture [137.64ms] (classify [10.13ms], payloads [123.40ms] (produce [14.77ms], serialize [49.63ms]), tables [4.11ms]) + write [3.62ms] (serialize [1.64ms], io [1.98ms]) + sidecar [0.00ms]. Audit [5.04ms] over [3174] probes (inside classify). [3174] entities, [3170] payloads ([2] distinct types), [6387688] bytes ([5071204] payload + [1316484] structural)."
+db781cbf38a34eadb2e49b4112cb95d2,server,28424363061362,13,"DIAG: v3 table provenance — EngineOwned [2], ConstructSpawned [2], RuntimeSpawned [3170] (of which bridged [3170])"
+db781cbf38a34eadb2e49b4112cb95d2,server,28424363150649,13,"Request_Load: v3 load [epoch 2072117249] started for slot [HexDense_53d59a4528a0499898cc0b1e1d8c9bbe] ([3174] entities, [3170] payloads; [3173] roots tearing down), written by game version [1.0.0.0] build [9a4a5f4]"
+db781cbf38a34eadb2e49b4112cb95d2,server,28424363150975,169,HexDense [server] phase=4
+db781cbf38a34eadb2e49b4112cb95d2,server,28424363332985,13,DIAG: teardown drained after [2] frames — initiating travel
+db781cbf38a34eadb2e49b4112cb95d2,server,28424363333529,13,"DIAG: Request_Load travel — OpenLevel (no connected clients) to map [/CkTests/CkGrid/HexGrid/HexPackagedAcceptance] (pre-travel world [HexPackagedAcceptance], epoch [2072117249])"
+db781cbf38a34eadb2e49b4112cb95d2,server,28424363494132,15659,"UEngine::Browse Started Browse: ""/CkTests/CkGrid/HexGrid/HexPackagedAcceptance?CkLoad=2072117249"""
+db781cbf38a34eadb2e49b4112cb95d2,server,28424363494513,15691,Browse: /CkTests/CkGrid/HexGrid/HexPackagedAcceptance?CkLoad=2072117249
+db781cbf38a34eadb2e49b4112cb95d2,server,28424363494971,16171,LoadMap: /CkTests/CkGrid/HexGrid/HexPackagedAcceptance?CkLoad=2072117249
+db781cbf38a34eadb2e49b4112cb95d2,server,28424364375724,770,took   1.85ms
+db781cbf38a34eadb2e49b4112cb95d2,server,28424364773694,16695,Took 0.127872 seconds to LoadMap(/CkTests/CkGrid/HexGrid/HexPackagedAcceptance)
+db781cbf38a34eadb2e49b4112cb95d2,server,28424364773794,16712,UEngine::LoadMap Load map complete /CkTests/CkGrid/HexGrid/HexPackagedAcceptance
+db781cbf38a34eadb2e49b4112cb95d2,server,28424364793744,13,DIAG: rehydrated SaveKey resolver with [2] live entries
+db781cbf38a34eadb2e49b4112cb95d2,server,28424370642027,13,"DIAG: rebuild complete after [2] frames — [3174]/[3174] entities mapped ([0] skipped), hydrating"
+db781cbf38a34eadb2e49b4112cb95d2,server,28424371006764,13,DIAG: v3 hydrate — quarantined [3173] restored entities until every payload applies
+db781cbf38a34eadb2e49b4112cb95d2,server,28424371765977,13,DIAG: v3 hydrate — entities [3174] = mapped [3174] + skipped [0] + orphaned [0] | payloads [3170] = enqueued [3170] + on-skipped [0] + on-orphaned [0] + unresolved-owner [0] + dropped [0]
+db781cbf38a34eadb2e49b4112cb95d2,server,28424372526325,13,DIAG: v3 hydrate — quarantine lifted for [3173] entities (every payload applied)
+db781cbf38a34eadb2e49b4112cb95d2,server,28424373250937,13,"DIAG: v3 load payloads drained — converging (restored [3174], orphaned [0])"
+db781cbf38a34eadb2e49b4112cb95d2,server,28424373930797,13,"DIAG: v3 load READY TO RESUME (epoch [2072117249], restored [3174], orphaned [0], convergence unmet [0])"
+db781cbf38a34eadb2e49b4112cb95d2,server,28424375462172,169,HexDense [server] phase=5
+db781cbf38a34eadb2e49b4112cb95d2,server,28424534674372,169,HexDense [server] phase=6
+db781cbf38a34eadb2e49b4112cb95d2,server,28424542017832,174,HexDense [server] OBSERVED_INSPECTION_REJECTED phase=6 cursor=3168 both dense board projections and every occupant identity matched
+34681d6298b1407fafd4defdf7928d4d,server,28425362080366,771,took 0.0002 seconds to start up
+34681d6298b1407fafd4defdf7928d4d,server,28425445161374,169,HexDense [server] phase=0
+34681d6298b1407fafd4defdf7928d4d,server,28425445258770,15659,"UEngine::Browse Started Browse: ""/CkTests/CkGrid/HexGrid/HexPackagedAcceptance?Name=Player"""
+34681d6298b1407fafd4defdf7928d4d,server,28425445258900,15691,Browse: /CkTests/CkGrid/HexGrid/HexPackagedAcceptance?Name=Player
+34681d6298b1407fafd4defdf7928d4d,server,28425445259542,16171,LoadMap: /CkTests/CkGrid/HexGrid/HexPackagedAcceptance?Name=Player
+34681d6298b1407fafd4defdf7928d4d,server,28425445449544,770,took   2.45ms
+34681d6298b1407fafd4defdf7928d4d,server,28425446143888,16695,Took 0.088432 seconds to LoadMap(/CkTests/CkGrid/HexGrid/HexPackagedAcceptance)
+34681d6298b1407fafd4defdf7928d4d,server,28425446144018,16712,UEngine::LoadMap Load map complete /CkTests/CkGrid/HexGrid/HexPackagedAcceptance
+34681d6298b1407fafd4defdf7928d4d,server,28425446908617,169,HexDense [server] phase=1
+34681d6298b1407fafd4defdf7928d4d,server,28425507188432,169,HexDense [server] phase=2
+34681d6298b1407fafd4defdf7928d4d,server,28425567204058,169,HexDense [server] phase=3
+34681d6298b1407fafd4defdf7928d4d,server,28425570804537,13,"Request_Save TIMING slot [HexDense_56b0ad5e7d614ff9b0cf7ea4d79b0925]: total [271.09ms] = pump [2.05ms] ([0] passes) + capture [261.64ms] (classify [16.96ms], payloads [236.30ms] (produce [28.65ms], serialize [94.64ms]), tables [8.38ms]) + write [7.41ms] (serialize [3.42ms], io [3.99ms]) + sidecar [0.00ms]. Audit [7.74ms] over [5710] probes (inside classify). [5710] entities, [5706] payloads ([2] distinct types), [11497728] bytes ([9128804] payload + [2368924] structural)."
+34681d6298b1407fafd4defdf7928d4d,server,28425571070415,13,"DIAG: v3 table provenance — EngineOwned [2], ConstructSpawned [2], RuntimeSpawned [5706] (of which bridged [5706])"
+34681d6298b1407fafd4defdf7928d4d,server,28425571237512,13,"Request_Load: v3 load [epoch 512294913] started for slot [HexDense_56b0ad5e7d614ff9b0cf7ea4d79b0925] ([5710] entities, [5706] payloads; [5709] roots tearing down), written by game version [1.0.0.0] build [9a4a5f4]"
+34681d6298b1407fafd4defdf7928d4d,server,28425571238061,169,HexDense [server] phase=4
+34681d6298b1407fafd4defdf7928d4d,server,28425571613426,13,DIAG: teardown drained after [2] frames — initiating travel
+34681d6298b1407fafd4defdf7928d4d,server,28425571613987,13,"DIAG: Request_Load travel — OpenLevel (no connected clients) to map [/CkTests/CkGrid/HexGrid/HexPackagedAcceptance] (pre-travel world [HexPackagedAcceptance], epoch [512294913])"
+34681d6298b1407fafd4defdf7928d4d,server,28425571615559,15659,"UEngine::Browse Started Browse: ""/CkTests/CkGrid/HexGrid/HexPackagedAcceptance?CkLoad=512294913"""
+34681d6298b1407fafd4defdf7928d4d,server,28425571615730,15691,Browse: /CkTests/CkGrid/HexGrid/HexPackagedAcceptance?CkLoad=512294913
+34681d6298b1407fafd4defdf7928d4d,server,28425571616137,16171,LoadMap: /CkTests/CkGrid/HexGrid/HexPackagedAcceptance?CkLoad=512294913
+34681d6298b1407fafd4defdf7928d4d,server,28425573223026,770,took   2.27ms
+34681d6298b1407fafd4defdf7928d4d,server,28425573672384,16695,Took 0.205620 seconds to LoadMap(/CkTests/CkGrid/HexGrid/HexPackagedAcceptance)
+34681d6298b1407fafd4defdf7928d4d,server,28425573672490,16712,UEngine::LoadMap Load map complete /CkTests/CkGrid/HexGrid/HexPackagedAcceptance
+34681d6298b1407fafd4defdf7928d4d,server,28425573694902,13,DIAG: rehydrated SaveKey resolver with [2] live entries
+34681d6298b1407fafd4defdf7928d4d,server,28425585532742,13,"DIAG: rebuild complete after [2] frames — [5710]/[5710] entities mapped ([0] skipped), hydrating"
+34681d6298b1407fafd4defdf7928d4d,server,28425585977974,13,DIAG: v3 hydrate — quarantined [5709] restored entities until every payload applies
+34681d6298b1407fafd4defdf7928d4d,server,28425587261529,13,DIAG: v3 hydrate — entities [5710] = mapped [5710] + skipped [0] + orphaned [0] | payloads [5706] = enqueued [5706] + on-skipped [0] + on-orphaned [0] + unresolved-owner [0] + dropped [0]
+34681d6298b1407fafd4defdf7928d4d,server,28425588712357,13,DIAG: v3 hydrate — quarantine lifted for [5709] entities (every payload applied)
+34681d6298b1407fafd4defdf7928d4d,server,28425589973467,13,"DIAG: v3 load payloads drained — converging (restored [5710], orphaned [0])"
+34681d6298b1407fafd4defdf7928d4d,server,28425590657334,13,"DIAG: v3 load READY TO RESUME (epoch [512294913], restored [5710], orphaned [0], convergence unmet [0])"
+34681d6298b1407fafd4defdf7928d4d,server,28425593014457,169,HexDense [server] phase=5
+34681d6298b1407fafd4defdf7928d4d,server,28425785588578,169,HexDense [server] phase=6
+34681d6298b1407fafd4defdf7928d4d,server,28425798689853,174,HexDense [server] OBSERVED_INSPECTION_REJECTED phase=6 cursor=5704 both dense board projections and every occupant identity matched

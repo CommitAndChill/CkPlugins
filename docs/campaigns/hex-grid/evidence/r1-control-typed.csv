@@ -1,0 +1,5 @@
+group,case,density,rows,incoming_client_packets_through_cutoff,piece_count,piece_first_ms_from_first_incoming,piece_last_ms_from_first_incoming,identity_count,identity_logical_bits,identity_first_ms_from_first_incoming,identity_last_ms_from_first_incoming,board_count,board_logical_bits,board_first_ms_from_first_incoming,board_last_ms_from_first_incoming,last_typed_packet_to_supervisor_cutoff_ms
+r1-control-cap12,05b9ca1fcc944539829056ff4f7029f4,50,3168,536,3168,214.697,1307.061,3168,487872,214.697,1307.061,2,1152378,313.014,385.69,79.176
+r1-control-cap12,d3f497ac412b4d1b9375ea3502ceaf1b,90,5704,951,5704,251.95,2200.206,5704,878416,251.95,2200.206,2,2072946,429.93,579.175,78.801
+r1-control-cap3,b5001d9150bb4b36abcf1d8c88d95edd,50,3168,540,3168,215.59,4201.844,3168,487872,215.59,4201.844,2,1152378,4161.359,4252.488,98.827
+r1-control-cap3,daa3a13f2b654f6fb5c4cb3ccc06d830,90,5704,974,5704,216.446,7330.238,5704,878416,216.446,7330.238,2,2072946,7570.936,7713.05,137.891

@@ -1,0 +1,5 @@
+case,group,density,errors,fixture_exit,relay_exit
+6131e52f62324920b86ae7c6f6ae1459,r1-cap12,50,{'forwarding outside delay/lateness bounds': 72},0,0
+f767bdb936ac48d8b6bace732e7a1173,r1-cap12,50,{'forwarding outside delay/lateness bounds': 8},0,0
+96fe408aca604358b3f69933a6ba9642,r1-cap3,50,unrelated build overlap,0,0
+bdbb544f882741acb524745c15de40ec,r1-cap3,90,unrelated build overlap,0,0

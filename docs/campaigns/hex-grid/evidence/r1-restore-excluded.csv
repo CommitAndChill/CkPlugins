@@ -1,0 +1,5 @@
+case,folder,reason,fixture_exit,relay_exit
+6131e52f62324920b86ae7c6f6ae1459,r1-cap12,Independent artifact/relay validation failed.,0,0
+f767bdb936ac48d8b6bace732e7a1173,r1-cap12,Independent artifact/relay validation failed.,0,0
+96fe408aca604358b3f69933a6ba9642,r1-cap3,external compiler overlap,0,0
+bdbb544f882741acb524745c15de40ec,r1-cap3,external compiler overlap,0,0

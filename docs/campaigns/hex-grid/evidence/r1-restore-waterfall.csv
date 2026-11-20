@@ -1,0 +1,29 @@
+case,density,start,end,wall_ms,named_game_idle_ms,opaque_core_ticker_ms,other_unresolved_batch_ms,next_timer_1,next_ms_1,next_timer_2,next_ms_2,next_timer_3,next_ms_3,remaining_named_ms
+db781cbf38a34eadb2e49b4112cb95d2,50,after_save,provenance,10.4223,0.0,10.1368,0.0,UCk_Snapshot_Subsystem_UE_DoRequest_Save,0.251,STAT_FMsgLogf,0.0199,ConstructObject,0.0089,0.0057
+db781cbf38a34eadb2e49b4112cb95d2,50,provenance,load_started,8.9287,0.0,0.438,0.0,EntityLifetime::Request_DestroyEntity,3.8456,ck::FFragment_Signal_OnEntityBeginDestroy,3.2635,EntityLifetime_OnBeginDestroyCallbacks,0.8292,0.5524
+db781cbf38a34eadb2e49b4112cb95d2,50,load_started,teardown_drained,18.2336,0.0,0.1517,0.0005,ck::FProcessor_EntityScript_EndPlay,6.2483,ck::FProcessor_HexGrid_EndPlay,6.1836,ck::FProcessor_EntityLifetime_DestructionPhase_Endplay,1.8384,3.8111
+db781cbf38a34eadb2e49b4112cb95d2,50,teardown_drained,browse,16.1147,15.8685,0.0317,0.0004,STAT_FMsgLogf,0.0555,STAT_UGameEngine_Tick_TickWorldTravel,0.0211,UE::RHI::GPUProfiler::ProcessEvents,0.0168,0.1207
+db781cbf38a34eadb2e49b4112cb95d2,50,browse,map_complete,127.9662,0.0,0.0,0.0,UEngine::LoadMap,58.2024,ParallelFor,13.6177,Ck_AutoTest_NetSubject_MixedGridObject_UE,9.7766,46.3695
+db781cbf38a34eadb2e49b4112cb95d2,50,map_complete,resolver,1.995,0.0,0.0833,0.0,FCk_Request_EntityScript_SpawnEntity,0.2115,Scheduler::EmptyViewCheck,0.1436,Scheduler::Dispatch,0.1138,1.4428
+db781cbf38a34eadb2e49b4112cb95d2,50,resolver,rebuild_complete,584.8283,0.0,19.0321,0.0009,FCk_Request_EntityScript_SpawnEntity,224.4066,Ck_AutoTest_NetSubject_MixedGridObject_UE,75.7325,Request_Create_Entity,55.559,210.0972
+db781cbf38a34eadb2e49b4112cb95d2,50,rebuild_complete,quarantine_stamp,36.4737,30.2722,5.5844,0.0002,GameEngine Tick,0.0448,STAT_FMsgLogf,0.0432,[TG_PrePhysics] EcsScheduler_Actor,0.0294,0.4995
+db781cbf38a34eadb2e49b4112cb95d2,50,quarantine_stamp,enqueued,75.9213,0.0,68.8733,0.0,ConstructObject,3.8723,MakeUniqueObjectName,1.9569,Ck_PendingHydrationPayloads_UE,0.8966,0.3222
+db781cbf38a34eadb2e49b4112cb95d2,50,enqueued,lift,76.0348,0.0,1.7157,0.0005,ck::FProcessor_Hydration_Dispatch,65.5537,Request_Create_Entity,3.9476,ck::FProcessor_EntityLifetime_DestructionPhase_Teardown,0.9206,3.8967
+db781cbf38a34eadb2e49b4112cb95d2,50,lift,drained,72.4612,13.9877,36.1828,0.0008,ck::FProcessor_HexGrid_Publish,14.8438,ck::FProcessor_Transform_SyncFromActor [ForEachEntity],1.2693,DestroyEntities_EnTTDestroy,1.2036,4.9732
+db781cbf38a34eadb2e49b4112cb95d2,50,drained,ready,67.986,61.6187,0.1356,0.0009,ck::FProcessor_Transform_SyncFromActor [ForEachEntity],2.465,ParallelFor,0.3119,Scheduler::EmptyViewCheck,0.2677,3.1862
+db781cbf38a34eadb2e49b4112cb95d2,50,ready,earliest_verified,55.6785,28.9077,24.491,0.0005,ck::FProcessor_Transform_SyncFromActor [ForEachEntity],0.5786,[TG_PrePhysics] EcsScheduler_Actor,0.1719,ForEachObjectOfClasses_Implementation,0.1237,1.4051
+db781cbf38a34eadb2e49b4112cb95d2,50,earliest_verified,latest_verified,10.4223,0.0,10.4223,0.0,,0.0,,0.0,,0.0,0.0
+34681d6298b1407fafd4defdf7928d4d,90,after_save,provenance,26.5878,0.0,25.963,0.0,UCk_Snapshot_Subsystem_UE_DoRequest_Save,0.5489,ConstructObject,0.0301,STAT_FMsgLogf,0.0206,0.0252
+34681d6298b1407fafd4defdf7928d4d,90,provenance,load_started,16.7097,0.0,0.7894,0.0,EntityLifetime::Request_DestroyEntity,7.2046,ck::FFragment_Signal_OnEntityBeginDestroy,6.2452,EntityLifetime_OnBeginDestroyCallbacks,1.5132,0.9573
+34681d6298b1407fafd4defdf7928d4d,90,load_started,teardown_drained,37.5914,0.0,0.3332,0.0005,ck::FProcessor_EntityScript_EndPlay,14.7732,ck::FProcessor_HexGrid_EndPlay,11.2661,ck::FProcessor_EntityLifetime_DestructionPhase_Teardown,4.7179,6.5005
+34681d6298b1407fafd4defdf7928d4d,90,teardown_drained,browse,0.2133,0.0,0.0331,0.0005,STAT_FMsgLogf,0.056,UE::RHI::GPUProfiler::ProcessEvents,0.0175,STAT_UGameEngine_Tick_TickWorldTravel,0.0095,0.0967
+34681d6298b1407fafd4defdf7928d4d,90,browse,map_complete,205.6931,0.0,0.0,0.0,UEngine::LoadMap,86.205,ConditionalBeginDestroy,19.6774,Ck_AutoTest_NetSubject_MixedGridObject_UE,19.0811,80.7296
+34681d6298b1407fafd4defdf7928d4d,90,map_complete,resolver,2.2412,0.0,0.0857,0.0,FCk_Request_EntityScript_SpawnEntity,0.3176,Scheduler::EmptyViewCheck,0.1518,Scheduler::Dispatch,0.122,1.5641
+34681d6298b1407fafd4defdf7928d4d,90,resolver,rebuild_complete,1183.784,0.0,35.4625,0.0009,FCk_Request_EntityScript_SpawnEntity,446.6665,Ck_AutoTest_NetSubject_MixedGridObject_UE,144.4642,FCk_Request_EntityScript_SpawnEntity_CreateObject,134.2657,422.9242
+34681d6298b1407fafd4defdf7928d4d,90,rebuild_complete,quarantine_stamp,44.5232,26.6924,17.2743,0.0004,STAT_FMsgLogf,0.0436,UE::RHI::GPUProfiler::ProcessEvents,0.0339,GameNetDriver,0.0282,0.4504
+34681d6298b1407fafd4defdf7928d4d,90,quarantine_stamp,enqueued,128.3555,0.0,118.5018,0.0,ConstructObject,4.8316,MakeUniqueObjectName,3.0554,Ck_PendingHydrationPayloads_UE,1.4352,0.5315
+34681d6298b1407fafd4defdf7928d4d,90,enqueued,lift,145.0828,0.0,2.8882,0.0007,ck::FProcessor_Hydration_Dispatch,127.7728,Request_Create_Entity,7.1133,ck::FProcessor_EntityLifetime_DestructionPhase_Endplay,1.7004,5.6074
+34681d6298b1407fafd4defdf7928d4d,90,lift,drained,126.111,0.0,88.2897,0.0012,ck::FProcessor_HexGrid_Publish,26.5648,ck::FProcessor_Transform_SyncFromActor [ForEachEntity],2.051,DestroyEntities_EnTTDestroy,2.0471,7.1572
+34681d6298b1407fafd4defdf7928d4d,90,drained,ready,68.3867,59.9487,0.1561,0.0007,ck::FProcessor_Transform_SyncFromActor [ForEachEntity],3.8437,ParallelFor,0.5784,ck::FProcessor_Transform_SyncFromActor [CollectEntities],0.3027,3.5564
+34681d6298b1407fafd4defdf7928d4d,90,ready,earliest_verified,71.0769,26.0786,42.0089,0.0009,ck::FProcessor_Transform_SyncFromActor [ForEachEntity],1.1424,ForEachObjectOfClasses_Implementation,0.2206,ParallelFor,0.1416,1.4839
+34681d6298b1407fafd4defdf7928d4d,90,earliest_verified,latest_verified,26.5878,0.0,26.5878,0.0,,0.0,,0.0,,0.0,0.0

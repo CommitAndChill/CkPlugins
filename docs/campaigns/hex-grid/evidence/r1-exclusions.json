@@ -1,0 +1,36 @@
+[
+  {
+    "case": "6131e52f62324920b86ae7c6f6ae1459",
+    "group": "r1-cap12",
+    "density": 50,
+    "join_ms": "1410.667602",
+    "error_count": 72,
+    "reason": "forwarding outside delay/lateness bounds",
+    "max_downstream_lateness_ms": 19.835100509226322
+  },
+  {
+    "case": "f767bdb936ac48d8b6bace732e7a1173",
+    "group": "r1-cap12",
+    "density": 50,
+    "join_ms": "1427.810099",
+    "error_count": 8,
+    "reason": "forwarding outside delay/lateness bounds",
+    "max_downstream_lateness_ms": 7.535800337791443
+  },
+  {
+    "case": "96fe408aca604358b3f69933a6ba9642",
+    "group": "r1-cap3",
+    "density": 50,
+    "join_ms": 4083.669,
+    "reason": "external compile overlapped the packaged observation",
+    "restore_ms": 1221.272
+  },
+  {
+    "case": "bdbb544f882741acb524745c15de40ec",
+    "group": "r1-cap3",
+    "density": 90,
+    "join_ms": 7861.527,
+    "reason": "external compile overlapped the packaged observation",
+    "restore_ms": 2188.879
+  }
+]

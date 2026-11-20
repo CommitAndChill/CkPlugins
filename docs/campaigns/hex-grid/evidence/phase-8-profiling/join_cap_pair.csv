@@ -1,0 +1,3 @@
+cap,case,manifest_sha1,open_to_verified_ms,prebrowse_to_verified_ms,wire_bytes,packets,longest_consecutive_equal_sized_groups,median_ingress_period_ms,stable_bin_seconds,stable_mean_mbps,first_burst_bin_s,last_large_to_cutoff_ms,whole_flow_pass,boot_clean,inspection_pass
+3,8ad4d946388d4fe4b12793be20daa951,411CEFA22195AA248B2B1674648DF3053FDD8962,7599.944200,8024.517301,905161,978,205,33.251,6.7,0.694,7.4,158.752,False,False,False
+12,973a53d0115e4595831d7834882f8ece,B0105857D5085C57E80982D94E50652315CA610F,1891.194001,2381.845400,904479,955,45,33.276,1.3,2.774,0.5,92.923,False,False,False
