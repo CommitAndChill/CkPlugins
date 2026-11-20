@@ -1,5 +1,7 @@
 # Phase 8 remediation proposal
 
+> **Closed 2026-11-20.** R1 and R2A are done. The maintainer removed the performance budgets from release acceptance, so R2B, R3 and R4 are follow-ups, not gates. See "November 20 module closeout" in [PROGRESS.md](PROGRESS.md).
+
 **Decision requested:** authorize the measurement and isolation work in R1 first. Keep Phase 8 on hold. The release clocks remain request-to-verified authority state and observed-open-to-verified client state. The two tracks can be staffed independently after R1. Run their timed workloads serially on the qualification PC.
 
 ## Workload and diagnosis

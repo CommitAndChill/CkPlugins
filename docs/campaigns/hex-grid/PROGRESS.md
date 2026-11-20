@@ -1,8 +1,8 @@
 ---
 {
   "campaign": "Typed hex grids in CkGrid",
-  "status": "blocked",
-  "updated": "2026-11-19",
+  "status": "done",
+  "updated": "2026-11-20",
   "phases": [
     {"id":"G1","title":"Coordinates and geometry","state":"done"},
     {"id":"G2","title":"Board composition and authoring","state":"done"},
@@ -11,11 +11,11 @@
     {"id":"G5","title":"Authority save and restore","state":"done"},
     {"id":"G6","title":"Replication and late join","state":"done"},
     {"id":"G7","title":"Optional saved editor painting","state":"done"},
-    {"id":"G8","title":"Release acceptance","state":"blocked"}
+    {"id":"G8","title":"Release acceptance","state":"done"}
   ],
-  "next": "Decide how to address the measured authority travel and actor rebuild costs before authorizing further restore changes. R2B late join is a separate decision.",
-  "blocked_on": "The two-board targets exceeded restore and late-join p95 at both occupancies. Grid-owned memory is unqualified. Packaged startup and rendered exit still fail their clean gates. Newly written pooled saves pass offline inspection.",
-  "owed_by_maintainer": ["Tier 4 release sign-off after the remaining failures are reconciled."]
+  "next": "None. Module closed on functional acceptance. Performance budgets and audit items are tracked as follow-ups below.",
+  "blocked_on": "",
+  "owed_by_maintainer": []
 }
 ---
 
@@ -24,6 +24,29 @@
 [Design and qualification digest](evidence/README.md). Parenthetical source logs and archives identify artifacts retained on the original workstation. Linked CSVs, visual evidence and tests are available from this checkout.
 
 ## Current state
+
+### November 20 module closeout
+
+**The hex-grid module is closed.** The maintainer removed the performance budgets from release acceptance and gave Tier 4 sign-off on functional acceptance. All campaign commits are on each plugin's `origin/dev`, and host `d65c88b` pins them: CkFoundation `d7e0c6f3baa4f3a4ff6293c55c1518d896ca10e5`, CkGameplayDebugger `0af629b1be7078c9325712d2e15b6bcc70223466`, CkTests `cd2e9815ce57af7a3febefda3557fd1c9e54365a`. Later host `dev` pins contain all three.
+
+Acceptance rests on the November 19 source-workstation evidence below. All 109 selected Editor tests passed, including all 102 release-manifest cases. Both fresh packaged authority saves restored the exact two-board manifest and passed normal offline inspection with zero errors. No gate was re-run for this closeout.
+
+The following are follow-ups, not release gates:
+
+| Follow-up | Owner | Notes |
+|---|---|---|
+| Authority restore ≤250 ms p95 | Hex campaign / CkSnapshot | The empty-board travel control alone took 368–373 ms. Meeting the budget on the request-to-verified clock needs an R3 contract change. The hex-owned hydration scopes were about 117 / 223 ms at 50% / 90%. |
+| Late join ≤1 s p95 | Hex campaign / replication | Needs a global Iris cap or a representation change. See R2B in [PHASE_8_REMEDIATION.md](PHASE_8_REMEDIATION.md). |
+| Grid-owned memory ≤64 MiB retained / ≤128 MiB peak | Hex campaign | Unattributed interval peaks were 53.22 / 59.54 MiB. |
+| Whole-board republish on every board change | Hex campaign | `CkHexGridReplication_Processor.cpp` republishes the full `FCk_RepData_HexGridState`. The client decodes, compares and restamps every placement. The Host-mode publish path was not measured. |
+| Compact persisted placement encoding | Hex campaign | Each saved placement stores cells alongside anchor, rotation and footprint offsets, about 1.4 KB at 90%. Needs a schema v2. |
+| File-scope `Failure` / `Result` aliases | Hex campaign | `CkHexGrid_Projection.cpp:19-20`. Same unity-build collision class as the two C4459 errors from November 19. |
+| Replica projection stalls on a reparented retained entity | Hex campaign | `RetainsRetiringEntity` rejects the whole projection while user code keeps a retained entity parented under a retiring placement. |
+| Pooled relay with a member that is not engine-owned | CkSnapshot | Capture drops every claim in the group, so inspection reports `DuplicateSaveKey`. This fails closed. Add a test if relay channels can ever be spawned at runtime. |
+| 64 packaged startup diagnostics (60 AngelScript, 4 ZenLoader) | Baseline, outside hex | Present before the campaign. |
+| Rendered shutdown exit 777003 | Baseline, outside hex | Reproduces on a matched map without the hex fixture. |
+
+The sections below are the historical record. Mentions of local or uncommitted work describe the state at that time.
 
 ### November 19 integration verification
 
@@ -149,7 +172,7 @@ The full scale sweep completed all 90 distinct cases, covering disk, explicit sp
 | Retained grid memory ≤64 MiB | Unverified ownership | Unverified ownership |
 | Peak grid memory ≤128 MiB | Unverified ownership | Unverified ownership |
 | Grid game-thread work ≤1 ms p95, 16 previews and four committed moves/frame | **0.2171 ms**, below budget in measured scopes | **0.2106 ms**, below budget in measured scopes |
-| Authority restore to verified manifest ≤250 ms p95 | **1,193.84 ms**, exceeded | **2,002.57 ms**, exceeded |
+| Authority restore to verified manifest ≤250 ms p95 | **1,193.84 ms**, exceeded (R2A indexed cohort: 1,142.29 ms) | **2,002.57 ms**, exceeded (R2A indexed cohort: 1,829.85 ms) |
 | Usable late-join baseline ≤1 s p95 on the 50 ms RTT / 10 Mbps emulated link | **4,077.16 ms**, exceeded | **7,602.21 ms**, exceeded |
 
 The first shaped 50% late client verified the exact 3,168-row server manifest and completed teardown. Initialization before network browse to usable state took 4,557.47 ms; the first observed open connection to usable state took 4,088.29 ms. The ready and teardown receipts both matched the authority and client manifest hash. The local UDP relay encountered Windows socket error 10054 during peer shutdown and its telemetry was incomplete. This run is excluded from the network-profile cohort. First shaped late join (source workstation, `6f5321451e97463cbba523a0fb6abc32`)
@@ -251,6 +274,7 @@ Foundation `b36337c4f8dd72a52153764734f575ad76c20b84`, CkGameplayDebugger `be82e
 | 2026-11-17 | Plan uses independent square and hex membership, stable grid-scoped placement IDs and finite authored domains. P7 is optional for the runtime release. A change in those assumptions goes to the lead and Technical Director. |
 | 2026-11-17 | P5a recommends a neutral CkEcs restore disposition with classification supplied by CkSnapshot. A maintainer decision on this Tier 4 extension is required before P5 implementation. P6 uses a separate, independently delivered object binding key to match pending placements and requires a genuine late-join proof. Final production size/budget and inclusion of saved painting are release decisions. |
 | 2026-11-18 | The Technical Director approved P5a and early declaration for ambiguous external construction. Scope covers both the board-state and object-identity payloads. |
+| 2026-11-20 | The maintainer removed the restore, late-join and grid-memory budgets from release acceptance and signed off Tier 4 on functional acceptance. G8 is done. The budgets, the R2B/R3 work and the audit findings are follow-ups listed under "November 20 module closeout". The packaged startup diagnostics and exit 777003 are baseline defects outside the campaign. |
 
 
 
