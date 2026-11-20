@@ -65,13 +65,6 @@
       "added": "2026-10-08"
     },
     {
-      "test": "Project.Functional Tests.CkTests.AutoTests.AutoTests_CkTests_Level.Ck_AutoTest_ProceduralAnimation_SpiderCourseTraversal",
-      "status": "red",
-      "reason": "OSCILLATES. [owner: CkTests] Red in gate 1 and red alone twice, green in gate 2 the same morning. Failure: FinishTest Failed at step 2/4 'verify two complete traversals and intact coverage': Ledge completed two route traversals with every leg replanted (1 traversals, 8/8 legs). Defined in Plugins/CkTests/Script/CkProceduralAnimation/CkAutoTest_ProceduralAnimation_SpiderCourseTraversal.as. While listed it detects nothing: follow-up is to fix the test, then remove the entry (do not prune it on one pass).",
-      "evidence": "Slice A gate of record, 2026-10-08: toolbox v1.56 (CkAuto e0e756ed8) --build --test --no-live --discover-fresh, 3993 run / 3955 passed / 38 failed / 0 contaminated on 3 auto-sized editors, at CkFoundation cf25641a3, CkTests 17b956d50, CkGameplayDebugger 11d89540a, superproject 33458aa. Another project's full gate and two engine builds were running on the machine at the same time. Red alone (--test --no-live --test-pattern <this path>, Saved/Logs/Test-Alone-7.log) and again in Test-Alone-7b.log after gate 2, same assertion. Gate 2 (--test --no-live --known-reds prune, Saved/Logs/Test-Prune.log, same pins) passed it and pruned it; restored by hand.",
-      "added": "2026-10-08"
-    },
-    {
       "test": "Ck.AudioDebugger.AuthoredShell",
       "status": "flaky",
       "reason": "[owner: CkGameplayDebugger] renderer-only; failed in the real-renderer pass: Expected 'physical Tracks group-header navigation resolves its exact director' (spec.cpp:1733). Defined in Plugins/CkGameplayDebugger/Source/CkAudioDebugger/Private/Tests/CkAudioDebugger_AuthoredShell.spec.cpp.",
