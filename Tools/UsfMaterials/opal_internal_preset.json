@@ -1,0 +1,36 @@
+{
+  "scalars": {
+    "Opal": {
+      "CoatIor": 1.45,
+      "UVRotation": 60,
+      "CoatRoughness": 0.025,
+      "DomainNormalStrength": 1.6,
+      "DomainRoughness": 0.085,
+      "FlashReflectance": 0.45,
+      "ScatteringStrength": 0.65
+    }
+  },
+  "vectors": {
+    "Opal": {
+      "MilkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "BodyTransmission": [
+        0.3,
+        0.36,
+        0.4,
+        1
+      ]
+    }
+  },
+  "sky": 0.5,
+  "environment_intensity": 15,
+  "reflection_brightness": 3,
+  "body_shadow": true,
+  "front_reflections": true,
+  "name": "Opal internal color - polished silica",
+  "schema_version": 1
+}
